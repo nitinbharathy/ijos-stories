@@ -79,3 +79,18 @@ test("emits crawler rules and an absolute sitemap URL", async () => {
   assert.match(robots, /Sitemap: https?:\/\/[^\s]+\/sitemap\.xml/);
   assert.match(sitemap, /<loc>https?:\/\/[^<]+<\/loc>/);
 });
+
+test("includes valid ProfessionalService structured data", async () => {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const match = html.match(/<script id="business-structured-data" type="application\/ld\+json">([\s\S]*?)<\/script>/);
+
+  assert.ok(match, "business structured-data script is missing");
+
+  const business = JSON.parse(match[1]);
+
+  assert.equal(business["@context"], "https://schema.org");
+  assert.equal(business["@type"], "ProfessionalService");
+  assert.equal(business.name, "ijós Moments");
+  assert.equal(business.areaServed.name, "Singapore");
+  assert.equal(business.founder.name, "Madhu");
+});

@@ -122,6 +122,8 @@ The Cloudflare Pages files are generated in `dist/client/`. Do not edit files in
 
 The build also generates `robots.txt` and `sitemap.xml`. Cloudflare Pages supplies its deployment address through `CF_PAGES_URL`. After connecting a custom production domain, set the Cloudflare Pages environment variable `SITE_URL` to that full address, such as `https://www.example.com`, so the sitemap uses the canonical domain.
 
+The business structured data is in the root `index.html` file, inside the script with `id="business-structured-data"`. Review that block whenever the business name, contact details, service area, founder details, Instagram profile, or services change. Add the final website URL, business identifier, logo, and representative image after the production domain is confirmed.
+
 ## Publish through Git and Cloudflare Pages
 
 The website is published through Cloudflare Pages Git integration. Configure the Cloudflare Pages project once with:
