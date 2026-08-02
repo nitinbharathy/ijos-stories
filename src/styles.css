@@ -33,3 +33,10 @@ header{justify-content:center;position:relative}
 
 .service,.packages{width:100%;max-width:1400px;margin-inline:auto}.contact{padding-inline:max(5vw,calc((100vw - 1400px)/2))}
 @media(max-width:700px){.service,.packages{max-width:none}.contact{padding-inline:20px}}
+
+.about img{height:440px;object-position:center top}
+@media(max-width:700px){.about img{height:400px;object-position:center top}}
+
+.intro{max-width:900px}
+
+.counter button{color:#1f1f1c;background:rgba(248,245,239,.96);font-weight:700;box-shadow:0 2px 12px rgba(0,0,0,.2)}
