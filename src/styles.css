@@ -12,14 +12,51 @@ button, input, select, textarea { font: inherit; color: inherit; }
 
 .content-block { padding: var(--section-space) var(--page-gutter); }
 
+.site-header-shell {
+  position: sticky;
+  z-index: 50;
+  top: 0;
+  height: var(--header-height);
+  pointer-events: none;
+}
+
+.site-header-shell.over-hero {
+  position: absolute;
+  width: 100%;
+  height: 0;
+}
+
+.site-header-shell.over-hero.is-floating-shell {
+  position: fixed;
+}
+
 header {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   height: var(--header-height);
   padding: 0 var(--page-gutter);
+  border-radius: 0;
   background: var(--color-header);
+  pointer-events: auto;
+  transform: translateX(-50%);
+  transition: var(--transition-header);
+}
+
+header.is-floating {
+  top: var(--header-floating-offset);
+  width: min(calc(100% - 2rem), var(--header-floating-width));
+  height: var(--header-floating-height);
+  border-radius: 999px;
+  box-shadow: var(--shadow-header-floating);
+}
+
+.site-header-shell.over-hero header:not(.is-floating) {
+  background: var(--color-transparent);
 }
 
 .brand {
@@ -322,17 +359,18 @@ footer a:hover, footer a:focus-visible { text-decoration: underline; text-underl
 
 /* Motion is intentionally centralized so future scroll effects remain replaceable. */
 @media (prefers-reduced-motion: reduce) {
-  .hero > .hero-picture, .rail-controls button { transition: none; }
+  header, .hero > .hero-picture, .rail-controls button { transition: none; }
 }
 
 @media (max-width: 700px) {
+  header.is-floating { width: calc(100% - 1rem); padding-inline: 1rem; }
   header { justify-content: center; }
   .brand { margin-right: auto; color: var(--color-text-inverse); }
   header.has-back-link .brand { margin-left: 3.75rem; }
   .header-action { right: 1rem; color: var(--color-text-inverse); font-size: var(--font-size-header-action-mobile); letter-spacing: 0.1em; }
   .header-back { left: 1rem; color: var(--color-text-inverse); font-size: var(--font-size-header-action-mobile); }
 
-  .hero h1 { top: 3rem; left: var(--page-gutter); }
+  .hero h1 { top: calc(var(--header-height) + 2rem); left: var(--page-gutter); }
   .hero::after { background: linear-gradient(var(--color-mobile-hero-overlay), var(--color-transparent) 45%); }
   .counter { right: auto; bottom: 0.875rem; left: 50%; transform: translateX(-50%); }
 

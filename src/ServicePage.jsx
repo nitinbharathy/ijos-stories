@@ -8,7 +8,7 @@ export function ServicePage({ service }) {
 
   return <main>
     <PageSeo title={service.metaTitle} description={service.metaDescription} path={`/${service.slug}`} structuredData={structuredData} />
-    <SiteHeader showHomeLink />
+    <SiteHeader showHomeLink overlayHero />
 
     <section className="service-page-hero">
       <SmartImage image={service.heroImage} loading="eager" fetchPriority="high" decoding="async" />

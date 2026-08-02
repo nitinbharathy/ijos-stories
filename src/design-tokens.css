@@ -61,6 +61,11 @@
   --footer-content-max-width: 112rem;
   --header-height: 4.625rem;
   --header-height-mobile: 4.125rem;
+  --header-floating-height: 3.5rem;
+  --header-floating-height-mobile: 3.125rem;
+  --header-floating-width: 56rem;
+  --header-floating-offset: 0.75rem;
+  --header-floating-offset-mobile: 0.5rem;
   --section-space: 5.625rem;
   --section-space-mobile: 4.375rem;
   --section-gap: 5vw;
@@ -119,9 +124,11 @@
   /* Effects and motion */
   --shadow-control: 0 2px 12px rgb(0 0 0 / 12%);
   --shadow-control-strong: 0 2px 12px rgb(0 0 0 / 20%);
+  --shadow-header-floating: 0 0.75rem 2.5rem rgb(17 34 43 / 22%);
   --focus-ring: 2px solid var(--color-text-strong);
   --transition-fade: opacity 0.9s ease;
   --transition-control: background-color 0.2s ease, transform 0.2s ease;
+  --transition-header: width 0.35s ease, height 0.35s ease, top 0.35s ease, border-radius 0.35s ease, box-shadow 0.35s ease, background-color 0.25s ease;
 }
 
 @media (max-width: 700px) {
@@ -136,6 +143,8 @@
     --font-size-intro-eyebrow: var(--font-size-intro-eyebrow-mobile);
     --font-size-footer-display: var(--font-size-footer-display-mobile);
     --header-height: var(--header-height-mobile);
+    --header-floating-height: var(--header-floating-height-mobile);
+    --header-floating-offset: var(--header-floating-offset-mobile);
     --hero-height: var(--hero-height-mobile);
     --hero-title-width: var(--hero-title-width-mobile);
     --gallery-image-height: var(--gallery-image-height-mobile);

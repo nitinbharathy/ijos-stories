@@ -36,12 +36,37 @@ export function Rail({ images: railImages, label }) {
   </div>
 }
 
-export function SiteHeader({ showHomeLink = false }) {
-  return <header className={showHomeLink ? 'has-back-link' : undefined}>
-    {showHomeLink && <a href={sitePath('/')} className="header-back">Home</a>}
-    <a href={sitePath('/')} className="brand">ijós moments</a>
-    <a href="#contact" className="header-action">Get in touch</a>
-  </header>
+export function SiteHeader({ showHomeLink = false, overlayHero = false }) {
+  const [isFloating, setIsFloating] = useState(false)
+
+  useEffect(() => {
+    let frame
+    const updateHeader = () => {
+      frame = undefined
+      setIsFloating(window.scrollY > 24)
+    }
+    const handleScroll = () => {
+      if (!frame) frame = window.requestAnimationFrame(updateHeader)
+    }
+
+    updateHeader()
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      if (frame) window.cancelAnimationFrame(frame)
+    }
+  }, [])
+
+  const headerClasses = [showHomeLink && 'has-back-link', isFloating && 'is-floating'].filter(Boolean).join(' ')
+  const shellClasses = ['site-header-shell', overlayHero && 'over-hero', overlayHero && isFloating && 'is-floating-shell'].filter(Boolean).join(' ')
+
+  return <div className={shellClasses}>
+    <header className={headerClasses || undefined}>
+      {showHomeLink && <a href={sitePath('/')} className="header-back">Home</a>}
+      <a href={sitePath('/')} className="brand">ijós moments</a>
+      <a href="#contact" className="header-action">Get in touch</a>
+    </header>
+  </div>
 }
 
 export function ContactSection({ selectedService = '' }) {

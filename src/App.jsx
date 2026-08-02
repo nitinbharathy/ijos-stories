@@ -7,7 +7,7 @@ export function App(){
   const [slide,setSlide]=useState(0)
   useEffect(()=>{const id=setInterval(()=>setSlide(v=>(v+1)%images.hero.length),5500);return()=>clearInterval(id)},[])
   return <main>
-    <SiteHeader />
+    <SiteHeader overlayHero />
     <section className="hero" id="top">
       {images.hero.map((image,i)=><SmartImage key={image.base} className={`hero-picture ${i===slide?'active':''}`} image={image} loading={i===0?'eager':'lazy'} fetchPriority={i===0?'high':'auto'} decoding="async" />)}
       <h1>Capture your big day as it unfolds</h1>
