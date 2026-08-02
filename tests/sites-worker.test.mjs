@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { access } from "node:fs/promises";
+import { access, readFile } from "node:fs/promises";
 import test from "node:test";
 import worker from "../worker/index.js";
 
@@ -63,6 +63,19 @@ test("does not turn missing API or write requests into the app shell", async () 
 
 test("emits the files required by Sites packaging", async () => {
   await access(new URL("../dist/client/index.html", import.meta.url));
+  await access(new URL("../dist/client/robots.txt", import.meta.url));
+  await access(new URL("../dist/client/sitemap.xml", import.meta.url));
   await access(new URL("../dist/server/index.js", import.meta.url));
   await access(new URL("../dist/.openai/hosting.json", import.meta.url));
+});
+
+test("emits crawler rules and an absolute sitemap URL", async () => {
+  const robots = await readFile(new URL("../dist/client/robots.txt", import.meta.url), "utf8");
+  const sitemap = await readFile(new URL("../dist/client/sitemap.xml", import.meta.url), "utf8");
+
+  assert.match(robots, /User-agent: Googlebot\nAllow: \//);
+  assert.match(robots, /User-agent: Bingbot\nAllow: \//);
+  assert.match(robots, /User-agent: OAI-SearchBot\nAllow: \//);
+  assert.match(robots, /Sitemap: https?:\/\/[^\s]+\/sitemap\.xml/);
+  assert.match(sitemap, /<loc>https?:\/\/[^<]+<\/loc>/);
 });

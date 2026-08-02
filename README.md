@@ -120,6 +120,8 @@ npm run test:sites
 
 The Cloudflare Pages files are generated in `dist/client/`. Do not edit files inside `dist/` directly because they are recreated by every build.
 
+The build also generates `robots.txt` and `sitemap.xml`. Cloudflare Pages supplies its deployment address through `CF_PAGES_URL`. After connecting a custom production domain, set the Cloudflare Pages environment variable `SITE_URL` to that full address, such as `https://www.example.com`, so the sitemap uses the canonical domain.
+
 ## Publish through Git and Cloudflare Pages
 
 The website is published through Cloudflare Pages Git integration. Configure the Cloudflare Pages project once with:
