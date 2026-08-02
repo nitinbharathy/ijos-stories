@@ -182,6 +182,7 @@ export function SiteFooter() {
           <div className="footer-primary-links">
             <a href={sitePath('/')}>Home</a>
             <a href={sitePath('/stories')}>Stories</a>
+            <a href={sitePath('/faq')}>FAQ</a>
           </div>
           <div className="footer-service-links">
             <a href={sitePath('/wedding-day')}>Wedding Day</a>

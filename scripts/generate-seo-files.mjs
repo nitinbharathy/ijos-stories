@@ -25,6 +25,7 @@ const pagePaths = [
   '/wedding-day',
   '/pre-wedding',
   '/proposal',
+  '/faq',
   '/stories',
   '/stories/sikh-wedding-portrait-story-singapore',
   '/stories/singapore-pre-wedding-portrait-story',

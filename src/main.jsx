@@ -4,6 +4,7 @@ import { App } from "./App.jsx";
 import { ServicePage } from "./ServicePage.jsx";
 import { StoriesPage } from "./StoriesPage.jsx";
 import { StoryPage } from "./StoryPage.jsx";
+import { FaqPage } from "./FaqPage.jsx";
 import { getService } from "./serviceData.js";
 import { getStory } from "./storyData.js";
 import { currentSitePath } from "./sitePaths.js";
@@ -15,6 +16,8 @@ const service = getService(path);
 const story = path.startsWith("stories/") ? getStory(path.replace("stories/", "")) : null;
 const page = path === "stories"
   ? <StoriesPage />
+  : path === "faq"
+    ? <FaqPage />
   : story
     ? <StoryPage story={story} />
     : service
