@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.DS_Store
+
+# Local visual-capture and QA working files
+source-*.png
+implementation-*.png
+qa-*-comparison.*
+asset-contact-sheet.*
+
+# Local agent instructions, audits, and planning notes
+/AGENTS.md
+/design-qa.md
+/site-improvement-backlog.md
