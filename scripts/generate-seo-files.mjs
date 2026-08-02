@@ -20,7 +20,7 @@ const projectRoot = new URL('../', import.meta.url)
 const outputDirectory = new URL('dist/client/', projectRoot)
 const robotsSource = await readFile(new URL('public/robots.txt', projectRoot), 'utf8')
 const sitemapUrl = `${siteOrigin}/sitemap.xml`
-const pageUrl = `${siteOrigin}/`
+const pagePaths = ['/', '/wedding-day', '/pre-wedding', '/proposal']
 
 const escapeXml = (value) => value
   .replaceAll('&', '&amp;')
@@ -29,11 +29,13 @@ const escapeXml = (value) => value
   .replaceAll('"', '&quot;')
   .replaceAll("'", '&apos;')
 
+const sitemapEntries = pagePaths
+  .map((path) => `  <url>\n    <loc>${escapeXml(`${siteOrigin}${path}`)}</loc>\n  </url>`)
+  .join('\n')
+
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>${escapeXml(pageUrl)}</loc>
-  </url>
+${sitemapEntries}
 </urlset>
 `
 

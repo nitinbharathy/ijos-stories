@@ -78,6 +78,9 @@ test("emits crawler rules and an absolute sitemap URL", async () => {
   assert.match(robots, /User-agent: OAI-SearchBot\nAllow: \//);
   assert.match(robots, /Sitemap: https?:\/\/[^\s]+\/sitemap\.xml/);
   assert.match(sitemap, /<loc>https?:\/\/[^<]+<\/loc>/);
+  assert.match(sitemap, /<loc>https?:\/\/[^<]+\/wedding-day<\/loc>/);
+  assert.match(sitemap, /<loc>https?:\/\/[^<]+\/pre-wedding<\/loc>/);
+  assert.match(sitemap, /<loc>https?:\/\/[^<]+\/proposal<\/loc>/);
 });
 
 test("includes valid ProfessionalService structured data", async () => {

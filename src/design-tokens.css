@@ -85,6 +85,14 @@
   --package-image-height-mobile: 32.5rem;
   --contact-min-height: 57.5rem;
   --contact-form-mobile-width: 17.1875rem;
+  --service-hero-height: 40rem;
+  --service-hero-height-mobile: 34rem;
+  --service-intro-max-width: 52rem;
+  --service-gallery-tall: 38rem;
+  --service-gallery-short: 30rem;
+  --service-gallery-mobile: 28rem;
+  --service-card-height: 25rem;
+  --service-card-height-mobile: 19rem;
   --button-width: 12.5rem;
   --button-height: 3.75rem;
   --control-size: 2.375rem;
@@ -119,5 +127,9 @@
     --portrait-height: var(--portrait-height-mobile);
     --testimonial-image-height: var(--testimonial-image-height-mobile);
     --package-image-height: var(--package-image-height-mobile);
+    --service-hero-height: var(--service-hero-height-mobile);
+    --service-gallery-tall: var(--service-gallery-mobile);
+    --service-gallery-short: var(--service-gallery-mobile);
+    --service-card-height: var(--service-card-height-mobile);
   }
 }
