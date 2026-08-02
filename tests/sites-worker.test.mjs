@@ -83,6 +83,8 @@ test("emits crawler rules and an absolute sitemap URL", async () => {
   assert.match(sitemap, /<loc>https?:\/\/[^<]+\/proposal<\/loc>/);
   assert.match(sitemap, /<loc>https?:\/\/[^<]+\/stories<\/loc>/);
   assert.match(sitemap, /<loc>https?:\/\/[^<]+\/stories\/sikh-wedding-portrait-story-singapore<\/loc>/);
+  assert.match(sitemap, /<loc>https?:\/\/[^<]+\/stories\/singapore-pre-wedding-portrait-story<\/loc>/);
+  assert.match(sitemap, /<loc>https?:\/\/[^<]+\/stories\/garden-proposal-fairy-lights-singapore<\/loc>/);
 });
 
 test("includes valid ProfessionalService structured data", async () => {

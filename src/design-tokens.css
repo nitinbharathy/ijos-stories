@@ -2,7 +2,7 @@
   /* Brand palette */
   --color-canvas: #f8f5ef;
   --color-surface-muted: #e4e5df;
-  --color-header-mobile: #252521;
+  --color-header: #345c72;
   --color-text: #4c4c4c;
   --color-text-strong: #373737;
   --color-text-dark: #1f1f1c;
@@ -26,9 +26,9 @@
   --font-size-heading-mobile: 1.9375rem;
   --font-size-subheading: 1.875rem;
   --font-size-subheading-mobile: 1.5625rem;
-  --font-size-brand: 0.9375rem;
+  --font-size-brand: 1.3rem;
   --font-size-brand-mobile: 0.75rem;
-  --font-size-label: 0.75rem;
+  --font-size-label: 0.85rem;
   --font-size-note: 0.9375rem;
   --font-size-eyebrow: 0.875rem;
   --font-size-intro-eyebrow: 1.125rem;
@@ -95,6 +95,8 @@
   --service-card-height-mobile: 19rem;
   --stories-card-image-height: 38rem;
   --stories-card-image-height-mobile: 28rem;
+  --stories-grid-image-height: 22rem;
+  --stories-grid-image-height-mobile: 25rem;
   --story-hero-height: 46rem;
   --story-hero-height-mobile: 36rem;
   --story-image-height: 42rem;
@@ -138,6 +140,7 @@
     --service-gallery-short: var(--service-gallery-mobile);
     --service-card-height: var(--service-card-height-mobile);
     --stories-card-image-height: var(--stories-card-image-height-mobile);
+    --stories-grid-image-height: var(--stories-grid-image-height-mobile);
     --story-hero-height: var(--story-hero-height-mobile);
     --story-image-height: var(--story-image-height-mobile);
   }

@@ -11,7 +11,7 @@ try {
     throw new Error('the URL must use HTTP or HTTPS')
   }
 
-  siteOrigin = url.origin
+  siteOrigin = url.href.replace(/\/$/, '')
 } catch (error) {
   throw new Error(`Invalid SITE_URL or CF_PAGES_URL value "${configuredUrl}": ${error.message}`)
 }
@@ -27,6 +27,8 @@ const pagePaths = [
   '/proposal',
   '/stories',
   '/stories/sikh-wedding-portrait-story-singapore',
+  '/stories/singapore-pre-wedding-portrait-story',
+  '/stories/garden-proposal-fairy-lights-singapore',
 ]
 
 const escapeXml = (value) => value

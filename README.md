@@ -1,6 +1,6 @@
 # ijós Moments website guide
 
-This guide explains how to update the website locally, manage its images, and publish changes to Cloudflare Pages.
+This guide explains how to update the website locally, manage its images, and publish changes through GitHub Pages or Sites.
 
 ## Preview changes locally
 
@@ -123,6 +123,14 @@ The Cloudflare Pages files are generated in `dist/client/`. Do not edit files in
 The build also generates `robots.txt` and `sitemap.xml`. Cloudflare Pages supplies its deployment address through `CF_PAGES_URL`. After connecting a custom production domain, set the Cloudflare Pages environment variable `SITE_URL` to that full address, such as `https://www.example.com`, so the sitemap uses the canonical domain.
 
 The business structured data is in the root `index.html` file, inside the script with `id="business-structured-data"`. Review that block whenever the business name, contact details, service area, founder details, Instagram profile, or services change. Add the final website URL, business identifier, logo, and representative image after the production domain is confirmed.
+
+## Publish through GitHub Pages
+
+Push the `main` branch to the `nitinbharathy/ijos-stories` repository. The included GitHub Actions workflow builds and deploys the site automatically to:
+
+`https://nitinbharathy.github.io/ijos-stories/`
+
+In the repository settings, set **Pages → Build and deployment → Source** to **GitHub Actions**.
 
 ## Publish through Git and Cloudflare Pages
 

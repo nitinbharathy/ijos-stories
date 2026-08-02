@@ -1,8 +1,10 @@
 import { ContactSection, PageSeo, SiteFooter, SiteHeader, SmartImage } from './SiteComponents'
 import { getServiceStructuredData, services } from './serviceData'
+import { sitePath } from './sitePaths'
 
 export function ServicePage({ service }) {
-  const structuredData = getServiceStructuredData(service, window.location.origin)
+  const siteOrigin = new URL(sitePath('/'), window.location.origin).href.replace(/\/$/, '')
+  const structuredData = getServiceStructuredData(service, siteOrigin)
 
   return <main>
     <PageSeo title={service.metaTitle} description={service.metaDescription} path={`/${service.slug}`} structuredData={structuredData} />
@@ -37,7 +39,7 @@ export function ServicePage({ service }) {
 
     <section className="other-services content-block">
       <p className="eyebrow">Explore other services</p>
-      <div>{services.filter((item) => item.slug !== service.slug).map((item) => <a href={`/${item.slug}`} key={item.slug}><SmartImage image={item.heroImage} loading="lazy" decoding="async" /><span>{item.navLabel}</span></a>)}</div>
+      <div>{services.filter((item) => item.slug !== service.slug).map((item) => <a href={sitePath(`/${item.slug}`)} key={item.slug}><SmartImage image={item.heroImage} loading="lazy" decoding="async" /><span>{item.navLabel}</span></a>)}</div>
     </section>
 
     <div id="service-enquiry"><ContactSection selectedService={service.formValue} /></div>

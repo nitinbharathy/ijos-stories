@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import { getImageSources, images } from './imageCatalog'
+import { sitePath } from './sitePaths'
 
 export function SmartImage({ image, className, ...props }) {
   const sources = getImageSources(image.base)
@@ -37,8 +38,8 @@ export function Rail({ images: railImages, label }) {
 
 export function SiteHeader({ showHomeLink = false }) {
   return <header>
-    {showHomeLink && <a href="/" className="header-back">Home</a>}
-    <a href="/" className="brand">ijós moments</a>
+    {showHomeLink && <a href={sitePath('/')} className="header-back">Home</a>}
+    <a href={sitePath('/')} className="brand">ijós moments</a>
     <a href="#contact" className="header-action">Get in touch</a>
   </header>
 }
@@ -63,7 +64,26 @@ export function ContactSection({ selectedService = '' }) {
 }
 
 export function SiteFooter() {
-  return <footer><nav aria-label="Footer"><a href="/">Home</a><a href="/stories">Stories</a><a href="/wedding-day">Wedding Day</a><a href="/pre-wedding">Pre-wedding</a><a href="/proposal">Proposal</a></nav><p>Follow me on Instagram</p><a href="https://www.instagram.com/ijos_moments/">@IJOS_MOMENTS</a><p>© 2026 ijos</p></footer>
+  return (
+    <footer>
+      <div className="footer-main">
+        <nav aria-label="Footer">
+          <a href={sitePath('/')}>Home</a>
+          <a href={sitePath('/stories')}>Stories</a>
+          <div className="footer-service-links">
+            <a href={sitePath('/wedding-day')}>Wedding Day</a>
+            <a href={sitePath('/pre-wedding')}>Pre-wedding</a>
+            <a href={sitePath('/proposal')}>Proposal</a>
+          </div>
+        </nav>
+        <div className="footer-social">
+          <p>Follow on Instagram</p>
+          <a href="https://www.instagram.com/ijos_moments/">@IJOS_MOMENTS</a>
+        </div>
+      </div>
+      <p className="footer-copyright">© 2026 ijos</p>
+    </footer>
+  )
 }
 
 export function PageSeo({ title, description, path, structuredData }) {
@@ -79,7 +99,7 @@ export function PageSeo({ title, description, path, structuredData }) {
       canonical.rel = 'canonical'
       document.head.append(canonical)
     }
-    canonical.href = new URL(path, window.location.origin).href
+    canonical.href = new URL(sitePath(path), window.location.origin).href
 
     let structuredDataTag = document.querySelector('#page-structured-data')
     if (!structuredDataTag) {

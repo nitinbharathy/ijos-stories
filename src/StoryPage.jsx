@@ -1,8 +1,10 @@
 import { ContactSection, PageSeo, SiteFooter, SiteHeader, SmartImage } from './SiteComponents'
 import { getStoryStructuredData } from './storyData'
+import { sitePath } from './sitePaths'
 
 export function StoryPage({ story }) {
-  const structuredData = getStoryStructuredData(story, window.location.origin)
+  const siteOrigin = new URL(sitePath('/'), window.location.origin).href.replace(/\/$/, '')
+  const structuredData = getStoryStructuredData(story, siteOrigin)
 
   return <main>
     <PageSeo title={story.metaTitle} description={story.metaDescription} path={`/stories/${story.slug}`} structuredData={structuredData} />
@@ -24,8 +26,8 @@ export function StoryPage({ story }) {
       </div>
     </article>
 
-    <section className="story-close content-block"><p className="eyebrow">Your story</p><h2>Photography that leaves room for the day itself</h2><p>Explore the approach and coverage options for wedding celebrations in Singapore and beyond.</p><a className="text-link" href="/wedding-day">View wedding-day service</a><a className="text-link" href="/stories">All stories</a></section>
-    <ContactSection selectedService="Actual day coverage" />
+    <section className="story-close content-block"><p className="eyebrow">Your story</p><h2>Photography that leaves room for the moment itself</h2><p>Explore the approach and coverage options for celebrations and portraits in Singapore.</p><a className="text-link" href={sitePath(story.servicePath)}>{story.serviceLabel}</a><a className="text-link" href={sitePath('/stories')}>All stories</a></section>
+    <ContactSection selectedService={story.selectedService} />
     <SiteFooter />
   </main>
 }

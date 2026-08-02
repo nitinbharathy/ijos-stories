@@ -6,10 +6,11 @@ import { StoriesPage } from "./StoriesPage.jsx";
 import { StoryPage } from "./StoryPage.jsx";
 import { getService } from "./serviceData.js";
 import { getStory } from "./storyData.js";
+import { currentSitePath } from "./sitePaths.js";
 import "./design-tokens.css";
 import "./styles.css";
 
-const path = window.location.pathname.replace(/^\/+|\/+$/g, "");
+const path = currentSitePath();
 const service = getService(path);
 const story = path.startsWith("stories/") ? getStory(path.replace("stories/", "")) : null;
 const page = path === "stories"
