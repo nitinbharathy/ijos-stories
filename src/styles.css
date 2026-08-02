@@ -21,3 +21,9 @@ header{justify-content:center;position:relative}
 .testimonial{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:6vw;align-items:center;margin-inline:auto}.testimonial>div>p{text-transform:uppercase;letter-spacing:.17em;margin-top:25px;font-size:14px}.testimonial>img{display:block;width:100%;height:480px;object-fit:cover}
 @media(max-width:700px){.testimonial{display:flex;flex-direction:column;align-items:stretch;gap:38px}.testimonial>img{height:440px}}
 @media(max-width:700px){header{position:relative}.header-action{right:16px;color:#fff;font-size:9px;letter-spacing:.1em}.brand{font-size:12px}.form-success{text-align:center}}
+
+.testimonial{padding-block:65px;gap:4vw}.testimonial>img{height:440px}footer{padding:48px 5vw 32px}footer a{margin-bottom:48px}
+@media(max-width:700px){.testimonial{padding-block:52px;gap:26px}.testimonial>img{height:400px}footer{padding:45px 20px 30px}footer a{margin-bottom:45px}}
+
+.intro .eyebrow{font-size:18px!important;line-height:1.6}
+@media(max-width:700px){.intro .eyebrow{font-size:16px!important}}
