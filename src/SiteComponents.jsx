@@ -7,17 +7,23 @@ import { sitePath } from './sitePaths'
 export function SmartImage({ image, className, ...props }) {
   const sources = getImageSources(image.base)
   const fallback = sources.jpg || sources.webp || sources.avif
+  const { style: imageStyle, ...imageProps } = props
+  const pictureClassName = ['smart-image', className].filter(Boolean).join(' ')
+  const focusStyle = {
+    '--image-focus-desktop': image.focus.desktop,
+    '--image-focus-mobile': image.focus.mobile,
+  }
 
-  return <picture className={className}>
+  return <picture className={pictureClassName} style={focusStyle}>
     {sources.avif && <source srcSet={sources.avif} type="image/avif" />}
     {sources.webp && <source srcSet={sources.webp} type="image/webp" />}
-    <img src={fallback} alt={image.alt} {...props} />
+    <img src={fallback} alt={image.alt} style={{ objectPosition: 'var(--image-focus-current)', ...imageStyle }} {...imageProps} />
   </picture>
 }
 
 export function Rail({ images: railImages, label }) {
   const reduceMotion = typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  const autoplay = useRef(Autoplay({ active: !reduceMotion, delay: 4200, stopOnInteraction: false, stopOnMouseEnter: true, stopOnFocusIn: true }))
+  const autoplay = useRef(Autoplay({ active: !reduceMotion, delay: 4200, stopOnInteraction: false, stopOnMouseEnter: false, stopOnFocusIn: true }))
   const [railRef, railApi] = useEmblaCarousel({ loop: true, align: 'start', duration: 32 }, [autoplay.current])
   const move = (direction) => {
     if (direction === 'previous') railApi?.scrollPrev()
@@ -92,8 +98,7 @@ export function SiteFooter() {
   return (
     <footer>
       <div className="footer-invitation">
-        <h2>Let’s make<br />something<br />timeless</h2>
-        <a className="footer-cta" href="#contact">Get in touch</a>
+        <h2>Let’s make something timeless</h2>
       </div>
       <div className="footer-directory">
         <nav aria-label="Footer navigation">

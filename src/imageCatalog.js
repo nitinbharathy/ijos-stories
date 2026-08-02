@@ -13,8 +13,11 @@ const variants = Object.entries(imageFiles).reduce((catalog, [path, url]) => {
   return catalog
 }, {})
 
-function image(base, alt) {
-  return { base, alt }
+function image(base, alt, focus = '50% 50%') {
+  const desktop = typeof focus === 'string' ? focus : (focus.desktop || '50% 50%')
+  const mobile = typeof focus === 'string' ? focus : (focus.mobile || desktop)
+
+  return { base, alt, focus: { desktop, mobile } }
 }
 
 export function getImageSources(base) {
@@ -36,7 +39,7 @@ export const images = {
   galleries: {
     weddingDay: [
       image('galleries/wedding-day/church-wedding-invitation-and-rings', 'Church wedding invitation and rings arranged on the bride’s veil'),
-      image('galleries/wedding-day/sikh-wedding-couple-sunset-portrait', 'Sikh bride and groom sharing a quiet moment in the evening light'),
+      image('galleries/wedding-day/sikh-wedding-couple-sunset-portrait', 'Sikh bride and groom sharing a quiet moment in the evening light', { desktop: '50% 35%', mobile: '50% 35%' }),
       image('galleries/wedding-day/newlyweds-kissing-in-singapore-church', 'Newlyweds kissing in the aisle of a Singapore church'),
       image('galleries/wedding-day/multicultural-newlyweds-guest-celebration', 'Newlyweds walking between cheering guests after their ceremony'),
       image('galleries/wedding-day/bride-and-groom-wedding-reception', 'Bride joining the groom during their wedding reception'),
@@ -44,7 +47,7 @@ export const images = {
     ],
     preWedding: [
       image('galleries/pre-wedding/couple-intimate-black-and-white-portrait', 'Intimate black-and-white portrait of an engaged couple'),
-      image('galleries/pre-wedding/couple-formal-portrait-singapore', 'Engaged couple in formal attire sharing a playful look'),
+      image('galleries/pre-wedding/couple-formal-portrait-singapore', 'Engaged couple in formal attire sharing a playful look', { desktop: '50% 25%', mobile: '50% 25%' }),
       image('galleries/pre-wedding/bride-walking-black-and-white-portrait', 'Black-and-white portrait of a bride walking in a flowing dress'),
       image('galleries/pre-wedding/couple-walking-formal-shoes-detail', 'Couple walking together in formal shoes during a pre-wedding shoot'),
       image('galleries/pre-wedding/couple-kissing-elevator-portrait', 'Engaged couple sharing a kiss in a warmly lit elevator'),
@@ -57,7 +60,7 @@ export const images = {
     ],
   },
   people: {
-    photographer: image('people/madhu-ijos-moments-photographer', 'Madhu, founder and lead photographer of ijós Moments'),
+    photographer: image('people/madhu-ijos-moments-photographer', 'Madhu, founder and lead photographer of ijós Moments', { desktop: '50% 0%', mobile: '50% 0%' }),
     testimonial: image('people/marianna-pascal-wedding-client', 'Marianna Pascal photographed on her wedding day'),
   },
   sections: {

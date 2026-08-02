@@ -36,8 +36,7 @@
   --font-size-intro-eyebrow: 1.125rem;
   --font-size-intro-eyebrow-mobile: 1rem;
   --font-size-header-action-mobile: 0.5625rem;
-  --font-size-footer-display: clamp(4.75rem, 8.2vw, 8.75rem);
-  --font-size-footer-display-mobile: clamp(2.875rem, 13vw, 4.6rem);
+  --font-size-footer-display: clamp(1.75rem, 4.2vw, 3.75rem);
   --font-weight-regular: 400;
   --font-weight-bold: 700;
   --line-height-heading: 1.22;
@@ -141,7 +140,6 @@
     --font-size-subheading: var(--font-size-subheading-mobile);
     --font-size-brand: var(--font-size-brand-mobile);
     --font-size-intro-eyebrow: var(--font-size-intro-eyebrow-mobile);
-    --font-size-footer-display: var(--font-size-footer-display-mobile);
     --header-height: var(--header-height-mobile);
     --header-floating-height: var(--header-floating-height-mobile);
     --header-floating-offset: var(--header-floating-offset-mobile);
