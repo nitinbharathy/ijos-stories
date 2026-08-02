@@ -60,6 +60,55 @@ After adding the image files to the appropriate folder, update `src/imageCatalog
 
 Use lowercase, descriptive filenames with words separated by hyphens. Avoid camera-generated names such as `IMG_1234.jpg`.
 
+## Image metadata structure
+
+Every displayed photograph has one metadata entry in `src/imageCatalog.js`:
+
+```js
+image('folder/descriptive-base-filename', 'Accurate description of the photograph')
+```
+
+Each entry contains:
+
+- `base` — the path inside `src/assets/images/`, without `.avif`, `.webp`, `.jpg`, or `.jpeg`;
+- `alt` — a concise, human-readable description of what is visible in the photograph.
+
+For example:
+
+```js
+image(
+  'galleries/wedding-day/newlyweds-kissing-in-singapore-church',
+  'Newlyweds kissing in the aisle of a Singapore church',
+)
+```
+
+The metadata is arranged to match the website sections:
+
+```js
+export const images = {
+  hero: [
+    image('hero/example-image', 'Description of the hero photograph'),
+  ],
+  galleries: {
+    weddingDay: [],
+    preWedding: [],
+    proposal: [],
+  },
+  people: {
+    photographer: image('people/example-photographer', 'Description'),
+    testimonial: image('people/example-client', 'Description'),
+  },
+  sections: {
+    packages: image('sections/example-packages', 'Description'),
+    contact: image('sections/example-contact', ''),
+  },
+}
+```
+
+The order of entries in a hero or gallery array is the order shown on the website. Use an empty alt value (`''`) only when an image is purely decorative and the surrounding content already provides its meaning.
+
+The `base` value must match at least one real image file. Multiple formats with the same base value are automatically treated as variants of the same photograph.
+
 ## Check the production version
 
 Before publishing, build and test the website:
@@ -71,16 +120,16 @@ npm run test:sites
 
 The Cloudflare Pages files are generated in `dist/client/`. Do not edit files inside `dist/` directly because they are recreated by every build.
 
-## Publish with Cloudflare Pages Git integration
+## Publish through Git and Cloudflare Pages
 
-Git integration is the easiest ongoing workflow. Configure the Cloudflare Pages project with:
+The website is published through Cloudflare Pages Git integration. Configure the Cloudflare Pages project once with:
 
 - Build command: `npm run build`
 - Build output directory: `dist/client`
 - Root directory: the repository root
 - Framework preset: Vite, or None with the settings above
 
-For each website update:
+For each website update, commit the changes and push them to the branch connected to Cloudflare Pages:
 
 ```sh
 git add -A
@@ -88,15 +137,6 @@ git commit -m "Describe the website update"
 git push
 ```
 
-Cloudflare Pages will build and publish the pushed commit automatically. This repository currently has no Git remote configured, so connect it to a GitHub or GitLab repository before using this workflow.
+Cloudflare Pages will build and publish the pushed commit automatically.
 
-## Publish with Cloudflare Pages Direct Upload
-
-If the site is not connected to Git:
-
-1. Run `npm run build` locally.
-2. Open the Cloudflare Pages project.
-3. Create a new deployment using Direct Upload.
-4. Upload the generated `dist/client/` directory.
-
-Upload `dist/client/`, not the project source directory. Every later local change requires a new build and upload.
+After the Git remote and Cloudflare Pages project are connected, a manual upload is not required. A local commit by itself does not update the live site; the commit must also be pushed.
