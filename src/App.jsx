@@ -1,4 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import useEmblaCarousel from 'embla-carousel-react'
+import Autoplay from 'embla-carousel-autoplay'
 
 const A='/assets/source/'
 const hero=['hero-1.jpg','hero-2.jpg','hero-3.jpg']
@@ -6,7 +8,26 @@ const wedding=['ab4ebd838cd1db33.JPG','ba9a3e2f96ad5c8c.jpg','727391f1aa20dd45.J
 const pre=['42886b1aa866b96a.JPG','693830d48910e2fd.JPG','b1cebf7834e529a9.JPG','1613e58d247f1b35.JPG','01135afb5af48a78.JPG']
 const proposal=['f4f9fe09d912feb2.JPG','fb539a4897697cbe.jpg','38bf2569f5e1fc40.JPG','0dc677146fef6372.JPG']
 
-function Rail({images,label}){return <div className="rail" aria-label={label}>{images.map((src,i)=><img key={src} src={A+src} alt={`${label} ${i+1}`} loading="lazy" />)}</div>}
+function Rail({images,label}){
+  const reduceMotion=typeof window!=='undefined'&&window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  const autoplay=useRef(Autoplay({active:!reduceMotion,delay:4200,stopOnInteraction:false,stopOnMouseEnter:true,stopOnFocusIn:true}))
+  const [railRef,railApi]=useEmblaCarousel({loop:true,align:'start',duration:32},[autoplay.current])
+  const move=(direction)=>{
+    if(direction==='previous') railApi?.scrollPrev()
+    else railApi?.scrollNext()
+    autoplay.current.reset()
+  }
+
+  return <div className="carousel" role="region" aria-roledescription="carousel" aria-label={label}>
+    <div className="rail" ref={railRef}>
+      <div className="rail-track">{images.map((src,i)=><div className="rail-slide" role="group" aria-roledescription="slide" aria-label={`${i+1} of ${images.length}`} key={src}><img src={A+src} alt={`${label} ${i+1}`} loading="lazy" /></div>)}</div>
+    </div>
+    <div className="rail-controls">
+      <button type="button" onClick={()=>move('previous')} aria-label={`Previous image in ${label}`}>‹</button>
+      <button type="button" onClick={()=>move('next')} aria-label={`Next image in ${label}`}>›</button>
+    </div>
+  </div>
+}
 
 export function App(){
   const [slide,setSlide]=useState(0)
@@ -27,7 +48,7 @@ export function App(){
     <section className="service right content-block"><Rail images={pre} label="Pre-wedding gallery"/><div><h2>Pre-wedding shoots</h2><p>Meaningful pre wedding photography that captures this chapter of your story with honesty, warmth and timeless style.</p></div></section>
     <section className="service left content-block"><div><h2>Proposal</h2><p>Planning the perfect proposal? We’ll work behind the scenes to ensure every meaningful moment is beautifully and discreetly captured.</p></div><Rail images={proposal} label="Proposal gallery"/></section>
 
-    <section className="testimonial content-block"><blockquote>“Madhu was our superstar wedding photographer... She moved around the ceremony, the cocktails at the bar and the dinner, and managed to get the most beautiful, intimate, authentic, fun, lively shots of everybody attending our wedding. Although the lighting in the venue wasn't great, she did her magic and produced professional quality photos... everybody absolutely adored her work.”</blockquote><p>Marianna Pascal</p></section>
+    <section className="testimonial content-block"><div><blockquote>“Madhu was our superstar wedding photographer... She moved around the ceremony, the cocktails at the bar and the dinner, and managed to get the most beautiful, intimate, authentic, fun, lively shots of everybody attending our wedding. Although the lighting in the venue wasn't great, she did her magic and produced professional quality photos... everybody absolutely adored her work.”</blockquote><p>Marianna Pascal</p></div><img src={A+'testimonial-marianna.jpg'} alt="Marianna Pascal" loading="lazy"/></section>
 
     <section className="packages content-block"><img src={A+'2e4d33a64348961a.jpg'} alt="Wedding couple"/><div>{[['Full day (10 hrs) Actual Day packages','$ 1800'],['Half day (6 hrs) Actual Day packages','$ 1200'],['Pre-wedding shoot packages','$ 500'],['Proposal packages','$ 300']].map(([n,p])=><div className="price" key={n}><h3>{n}</h3><p>start from {p}</p></div>)}<p className="note">Contact us to get a welcome guide with all package details, FAQs and all other info you will need.</p></div></section>
 
