@@ -8,7 +8,7 @@ export function StoryPage({ story }) {
 
   return <main>
     <PageSeo title={story.metaTitle} description={story.metaDescription} path={`/stories/${story.slug}`} structuredData={structuredData} />
-    <SiteHeader showHomeLink overlayHero />
+    <SiteHeader overlayHero />
 
     <article>
       <section className="story-hero">

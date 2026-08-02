@@ -42,7 +42,7 @@ export function Rail({ images: railImages, label }) {
   </div>
 }
 
-export function SiteHeader({ showHomeLink = false, overlayHero = false }) {
+export function SiteHeader({ overlayHero = false }) {
   const [isFloating, setIsFloating] = useState(false)
 
   useEffect(() => {
@@ -63,33 +63,110 @@ export function SiteHeader({ showHomeLink = false, overlayHero = false }) {
     }
   }, [])
 
-  const headerClasses = [showHomeLink && 'has-back-link', isFloating && 'is-floating'].filter(Boolean).join(' ')
+  const headerClasses = isFloating ? 'is-floating' : undefined
   const shellClasses = ['site-header-shell', overlayHero && 'over-hero', overlayHero && isFloating && 'is-floating-shell'].filter(Boolean).join(' ')
 
   return <div className={shellClasses}>
-    <header className={headerClasses || undefined}>
-      {showHomeLink && <a href={sitePath('/')} className="header-back">Home</a>}
+    <header className={headerClasses}>
       <a href={sitePath('/')} className="brand">ijós moments</a>
       <a href="#contact" className="header-action">Get in touch</a>
     </header>
   </div>
 }
 
-export function ContactSection({ selectedService = '' }) {
-  const [formSent, setFormSent] = useState(false)
+export function ContactSection() {
+  const [submissionStatus, setSubmissionStatus] = useState('idle')
+  const [submissionMessage, setSubmissionMessage] = useState('')
+
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+    const form = event.currentTarget
+    const formData = new FormData(form)
+
+    if (formData.get('website')) return
+
+    setSubmissionStatus('submitting')
+    setSubmissionMessage('Sending your enquiry…')
+
+    const services = formData.getAll('services')
+    const email = formData.get('email')?.trim()
+    const message = formData.get('message')?.trim()
+    const fields = [
+      { objectTypeId: '0-1', name: 'firstname', value: formData.get('firstname').trim() },
+      { objectTypeId: '0-1', name: 'mobilephone', value: formData.get('mobilephone').trim() },
+    ]
+
+    if (email) fields.push({ objectTypeId: '0-1', name: 'email', value: email })
+    if (message) fields.push({ objectTypeId: '0-1', name: 'message', value: message })
+    if (services.length) {
+      fields.push({ objectTypeId: '0-5', name: 'services_require', value: services.join(';') })
+    }
+
+    try {
+      const response = await fetch('https://api.hsforms.com/submissions/v3/integration/submit/246933680/6f495e54-22cb-4d45-be12-46c2ff135a4d', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          fields,
+          context: {
+            pageName: document.title,
+            pageUri: window.location.href,
+          },
+        }),
+      })
+
+      if (!response.ok) throw new Error('HubSpot rejected the submission')
+
+      form.reset()
+      setSubmissionStatus('success')
+      setSubmissionMessage('Thank you — your enquiry has been sent.')
+    } catch {
+      setSubmissionStatus('error')
+      setSubmissionMessage('We could not send your enquiry. Please try again shortly.')
+    }
+  }
 
   return <section className="contact content-block" id="contact">
     <SmartImage className="contact-background" image={images.sections.contact} loading="lazy" decoding="async" aria-hidden="true" />
-    <div><h2>Get in touch</h2><p>Fill the form to get in touch and get the welcome guide with package details and all the info you will need to make a decision.</p><p>Ph: +65 8535 4678<br />Email: photos.ijos@gmail.com</p></div>
-    <form onSubmit={(event) => { event.preventDefault(); setFormSent(true) }}>
-      <label>Name *<input placeholder="John Doe" required /></label>
-      <label>Email address *<input type="email" placeholder="Your email address" required /></label>
-      <label>Mobile number *<input placeholder="Your WhatsApp number" required /></label>
-      <label>Service required *<select required defaultValue={selectedService}><option value="" disabled>Select option</option><option value="Actual day coverage">Actual day coverage</option><option value="Pre-wedding shoots">Pre-wedding shoots</option><option value="Proposal shoot">Proposal shoot</option></select></label>
-      <label>Date of the event *<input type="date" required /></label>
-      <label>Message *<textarea placeholder="Any other details you would like to share" required /></label>
-      <button type="submit">Send message</button>
-      {formSent && <p className="form-success" role="status" aria-live="polite">Thank you — your message has been received. We’ll be in touch soon.</p>}
+    <div className="contact-copy"><h2>Get in touch</h2><p>Fill the form to get in touch and get the welcome guide with package details and all the info you will need to make a decision.</p></div>
+    <form className="contact-form" onSubmit={handleSubmit}>
+      <div className="contact-form-fields">
+        <label>
+          <span>First name <span aria-hidden="true">*</span></span>
+          <input name="firstname" type="text" autoComplete="given-name" required />
+        </label>
+        <label>
+          <span>Phone number <span aria-hidden="true">*</span></span>
+          <input name="mobilephone" type="tel" autoComplete="tel" placeholder="+65" required />
+        </label>
+      </div>
+
+      <fieldset>
+        <legend>Services required</legend>
+        <div className="contact-form-options">
+          <label><input name="services" type="checkbox" value="-wsG-gLF3LTLVe8mNQZpa" /> <span>Actual day wedding coverage</span></label>
+          <label><input name="services" type="checkbox" value="U6CZQdYleCNGLy_vcwQeS" /> <span>Pre-wedding shoot</span></label>
+          <label><input name="services" type="checkbox" value="p9MGBzM6RquSrG-IKBqpc" /> <span>Proposal coverage</span></label>
+          <label><input name="services" type="checkbox" value="lKcGT2daUw11BaH4iGhHs" /> <span>Others</span></label>
+        </div>
+      </fieldset>
+
+      <label>
+        <span>Email</span>
+        <input name="email" type="email" autoComplete="email" />
+      </label>
+      <label>
+        <span>Message</span>
+        <textarea name="message" rows="4" placeholder="Date, scope of services, details about the celebration, etc" />
+      </label>
+      <div className="contact-form-honeypot" aria-hidden="true">
+        <label htmlFor="contact-website">Website</label>
+        <input id="contact-website" name="website" type="text" tabIndex="-1" autoComplete="off" aria-hidden="true" />
+      </div>
+      <p className={`contact-form-status is-${submissionStatus}`} aria-live="polite">{submissionMessage}</p>
+      <button type="submit" disabled={submissionStatus === 'submitting'}>
+        {submissionStatus === 'submitting' ? 'Sending…' : 'Submit'}
+      </button>
     </form>
   </section>
 }

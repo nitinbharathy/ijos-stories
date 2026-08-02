@@ -8,7 +8,7 @@ export function ServicePage({ service }) {
 
   return <main>
     <PageSeo title={service.metaTitle} description={service.metaDescription} path={`/${service.slug}`} structuredData={structuredData} />
-    <SiteHeader showHomeLink overlayHero />
+    <SiteHeader overlayHero />
 
     <section className="service-page-hero">
       <SmartImage image={service.heroImage} loading="eager" fetchPriority="high" decoding="async" />
@@ -42,7 +42,7 @@ export function ServicePage({ service }) {
       <div>{services.filter((item) => item.slug !== service.slug).map((item) => <a href={sitePath(`/${item.slug}`)} key={item.slug}><SmartImage image={item.heroImage} loading="lazy" decoding="async" /><span>{item.navLabel}</span></a>)}</div>
     </section>
 
-    <div id="service-enquiry"><ContactSection selectedService={service.formValue} /></div>
+    <div id="service-enquiry"><ContactSection /></div>
     <SiteFooter />
   </main>
 }

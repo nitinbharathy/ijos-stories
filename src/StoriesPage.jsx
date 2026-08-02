@@ -22,7 +22,7 @@ export function StoriesPage() {
 
   return <main>
     <PageSeo title="Wedding & Proposal Stories Singapore | ijós Moments" description="Explore real wedding, pre-wedding and proposal photography stories documented by ijós Moments in Singapore." path="/stories" structuredData={structuredData} />
-    <SiteHeader showHomeLink />
+    <SiteHeader />
 
     <section className="stories-heading content-block">
       <h1>Stories</h1>

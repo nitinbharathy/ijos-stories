@@ -76,16 +76,6 @@ header.is-floating {
   text-transform: uppercase;
 }
 
-.header-back {
-  position: absolute;
-  left: var(--page-gutter);
-  color: var(--color-text-inverse);
-  font-size: var(--font-size-label);
-  letter-spacing: var(--tracking-action);
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
 .hero { position: relative; height: var(--hero-height); overflow: hidden; background: var(--color-image-placeholder); }
 .hero > .hero-picture { position: absolute; inset: 0; display: block; opacity: 0; transition: var(--transition-fade); }
 .hero > .hero-picture.active { opacity: 1; }
@@ -213,8 +203,11 @@ header.is-floating {
   display: grid;
   grid-template-columns: minmax(0, 58%) 1fr;
   align-items: start;
-  gap: var(--section-gap-wider);
+  row-gap: var(--contact-copy-form-gap);
+  column-gap: var(--section-gap-wider);
   min-height: var(--contact-min-height);
+  padding-block: var(--contact-section-space);
+  padding-bottom: calc(var(--contact-section-space) - var(--contact-section-bottom-trim));
   padding-inline: max(var(--page-gutter), calc((100vw - var(--content-max-width)) / 2));
   overflow: hidden;
   color: var(--color-text-inverse);
@@ -223,25 +216,53 @@ header.is-floating {
 .contact-background::after { content: ""; position: absolute; inset: 0; background: var(--color-image-overlay); }
 .contact-background img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .contact > div { grid-column: 1; max-width: var(--contact-content-max-width); }
-.contact form {
-  display: grid;
+.contact-copy { color: var(--color-text-dark); }
+.contact-form {
   grid-row: 2;
   grid-column: 1;
-  grid-template-columns: 1fr;
-  gap: var(--form-gap-row) var(--form-gap-column);
+  width: 100%;
   max-width: var(--contact-content-max-width);
-  padding: var(--form-panel-padding-block) var(--form-panel-padding-inline);
-  background: var(--color-canvas);
+  padding: var(--form-inner-padding);
+  border: 0;
+  background: var(--color-surface-muted);
   color: var(--color-text);
 }
-.contact label { font-size: var(--font-size-label); letter-spacing: var(--tracking-label); text-transform: uppercase; }
-.contact input, .contact select, .contact textarea { display: block; width: 100%; margin-top: 0.5rem; padding: var(--field-padding); border: 1px solid var(--color-border-soft); background: var(--color-transparent); letter-spacing: 0; text-transform: none; }
-.contact textarea { height: 8.125rem; resize: vertical; }
-.contact label:last-of-type, .contact form button { grid-column: 1; }
-.contact form button { width: var(--button-width); height: var(--button-height); border: 1px solid var(--color-text); background: var(--color-transparent); cursor: pointer; letter-spacing: var(--tracking-label); text-transform: uppercase; }
-.contact form button:hover { background: var(--color-text); color: var(--color-text-inverse); }
-.form-success { margin: 0; color: var(--color-text); font-size: var(--font-size-note) !important; line-height: var(--line-height-label) !important; }
-.contact form:has(.form-success) button { margin-bottom: 0; }
+.contact-form-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--form-gap-column); }
+.contact-form label, .contact-form fieldset { display: block; margin: 0 0 var(--form-gap-row); }
+.contact-form label > span, .contact-form legend { display: block; margin-bottom: 0.5rem; font-size: var(--font-size-label); letter-spacing: var(--tracking-label); text-transform: uppercase; }
+.contact-form fieldset { padding: 0; border: 0; }
+.contact-form input:not([type="checkbox"]), .contact-form textarea {
+  display: block;
+  width: 100%;
+  padding: var(--field-padding);
+  border: 1px solid var(--color-border);
+  border-radius: var(--form-field-radius);
+  background: var(--color-canvas);
+}
+.contact-form textarea { resize: vertical; }
+.contact-form input:focus-visible, .contact-form textarea:focus-visible, .contact-form button:focus-visible { outline: var(--focus-ring); outline-offset: 0.1875rem; }
+.contact-form-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem var(--form-gap-column); }
+.contact-form-options label { display: flex; align-items: flex-start; gap: 0.5rem; margin: 0; font-size: var(--font-size-note); line-height: 1.45; }
+.contact-form-options label > span { margin: 0; font-size: inherit; letter-spacing: normal; text-transform: none; }
+.contact-form-options input { flex: 0 0 auto; margin-top: 0.2rem; accent-color: var(--color-header); }
+.contact-form-honeypot { position: absolute; left: -9999px; }
+.contact-form-status { min-height: 1.5em; margin: 0 0 0.75rem; font-size: var(--font-size-note); }
+.contact-form-status.is-error { color: var(--color-error); }
+.contact-form-status.is-success { color: var(--color-success); }
+.contact-form button {
+  display: block;
+  width: min(100%, var(--button-width));
+  min-height: var(--button-height);
+  margin-inline: auto;
+  border: 0;
+  background: var(--color-header);
+  color: var(--color-text-inverse);
+  font-size: var(--font-size-label);
+  letter-spacing: var(--tracking-action);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.contact-form button:disabled { cursor: wait; opacity: 0.72; }
 
 footer {
   min-height: var(--footer-min-height);
@@ -361,9 +382,7 @@ footer a:hover, footer a:focus-visible { text-decoration: underline; text-underl
   header.is-floating { width: calc(100% - 1rem); padding-inline: 1rem; }
   header { justify-content: center; }
   .brand { margin-right: auto; color: var(--color-text-inverse); }
-  header.has-back-link .brand { margin-left: 3.75rem; }
   .header-action { right: 1rem; color: var(--color-text-inverse); font-size: var(--font-size-header-action-mobile); letter-spacing: 0.1em; }
-  .header-back { left: 1rem; color: var(--color-text-inverse); font-size: var(--font-size-header-action-mobile); }
 
   .hero h1 { top: calc(var(--header-height) + 2rem); left: var(--page-gutter); }
   .hero::after { background: linear-gradient(var(--color-mobile-hero-overlay), var(--color-transparent) 45%); }
@@ -380,11 +399,9 @@ footer a:hover, footer a:focus-visible { text-decoration: underline; text-underl
   .testimonial { display: flex; flex-direction: column; align-items: stretch; gap: 1.625rem; padding-block: 3.25rem; }
   .service, .packages { max-width: none; }
 
-  .contact { padding-inline: var(--page-gutter); }
-  .contact form { display: flex; flex-direction: column; align-self: center; width: var(--contact-form-mobile-width); }
-  .contact form button { align-self: center; }
-  .contact label:last-of-type { width: 100%; }
-  .form-success { text-align: center; }
+  .contact { gap: var(--contact-copy-form-gap); padding-block: var(--contact-section-space); padding-bottom: calc(var(--contact-section-space) - var(--contact-section-bottom-trim)); padding-inline: var(--page-gutter); }
+  .contact-form { align-self: center; width: var(--contact-form-mobile-width); }
+  .contact-form-fields, .contact-form-options { grid-template-columns: 1fr; }
 
   .service-page-hero > div { bottom: 3rem; }
   .service-page-hero::after { background: linear-gradient(var(--color-transparent) 25%, var(--color-mobile-hero-overlay)); }

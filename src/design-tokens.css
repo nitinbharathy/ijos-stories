@@ -17,6 +17,8 @@
   --color-image-overlay: rgb(24 28 30 / 18%);
   --color-mobile-hero-overlay: rgb(0 0 0 / 28%);
   --color-footer-rule: rgb(248 245 239 / 58%);
+  --color-error: #8b2e2e;
+  --color-success: #315c45;
 
   /* Typography */
   --font-brand: "MADE Mirage", Georgia, "Times New Roman", serif;
@@ -71,6 +73,10 @@
   --section-gap-wide: 6vw;
   --section-gap-wider: 7vw;
   --section-gap-mobile: 2.1875rem;
+  --contact-section-space: 4rem;
+  --contact-section-space-mobile: 3.25rem;
+  --contact-copy-form-gap: 2rem;
+  --contact-copy-form-gap-mobile: 1.5rem;
   --form-gap-row: 1.5rem;
   --form-gap-column: 1.125rem;
   --carousel-gap: 0.875rem;
@@ -92,7 +98,8 @@
   --testimonial-image-height-mobile: 25rem;
   --package-image-height: 40.625rem;
   --package-image-height-mobile: 32.5rem;
-  --contact-min-height: 57.5rem;
+  --contact-min-height: 48rem;
+  --contact-section-bottom-trim: 1.25rem;
   --footer-min-height: 38.75rem;
   --contact-form-mobile-width: 17.1875rem;
   --service-hero-height: 40rem;
@@ -117,8 +124,8 @@
   --hero-control-size: 2rem;
   --control-radius: 50%;
   --field-padding: 0.8125rem;
-  --form-panel-padding-block: 1.625rem;
-  --form-panel-padding-inline: 1.5rem;
+  --form-inner-padding: clamp(1.25rem, 3vw, 2rem);
+  --form-field-radius: 0;
 
   /* Effects and motion */
   --shadow-control: 0 2px 12px rgb(0 0 0 / 12%);
@@ -135,6 +142,8 @@
     --page-gutter: var(--page-gutter-mobile);
     --section-space: var(--section-space-mobile);
     --section-gap: var(--section-gap-mobile);
+    --contact-section-space: var(--contact-section-space-mobile);
+    --contact-copy-form-gap: var(--contact-copy-form-gap-mobile);
     --font-size-body: var(--font-size-body-mobile);
     --font-size-heading: var(--font-size-heading-mobile);
     --font-size-subheading: var(--font-size-subheading-mobile);
