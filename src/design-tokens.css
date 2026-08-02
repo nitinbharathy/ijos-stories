@@ -16,9 +16,11 @@
   --color-control-strong: rgb(248 245 239 / 96%);
   --color-image-overlay: rgb(24 28 30 / 18%);
   --color-mobile-hero-overlay: rgb(0 0 0 / 28%);
+  --color-footer-rule: rgb(248 245 239 / 58%);
 
   /* Typography */
   --font-brand: "MADE Mirage", Georgia, "Times New Roman", serif;
+  --font-display: Didot, "Bodoni 72", "Bodoni MT", "Times New Roman", serif;
   --font-control: Arial, sans-serif;
   --font-size-body: 1.125rem;
   --font-size-body-mobile: 1.0625rem;
@@ -27,13 +29,15 @@
   --font-size-subheading: 1.875rem;
   --font-size-subheading-mobile: 1.5625rem;
   --font-size-brand: 1.3rem;
-  --font-size-brand-mobile: 0.75rem;
+  --font-size-brand-mobile: 1rem;
   --font-size-label: 0.85rem;
   --font-size-note: 0.9375rem;
   --font-size-eyebrow: 0.875rem;
   --font-size-intro-eyebrow: 1.125rem;
   --font-size-intro-eyebrow-mobile: 1rem;
   --font-size-header-action-mobile: 0.5625rem;
+  --font-size-footer-display: clamp(4.75rem, 8.2vw, 8.75rem);
+  --font-size-footer-display-mobile: clamp(2.875rem, 13vw, 4.6rem);
   --font-weight-regular: 400;
   --font-weight-bold: 700;
   --line-height-heading: 1.22;
@@ -54,6 +58,7 @@
   --about-max-width: 81.25rem;
   --testimonial-max-width: 65.625rem;
   --contact-content-max-width: 45rem;
+  --footer-content-max-width: 112rem;
   --header-height: 4.625rem;
   --header-height-mobile: 4.125rem;
   --section-space: 5.625rem;
@@ -84,6 +89,7 @@
   --package-image-height: 40.625rem;
   --package-image-height-mobile: 32.5rem;
   --contact-min-height: 57.5rem;
+  --footer-min-height: 38.75rem;
   --contact-form-mobile-width: 17.1875rem;
   --service-hero-height: 40rem;
   --service-hero-height-mobile: 34rem;
@@ -128,6 +134,7 @@
     --font-size-subheading: var(--font-size-subheading-mobile);
     --font-size-brand: var(--font-size-brand-mobile);
     --font-size-intro-eyebrow: var(--font-size-intro-eyebrow-mobile);
+    --font-size-footer-display: var(--font-size-footer-display-mobile);
     --header-height: var(--header-height-mobile);
     --hero-height: var(--hero-height-mobile);
     --hero-title-width: var(--hero-title-width-mobile);

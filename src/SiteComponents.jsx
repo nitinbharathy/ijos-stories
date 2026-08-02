@@ -37,7 +37,7 @@ export function Rail({ images: railImages, label }) {
 }
 
 export function SiteHeader({ showHomeLink = false }) {
-  return <header>
+  return <header className={showHomeLink ? 'has-back-link' : undefined}>
     {showHomeLink && <a href={sitePath('/')} className="header-back">Home</a>}
     <a href={sitePath('/')} className="brand">ijós moments</a>
     <a href="#contact" className="header-action">Get in touch</a>
@@ -66,10 +66,16 @@ export function ContactSection({ selectedService = '' }) {
 export function SiteFooter() {
   return (
     <footer>
-      <div className="footer-main">
-        <nav aria-label="Footer">
-          <a href={sitePath('/')}>Home</a>
-          <a href={sitePath('/stories')}>Stories</a>
+      <div className="footer-invitation">
+        <h2>Let’s make<br />something<br />timeless</h2>
+        <a className="footer-cta" href="#contact">Get in touch</a>
+      </div>
+      <div className="footer-directory">
+        <nav aria-label="Footer navigation">
+          <div className="footer-primary-links">
+            <a href={sitePath('/')}>Home</a>
+            <a href={sitePath('/stories')}>Stories</a>
+          </div>
           <div className="footer-service-links">
             <a href={sitePath('/wedding-day')}>Wedding Day</a>
             <a href={sitePath('/pre-wedding')}>Pre-wedding</a>
@@ -78,10 +84,13 @@ export function SiteFooter() {
         </nav>
         <div className="footer-social">
           <p>Follow on Instagram</p>
-          <a href="https://www.instagram.com/ijos_moments/">@IJOS_MOMENTS</a>
+          <a href="https://www.instagram.com/ijos_moments/" target="_blank" rel="noreferrer">@IJOS_MOMENTS</a>
         </div>
       </div>
-      <p className="footer-copyright">© 2026 ijos</p>
+      <div className="footer-signoff">
+        <p className="footer-brand">ijós moments</p>
+        <p className="footer-copyright">© 2026 ijos moments</p>
+      </div>
     </footer>
   )
 }
