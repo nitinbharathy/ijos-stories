@@ -93,6 +93,12 @@
   --service-gallery-mobile: 28rem;
   --service-card-height: 25rem;
   --service-card-height-mobile: 19rem;
+  --stories-card-image-height: 38rem;
+  --stories-card-image-height-mobile: 28rem;
+  --story-hero-height: 46rem;
+  --story-hero-height-mobile: 36rem;
+  --story-image-height: 42rem;
+  --story-image-height-mobile: 30rem;
   --button-width: 12.5rem;
   --button-height: 3.75rem;
   --control-size: 2.375rem;
@@ -131,5 +137,8 @@
     --service-gallery-tall: var(--service-gallery-mobile);
     --service-gallery-short: var(--service-gallery-mobile);
     --service-card-height: var(--service-card-height-mobile);
+    --stories-card-image-height: var(--stories-card-image-height-mobile);
+    --story-hero-height: var(--story-hero-height-mobile);
+    --story-image-height: var(--story-image-height-mobile);
   }
 }

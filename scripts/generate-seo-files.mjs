@@ -20,7 +20,14 @@ const projectRoot = new URL('../', import.meta.url)
 const outputDirectory = new URL('dist/client/', projectRoot)
 const robotsSource = await readFile(new URL('public/robots.txt', projectRoot), 'utf8')
 const sitemapUrl = `${siteOrigin}/sitemap.xml`
-const pagePaths = ['/', '/wedding-day', '/pre-wedding', '/proposal']
+const pagePaths = [
+  '/',
+  '/wedding-day',
+  '/pre-wedding',
+  '/proposal',
+  '/stories',
+  '/stories/sikh-wedding-portrait-story-singapore',
+]
 
 const escapeXml = (value) => value
   .replaceAll('&', '&amp;')

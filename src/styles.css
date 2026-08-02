@@ -209,7 +209,9 @@ header {
 .contact form:has(.form-success) button { margin-bottom: 0; }
 
 footer { padding: 3rem var(--page-gutter) 2rem; border-top: 1px solid var(--color-border-faint); }
-footer a { display: inline-block; margin: 0.5rem 0 3rem; color: inherit; letter-spacing: 0.15em; }
+footer nav { display: flex; flex-wrap: wrap; gap: 1rem 2rem; margin-bottom: 3rem; }
+footer nav a { margin: 0; font-size: var(--font-size-label); text-transform: uppercase; }
+footer a { display: inline-block; margin: 0.5rem 0 3rem; color: inherit; letter-spacing: 0.15em; text-decoration: none; }
 
 /* Dedicated service pages share this single template and the global design tokens. */
 .service-page-hero { position: relative; height: var(--service-hero-height); overflow: hidden; color: var(--color-text-inverse); }
@@ -254,6 +256,42 @@ footer a { display: inline-block; margin: 0.5rem 0 3rem; color: inherit; letter-
 .other-services a:hover img { transform: scale(1.02); }
 .other-services span { position: absolute; z-index: 1; right: 2rem; bottom: 1.5rem; left: 2rem; font-size: var(--font-size-subheading); }
 
+/* Story index and editorial story pages */
+.stories-heading { max-width: var(--reading-max-width); margin-inline: auto; padding-block: 8rem; text-align: center; }
+.stories-heading h1 { margin: 0.2em 0 0.5em; font-size: 4rem; font-weight: var(--font-weight-regular); line-height: var(--line-height-heading); }
+.stories-heading > p:last-child { max-width: var(--service-intro-max-width); margin-inline: auto; font-size: var(--font-size-body); line-height: var(--line-height-copy); }
+.stories-list { max-width: var(--content-max-width); margin-inline: auto; padding-top: 0; }
+.story-card { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 0.65fr); align-items: center; gap: var(--section-gap-wider); }
+.story-card > a { display: block; height: var(--stories-card-image-height); overflow: hidden; }
+.story-card picture, .story-card img { display: block; width: 100%; height: 100%; }
+.story-card img { object-fit: cover; transition: transform 0.4s ease; }
+.story-card > a:hover img { transform: scale(1.015); }
+.story-card h2 { margin: 0.2em 0; font-size: var(--font-size-heading); font-weight: var(--font-weight-regular); line-height: var(--line-height-heading); }
+.story-card h2 a { color: inherit; text-decoration: none; }
+.story-card div > p:not(.eyebrow) { font-size: var(--font-size-body); line-height: var(--line-height-copy); }
+.stories-service-link, .story-close { max-width: var(--reading-max-width); margin-inline: auto; text-align: center; }
+.stories-service-link { position: relative; isolation: isolate; }
+.stories-service-link::before { content: ""; position: absolute; z-index: -1; inset-block: 0; left: 50%; width: 100vw; transform: translateX(-50%); background: var(--color-surface-muted); }
+.stories-service-link h2, .story-close h2 { margin: 0.2em 0 0.75em; font-size: var(--font-size-heading); font-weight: var(--font-weight-regular); }
+
+.story-hero { position: relative; height: var(--story-hero-height); overflow: hidden; color: var(--color-text-inverse); }
+.story-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(var(--color-transparent) 35%, var(--color-mobile-hero-overlay)); }
+.story-hero > picture, .story-hero img { display: block; width: 100%; height: 100%; }
+.story-hero img { object-fit: cover; object-position: center; }
+.story-hero > div { position: absolute; z-index: 1; right: var(--page-gutter); bottom: var(--section-space); left: var(--page-gutter); max-width: 54rem; }
+.story-hero h1 { margin: 0.2em 0 0; font-size: 4rem; font-weight: var(--font-weight-regular); line-height: var(--line-height-heading); }
+.story-introduction { max-width: var(--service-intro-max-width); margin-inline: auto; text-align: center; }
+.story-introduction p { margin: 0; font-size: var(--font-size-subheading); line-height: 1.55; }
+.story-sections { max-width: var(--content-max-width); margin-inline: auto; }
+.story-section { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(18rem, 0.85fr); align-items: center; gap: var(--section-gap-wider); }
+.story-section.reverse { grid-template-columns: minmax(18rem, 0.85fr) minmax(0, 1.15fr); }
+.story-section.reverse > picture { order: 2; }
+.story-section > picture { display: block; height: var(--story-image-height); overflow: hidden; }
+.story-section > picture img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.story-section h2 { margin: 0.2em 0; font-size: var(--font-size-heading); font-weight: var(--font-weight-regular); line-height: var(--line-height-heading); }
+.story-section div > p:last-child, .story-close > p:not(.eyebrow) { font-size: var(--font-size-body); line-height: var(--line-height-copy); }
+.story-close .text-link + .text-link { margin-left: 2rem; }
+
 /* Motion is intentionally centralized so future scroll effects remain replaceable. */
 @media (prefers-reduced-motion: reduce) {
   .hero > .hero-picture, .rail-controls button { transition: none; }
@@ -296,6 +334,18 @@ footer a { display: inline-block; margin: 0.5rem 0 3rem; color: inherit; letter-
   .service-package { flex-direction: column; gap: 0.75rem; }
   .other-services > div { grid-template-columns: 1fr; }
 
+  .stories-heading { padding-block: 6rem; text-align: left; }
+  .stories-heading h1, .story-hero h1 { font-size: var(--font-size-heading); }
+  .story-card, .story-section, .story-section.reverse { display: flex; flex-direction: column; align-items: stretch; gap: var(--section-gap); }
+  .story-card > a, .story-section > picture { width: 100%; }
+  .story-section.reverse > picture { order: 0; }
+  .story-hero > div { bottom: 3rem; }
+  .story-introduction, .story-close, .stories-service-link { text-align: left; }
+  .story-introduction p { font-size: var(--font-size-body); line-height: var(--line-height-copy); }
+  .story-close .text-link { margin-bottom: 1rem; }
+  .story-close .text-link + .text-link { margin-left: 1.25rem; }
+  footer nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
   footer { padding-block: 2.8125rem 1.875rem; }
-  footer a { margin-bottom: 2.8125rem; }
+  footer > a { margin-bottom: 2.8125rem; }
 }

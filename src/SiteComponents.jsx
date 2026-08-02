@@ -63,7 +63,7 @@ export function ContactSection({ selectedService = '' }) {
 }
 
 export function SiteFooter() {
-  return <footer><p>Follow me on Instagram</p><a href="https://www.instagram.com/ijos_moments/">@IJOS_MOMENTS</a><p>© 2026 ijos</p></footer>
+  return <footer><nav aria-label="Footer"><a href="/">Home</a><a href="/stories">Stories</a><a href="/wedding-day">Wedding Day</a><a href="/pre-wedding">Pre-wedding</a><a href="/proposal">Proposal</a></nav><p>Follow me on Instagram</p><a href="https://www.instagram.com/ijos_moments/">@IJOS_MOMENTS</a><p>© 2026 ijos</p></footer>
 }
 
 export function PageSeo({ title, description, path, structuredData }) {
