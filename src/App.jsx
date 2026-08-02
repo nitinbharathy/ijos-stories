@@ -31,9 +31,10 @@ function Rail({images,label}){
 
 export function App(){
   const [slide,setSlide]=useState(0)
+  const [formSent,setFormSent]=useState(false)
   useEffect(()=>{const id=setInterval(()=>setSlide(v=>(v+1)%hero.length),5500);return()=>clearInterval(id)},[])
   return <main>
-    <header><a href="#top" className="brand">ijós moments</a></header>
+    <header><a href="#top" className="brand">ijós moments</a><a href="#contact" className="header-action">Get in touch</a></header>
     <section className="hero" id="top">
       {hero.map((src,i)=><img key={src} className={i===slide?'active':''} src={A+src} alt="Wedding celebration" />)}
       <h1>Capture your big day as it unfolds</h1>
@@ -52,7 +53,7 @@ export function App(){
 
     <section className="packages content-block"><img src={A+'2e4d33a64348961a.jpg'} alt="Wedding couple"/><div>{[['Full day (10 hrs) Actual Day packages','$ 1800'],['Half day (6 hrs) Actual Day packages','$ 1200'],['Pre-wedding shoot packages','$ 500'],['Proposal packages','$ 300']].map(([n,p])=><div className="price" key={n}><h3>{n}</h3><p>start from {p}</p></div>)}<p className="note">Contact us to get a welcome guide with all package details, FAQs and all other info you will need.</p></div></section>
 
-    <section className="contact content-block"><div><h2>Get in touch</h2><p>Fill the form to get in touch and get the welcome guide with package details and all the info you will need to make a decision.</p><p>Ph: +65 8535 4678<br/>Email: photos.ijos@gmail.com</p></div><form onSubmit={e=>e.preventDefault()}><label>Name *<input placeholder="John Doe" required/></label><label>Email address *<input type="email" placeholder="Your email address" required/></label><label>Mobile number *<input placeholder="Your WhatsApp number" required/></label><label>Service required *<select required defaultValue=""><option value="" disabled>Select option</option><option>Actual day coverage</option><option>Pre-wedding shoots</option><option>Proposal shoot</option></select></label><label>Date of the event *<input type="date" required/></label><label>Message *<textarea placeholder="Any other details you would like to share" required/></label><button type="submit">Send message</button></form></section>
+    <section className="contact content-block" id="contact"><div><h2>Get in touch</h2><p>Fill the form to get in touch and get the welcome guide with package details and all the info you will need to make a decision.</p><p>Ph: +65 8535 4678<br/>Email: photos.ijos@gmail.com</p></div><form onSubmit={e=>{e.preventDefault();setFormSent(true)}}><label>Name *<input placeholder="John Doe" required/></label><label>Email address *<input type="email" placeholder="Your email address" required/></label><label>Mobile number *<input placeholder="Your WhatsApp number" required/></label><label>Service required *<select required defaultValue=""><option value="" disabled>Select option</option><option>Actual day coverage</option><option>Pre-wedding shoots</option><option>Proposal shoot</option></select></label><label>Date of the event *<input type="date" required/></label><label>Message *<textarea placeholder="Any other details you would like to share" required/></label><button type="submit">Send message</button>{formSent&&<p className="form-success" role="status" aria-live="polite">Thank you — your message has been received. We’ll be in touch soon.</p>}</form></section>
     <footer><p>Follow me on Instagram</p><a href="https://www.instagram.com/ijos_moments/">@IJOS_MOMENTS</a><p>© 2026 ijos</p></footer>
   </main>
 }
