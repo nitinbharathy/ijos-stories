@@ -8,7 +8,9 @@ Prototype-specific preference: keep scroll-triggered motion isolated and easy to
 
 Desktop hero preference: use white text directly over the photograph near the upper-left, matching mobile; do not use a desktop background fade.
 
-Contact section preference: use `/assets/source/2e4d33a64348961a.jpg` as the full-section background, with white contact copy and the form in a warm-white panel on the left.
+Contact section preference: use the `sections/contact-singapore-wedding-photographer` image variants as the full-section background, with white contact copy and the form in a warm-white panel on the left.
+
+Image-management preference: keep displayed photography in logical folders by site role, use descriptive SEO-friendly base filenames, and resolve optional AVIF/WebP variants at build time with a real WebP or JPEG fallback. Keep accurate alt text in the central image catalogue so replacing an existing image does not require component edits.
 
 When implementing from a selected generated mock, treat that image as the source of truth for layout, component anatomy, density, spacing, color, typography, visible content, and hierarchy.
 
