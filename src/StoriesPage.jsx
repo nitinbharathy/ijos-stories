@@ -34,13 +34,13 @@ export function StoriesPage() {
         <a className="story-feature-media" href={sitePath(`/stories/${featuredStory.slug}`)} aria-label={`View ${featuredStory.title}`}>
           <SmartImage image={featuredStory.heroImage} loading="eager" fetchPriority="high" decoding="async" />
         </a>
-        <div className="story-feature-copy"><p className="eyebrow">{featuredStory.category} · {featuredStory.location}</p><h2><a href={sitePath(`/stories/${featuredStory.slug}`)}>{featuredStory.title}</a></h2><p>{featuredStory.excerpt}</p><a className="text-link" href={sitePath(`/stories/${featuredStory.slug}`)}>View story</a></div>
+        <div className="story-feature-copy"><p className="eyebrow">{featuredStory.category} · {featuredStory.heroLocation || featuredStory.location}</p><h2><a href={sitePath(`/stories/${featuredStory.slug}`)}>{featuredStory.title}</a></h2><p>{featuredStory.excerpt}</p><a className="text-link" href={sitePath(`/stories/${featuredStory.slug}`)}>View story</a></div>
       </article>
 
       <div className="story-grid">
         {moreStories.map((story) => <article className="story-preview" key={story.slug}>
           <a className="story-preview-media" href={sitePath(`/stories/${story.slug}`)} aria-label={`View ${story.title}`}><SmartImage image={story.heroImage} loading="lazy" decoding="async" /></a>
-          <div><p className="eyebrow">{story.category} · {story.location}</p><h2><a href={sitePath(`/stories/${story.slug}`)}>{story.title}</a></h2><p>{story.excerpt}</p><a className="text-link" href={sitePath(`/stories/${story.slug}`)}>View story</a></div>
+          <div><p className="eyebrow">{story.category} · {story.heroLocation || story.location}</p><h2><a href={sitePath(`/stories/${story.slug}`)}>{story.title}</a></h2><p>{story.excerpt}</p><a className="text-link" href={sitePath(`/stories/${story.slug}`)}>View story</a></div>
         </article>)}
       </div>
     </section>

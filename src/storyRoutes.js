@@ -1,5 +1,6 @@
 export const STORY_SLUGS = {
   pawanAndJaspreet: 'sikh-wedding-portrait-story-singapore',
+  victoriaAndSean: 'victoria-sean-catholic-wedding-singapore',
   preWeddingPortrait: 'singapore-pre-wedding-portrait-story',
   gardenProposal: 'garden-proposal-fairy-lights-singapore',
 }

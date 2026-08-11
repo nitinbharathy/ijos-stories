@@ -1,12 +1,14 @@
 import { gardenProposalStory } from './stories/gardenProposal'
 import { pawanAndJaspreetStory } from './stories/pawanAndJaspreet'
 import { preWeddingPortraitStory } from './stories/preWeddingPortrait'
+import { victoriaAndSeanStory } from './stories/victoriaAndSean'
 
 const supportedBlockTypes = new Set(['introduction', 'imageText', 'text', 'fullImage', 'quote', 'gallery'])
 const requiredStoryFields = ['slug', 'category', 'tags', 'location', 'title', 'excerpt', 'metaTitle', 'metaDescription', 'heroImage']
 
 export const stories = [
   pawanAndJaspreetStory,
+  victoriaAndSeanStory,
   preWeddingPortraitStory,
   gardenProposalStory,
 ]
