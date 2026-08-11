@@ -4,6 +4,7 @@ import { STORY_SLUGS } from '../storyRoutes'
 export const gardenProposalStory = {
   slug: STORY_SLUGS.gardenProposal,
   category: 'Proposal',
+  tags: ['Garden proposal', 'Surprise proposal', 'Fairy lights', 'Evening photography'],
   location: 'Singapore',
   title: 'A Garden Proposal Under Fairy Lights',
   excerpt: 'A glowing garden setting, an intimate ring detail and an unguarded celebration shape this evening proposal story.',

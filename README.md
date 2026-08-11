@@ -234,6 +234,7 @@ The hero and listing information are required. Everything below the hero is made
 export const exampleStory = {
   slug: STORY_SLUGS.example,
   category: 'Wedding Day',
+  tags: ['Church wedding', 'Intimate wedding', 'Evening reception'],
   location: 'Singapore',
   heroLocation: 'Couple names',
   title: 'Story title',
@@ -270,6 +271,8 @@ export const exampleStory = {
 
 `heroImage` is always required because it is also used as the story’s cover on `/stories`. Add `heroImages` only when the story page should have a swipeable, automatically advancing hero carousel. When `heroImages` is omitted, the template displays the single `heroImage` without carousel controls.
 
+Every story must have one broad `category` and at least one specific `tag`. Categories are intended for the main `/stories` filter tabs, such as Wedding Day, Pre-wedding and Proposal. Tags describe narrower characteristics such as Sikh wedding, church wedding, garden proposal or black-and-white portraits. Keep spelling and capitalisation consistent because filter options are generated from these values.
+
 For `imageText`, omit `imagePosition` to alternate left and right automatically. Use `'left'` or `'right'` only when composition requires a specific side. Set `closing: false` to remove the standard closing section, or `showContact: false` to omit the contact section.
 
 To add a story:
@@ -280,7 +283,7 @@ To add a story:
 4. Create its content file in `src/stories/`.
 5. Import it and add it to the `stories` array in `src/storyData.js`. The array order controls the order on `/stories`.
 
-Alt text is not a caption and is normally not shown on the page. Provide an approved title, category, location, listing excerpt, content blocks, relevant service, SEO title and SEO description.
+Alt text is not a caption and is normally not shown on the page. Provide an approved title, category, tags, location, listing excerpt, content blocks, relevant service, SEO title and SEO description.
 
 Keep names or identifying details out of public text unless the couple has approved their use. Service-page wording is stored in `src/serviceData.js`; the homepage hero heading and section copy are stored in `src/App.jsx`.
 

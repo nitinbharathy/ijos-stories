@@ -4,6 +4,7 @@ import { STORY_SLUGS } from '../storyRoutes'
 export const pawanAndJaspreetStory = {
   slug: STORY_SLUGS.pawanAndJaspreet,
   category: 'Wedding Day',
+  tags: ['Sikh wedding', 'Multi-day wedding', 'Cultural wedding', 'Wedding reception'],
   location: 'Singapore',
   heroLocation: 'Pawan & Jaspreet',
   title: 'A 4-day Sikh Wedding in Singapore',

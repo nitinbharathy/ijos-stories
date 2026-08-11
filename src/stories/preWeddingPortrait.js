@@ -4,6 +4,7 @@ import { STORY_SLUGS } from '../storyRoutes'
 export const preWeddingPortraitStory = {
   slug: STORY_SLUGS.preWeddingPortrait,
   category: 'Pre-wedding',
+  tags: ['Couple portraits', 'Black and white', 'Formal portraits', 'Indoor portraits'],
   location: 'Singapore',
   title: 'A Playful Pre-wedding Portrait Story in Singapore',
   excerpt: 'Playful glances, close black-and-white frames and warm interior light give this portrait session its energy.',
