@@ -8,7 +8,7 @@ export function StoriesPage() {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
     name: 'Wedding, Pre-wedding and Proposal Stories',
-    description: 'Curated wedding, pre-wedding and proposal photography stories by ijós Moments in Singapore.',
+    description: 'Curated wedding, pre-wedding and proposal photography stories by ijós Stories in Singapore.',
     mainEntity: {
       '@type': 'ItemList',
       itemListElement: stories.map((story, index) => ({
@@ -21,7 +21,7 @@ export function StoriesPage() {
   }
 
   return <main>
-    <PageSeo title="Wedding & Proposal Stories Singapore | ijós Moments" description="Explore real wedding, pre-wedding and proposal photography stories documented by ijós Moments in Singapore." path="/stories" structuredData={structuredData} />
+    <PageSeo title="Wedding & Proposal Stories Singapore | ijós Stories" description="Explore real wedding, pre-wedding and proposal photography stories documented by ijós Stories in Singapore." path="/stories" structuredData={structuredData} />
     <SiteHeader />
 
     <section className="stories-heading content-block">

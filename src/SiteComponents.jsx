@@ -68,7 +68,7 @@ export function SiteHeader({ overlayHero = false }) {
 
   return <div className={shellClasses}>
     <header className={headerClasses}>
-      <a href={sitePath('/')} className="brand">ijós moments</a>
+      <a href={sitePath('/')} className="brand">ijós Stories</a>
       <a href="#contact" className="header-action">Get in touch</a>
     </header>
   </div>
@@ -196,8 +196,8 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="footer-signoff">
-        <p className="footer-brand">ijós moments</p>
-        <p className="footer-copyright">© 2026 ijos moments</p>
+        <p className="footer-brand">ijós Stories</p>
+        <p className="footer-copyright">© 2026 ijós Stories</p>
       </div>
     </footer>
   )

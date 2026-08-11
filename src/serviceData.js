@@ -2,7 +2,7 @@ import { images } from './imageCatalog'
 
 const provider = {
   '@type': 'ProfessionalService',
-  name: 'ijós Moments',
+  name: 'ijós Stories',
   telephone: '+6585354678',
   email: 'photos.ijos@gmail.com',
 }
@@ -14,7 +14,7 @@ export const services = [
     formValue: 'Actual day coverage',
     eyebrow: 'Singapore wedding photography & videography',
     title: 'Wedding Day Photography & Videography',
-    metaTitle: 'Wedding Photography & Videography Singapore | ijós Moments',
+    metaTitle: 'Wedding Photography & Videography Singapore | ijós Stories',
     metaDescription: 'Natural, documentary-style wedding photography and videography in Singapore for solemnisations, church ceremonies and multicultural celebrations.',
     lead: 'Your wedding is made of more than the planned moments. We document the quiet exchanges, joyful celebrations and people who make the day unmistakably yours.',
     heroImage: images.hero[0],
@@ -40,7 +40,7 @@ export const services = [
     formValue: 'Pre-wedding shoots',
     eyebrow: 'Pre-wedding photography in Singapore',
     title: 'Pre-wedding Photography',
-    metaTitle: 'Pre-wedding Photographer Singapore | ijós Moments',
+    metaTitle: 'Pre-wedding Photographer Singapore | ijós Stories',
     metaDescription: 'Warm, natural pre-wedding photography in Singapore, created around your relationship, personalities and the places meaningful to you.',
     lead: 'A pre-wedding session should feel like time spent together, not a performance for the camera. We create relaxed photographs with warmth, movement and a timeless finish.',
     heroImage: images.galleries.preWedding[1],
@@ -65,7 +65,7 @@ export const services = [
     formValue: 'Proposal shoot',
     eyebrow: 'Proposal photography in Singapore',
     title: 'Proposal Photography',
-    metaTitle: 'Proposal Photographer Singapore | ijós Moments',
+    metaTitle: 'Proposal Photographer Singapore | ijós Stories',
     metaDescription: 'Discreet proposal photography in Singapore, planned with you so the surprise and every meaningful reaction are naturally captured.',
     lead: 'You plan the question; we make sure the surprise, reaction and celebration are documented without taking you out of the moment.',
     heroImage: images.galleries.proposal[3],

@@ -98,7 +98,7 @@ test("includes valid ProfessionalService structured data", async () => {
 
   assert.equal(business["@context"], "https://schema.org");
   assert.equal(business["@type"], "ProfessionalService");
-  assert.equal(business.name, "ijós Moments");
+  assert.equal(business.name, "ijós Stories");
   assert.equal(business.areaServed.name, "Singapore");
   assert.equal(business.founder.name, "Madhu");
 });

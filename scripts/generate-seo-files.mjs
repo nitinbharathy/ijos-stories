@@ -1,4 +1,5 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
+import { storyPaths } from '../src/storyRoutes.js'
 
 const configuredUrl = process.env.SITE_URL || process.env.CF_PAGES_URL || 'http://localhost:5173'
 
@@ -27,9 +28,7 @@ const pagePaths = [
   '/proposal',
   '/faq',
   '/stories',
-  '/stories/sikh-wedding-portrait-story-singapore',
-  '/stories/singapore-pre-wedding-portrait-story',
-  '/stories/garden-proposal-fairy-lights-singapore',
+  ...storyPaths,
 ]
 
 const escapeXml = (value) => value

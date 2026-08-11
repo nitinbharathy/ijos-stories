@@ -81,8 +81,8 @@ export function FaqPage() {
 
   return <main>
     <PageSeo
-      title="Wedding Photography FAQ Singapore | ijós Moments"
-      description="Answers about booking, wedding photography and videography, pre-wedding sessions, proposals, packages and the ijós Moments experience."
+      title="Wedding Photography FAQ Singapore | ijós Stories"
+      description="Answers about booking, wedding photography and videography, pre-wedding sessions, proposals, packages and the ijós Stories experience."
       path="/faq"
       structuredData={structuredData}
     />

@@ -1,4 +1,4 @@
-# ijós Moments website guide
+# ijós Stories website guide
 
 This guide explains how to update the website locally, manage its images, and publish changes through GitHub Pages or Sites.
 
@@ -69,6 +69,7 @@ image(
   'folder/descriptive-base-filename',
   'Accurate description of the photograph',
   { desktop: '50% 35%', mobile: '55% 30%' },
+  { orientation: 'landscape' },
 )
 ```
 
@@ -77,6 +78,7 @@ Each entry contains:
 - `base` — the path inside `src/assets/images/`, without `.avif`, `.webp`, `.jpg`, or `.jpeg`;
 - `alt` — a concise, human-readable description of what is visible in the photograph.
 - `focus` — an optional focal point used when the image is cropped on desktop and mobile.
+- `orientation` — optional metadata for landscape photographs. In story galleries, these span two desktop columns.
 
 For example:
 
@@ -215,18 +217,63 @@ image(
 - Check the result on both desktop and mobile. Extremely different aspect ratios may still require a separately prepared crop in a future art-direction workflow.
 - Because focal points live in `src/imageCatalog.js`, every use of the same catalogue image receives the same desktop and mobile focus.
 
-**Visible story text**
+## Create or edit a story
 
-Alt text is not a caption and is normally not shown on the page. For a new story, add the visible content in `src/storyData.js`:
+Each story has its own content file in `src/stories/`. The shared template is in `src/StoryPage.jsx`; do not create a separate page component for each story.
 
-- couple or story title;
-- category, such as Wedding Day, Pre-wedding or Proposal;
-- location;
-- short listing-page excerpt;
-- introductory paragraph;
-- section eyebrow, heading and body text for each group of photographs;
-- related service and enquiry type;
-- SEO title and meta description.
+The hero and listing information are required. Everything below the hero is made from optional blocks. Blocks appear in their listed order and may be omitted or repeated:
+
+- `introduction` — one or more opening paragraphs;
+- `imageText` — a photograph with optional eyebrow and heading plus paragraphs;
+- `text` — a text-only passage;
+- `fullImage` — a wide photograph with an optional caption;
+- `quote` — a quotation with an optional attribution;
+- `gallery` — any number of photographs using the lightbox viewer.
+
+```js
+export const exampleStory = {
+  slug: STORY_SLUGS.example,
+  category: 'Wedding Day',
+  location: 'Singapore',
+  heroLocation: 'Couple names',
+  title: 'Story title',
+  excerpt: 'Short description shown on the Stories page.',
+  metaTitle: 'SEO page title | ijós Stories',
+  metaDescription: 'Concise SEO description of the story.',
+  heroImage: images.stories.example.hero,
+  servicePath: '/wedding-day',
+  serviceLabel: 'View wedding-day service',
+  selectedService: 'Actual day coverage',
+  blocks: [
+    { type: 'introduction', paragraphs: ['Opening paragraph.'] },
+    {
+      type: 'imageText',
+      eyebrow: 'Day 1',
+      title: 'Section heading',
+      paragraphs: ['Section text.'],
+      image: images.stories.example.dayOne,
+      imagePosition: 'left',
+    },
+    {
+      type: 'gallery',
+      label: 'Couple wedding gallery',
+      images: images.stories.example.gallery,
+    },
+  ],
+}
+```
+
+For `imageText`, omit `imagePosition` to alternate left and right automatically. Use `'left'` or `'right'` only when composition requires a specific side. Set `closing: false` to remove the standard closing section, or `showContact: false` to omit the contact section.
+
+To add a story:
+
+1. Put its photographs under `src/assets/images/stories/descriptive-story-name/`, with useful subfolders such as `hero/`, `day-1/` and `gallery/`.
+2. Add the photographs and alt text to `src/imageCatalog.js`.
+3. Add its slug to `src/storyRoutes.js`; this also adds the URL to the generated sitemap.
+4. Create its content file in `src/stories/`.
+5. Import it and add it to the `stories` array in `src/storyData.js`. The array order controls the order on `/stories`.
+
+Alt text is not a caption and is normally not shown on the page. Provide an approved title, category, location, listing excerpt, content blocks, relevant service, SEO title and SEO description.
 
 Keep names or identifying details out of public text unless the couple has approved their use. Service-page wording is stored in `src/serviceData.js`; the homepage hero heading and section copy are stored in `src/App.jsx`.
 

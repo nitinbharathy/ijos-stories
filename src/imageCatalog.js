@@ -13,11 +13,11 @@ const variants = Object.entries(imageFiles).reduce((catalog, [path, url]) => {
   return catalog
 }, {})
 
-function image(base, alt, focus = '50% 50%') {
+function image(base, alt, focus = '50% 50%', metadata = {}) {
   const desktop = typeof focus === 'string' ? focus : (focus.desktop || '50% 50%')
   const mobile = typeof focus === 'string' ? focus : (focus.mobile || desktop)
 
-  return { base, alt, focus: { desktop, mobile } }
+  return { base, alt, focus: { desktop, mobile }, ...metadata }
 }
 
 export function getImageSources(base) {
@@ -32,8 +32,8 @@ export function getImageSources(base) {
 
 export const images = {
   hero: [
-    image('hero/wedding-couple-celebration-recessional', 'Newlyweds walking through their guests after their wedding ceremony'),
-    image('hero/wedding-couple-holding-hands-ceremony', 'Bride and groom holding hands during their wedding ceremony'),
+    image('hero/wedding-couple-celebration-recessional', 'Newlyweds walking through their guests after their wedding ceremony', '50% 50%', { orientation: 'landscape' }),
+    image('hero/wedding-couple-holding-hands-ceremony', 'Bride and groom holding hands during their wedding ceremony', '50% 50%', { orientation: 'landscape' }),
     image('hero/singapore-multicultural-wedding-portrait', 'Newlyweds in traditional and formal dress on a red bridge in Singapore'),
   ],
   galleries: {
@@ -60,7 +60,7 @@ export const images = {
     ],
   },
   people: {
-    photographer: image('people/madhu-ijos-moments-photographer', 'Madhu, founder and lead photographer of ijós Moments', { desktop: '50% 0%', mobile: '50% 0%' }),
+    photographer: image('people/madhu-ijos-moments-photographer', 'Madhu, founder and lead photographer of ijós Stories', { desktop: '50% 0%', mobile: '50% 0%' }),
     testimonial: image('people/marianna-pascal-wedding-client', 'Marianna Pascal photographed on her wedding day'),
   },
   sections: {
