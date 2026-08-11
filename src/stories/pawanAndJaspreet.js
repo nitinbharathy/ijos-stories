@@ -11,6 +11,11 @@ export const pawanAndJaspreetStory = {
   metaTitle: 'A 4-day Sikh Wedding in Singapore | ijós Stories',
   metaDescription: 'Pawan and Jaspreet’s four-day Sikh wedding celebration in Singapore, from Maiyyan and Mehendi to their Central Gurdwara ceremony and Orchard Hotel reception.',
   heroImage: images.galleries.weddingDay[1],
+  heroImages: [
+    images.galleries.weddingDay[1],
+    images.hero[1],
+    images.galleries.weddingDay[5],
+  ],
   servicePath: '/wedding-day',
   serviceLabel: 'View wedding-day service',
   selectedService: 'Actual day coverage',

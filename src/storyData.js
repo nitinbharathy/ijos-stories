@@ -19,6 +19,9 @@ function validateStory(story) {
   if (story.blocks !== undefined && !Array.isArray(story.blocks)) {
     throw new Error(`Story "${story.slug}" must use an array for "blocks"`)
   }
+  if (story.heroImages !== undefined && (!Array.isArray(story.heroImages) || !story.heroImages.length)) {
+    throw new Error(`Story "${story.slug}" must use a non-empty array for "heroImages"`)
+  }
 
   story.blocks?.forEach((block, index) => {
     if (!supportedBlockTypes.has(block.type)) {

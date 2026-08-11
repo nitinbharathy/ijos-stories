@@ -241,6 +241,11 @@ export const exampleStory = {
   metaTitle: 'SEO page title | ijós Stories',
   metaDescription: 'Concise SEO description of the story.',
   heroImage: images.stories.example.hero,
+  heroImages: [
+    images.stories.example.hero,
+    images.stories.example.heroTwo,
+    images.stories.example.heroThree,
+  ],
   servicePath: '/wedding-day',
   serviceLabel: 'View wedding-day service',
   selectedService: 'Actual day coverage',
@@ -262,6 +267,8 @@ export const exampleStory = {
   ],
 }
 ```
+
+`heroImage` is always required because it is also used as the story’s cover on `/stories`. Add `heroImages` only when the story page should have a swipeable, automatically advancing hero carousel. When `heroImages` is omitted, the template displays the single `heroImage` without carousel controls.
 
 For `imageText`, omit `imagePosition` to alternate left and right automatically. Use `'left'` or `'right'` only when composition requires a specific side. Set `closing: false` to remove the standard closing section, or `showContact: false` to omit the contact section.
 

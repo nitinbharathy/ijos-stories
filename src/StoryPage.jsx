@@ -1,7 +1,52 @@
 import { useEffect, useRef, useState } from 'react'
+import Autoplay from 'embla-carousel-autoplay'
+import useEmblaCarousel from 'embla-carousel-react'
 import { ContactSection, PageSeo, SiteFooter, SiteHeader, SmartImage } from './SiteComponents'
 import { getStoryStructuredData } from './storyData'
 import { sitePath } from './sitePaths'
+
+function StoryHero({ story }) {
+  const heroImages = story.heroImages?.length ? story.heroImages : [story.heroImage]
+  const reduceMotion = typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  const autoplay = useRef(Autoplay({ active: heroImages.length > 1 && !reduceMotion, delay: 5200, stopOnInteraction: false, stopOnMouseEnter: false, stopOnFocusIn: true }))
+  const [heroRef, heroApi] = useEmblaCarousel({ loop: heroImages.length > 1 }, [autoplay.current])
+  const [activeIndex, setActiveIndex] = useState(0)
+
+  useEffect(() => {
+    if (!heroApi) return undefined
+
+    const updateIndex = () => setActiveIndex(heroApi.selectedScrollSnap())
+    updateIndex()
+    heroApi.on('select', updateIndex)
+    heroApi.on('reInit', updateIndex)
+    return () => {
+      heroApi.off('select', updateIndex)
+      heroApi.off('reInit', updateIndex)
+    }
+  }, [heroApi])
+
+  const move = (direction) => {
+    if (direction === 'previous') heroApi?.scrollPrev()
+    else heroApi?.scrollNext()
+    autoplay.current.reset()
+  }
+
+  return <section className="story-hero" aria-label={`${story.title} featured photographs`}>
+    <div className="story-hero-viewport" ref={heroRef}>
+      <div className="story-hero-track">
+        {heroImages.map((image, index) => <div className="story-hero-slide" role="group" aria-roledescription="slide" aria-label={`${index + 1} of ${heroImages.length}`} key={image.base}>
+          <SmartImage image={image} loading={index === 0 ? 'eager' : 'lazy'} fetchPriority={index === 0 ? 'high' : 'auto'} decoding="async" />
+        </div>)}
+      </div>
+    </div>
+    <div className="story-hero-copy"><p className="eyebrow">{story.category} · {story.heroLocation || story.location}</p><h1>{story.title}</h1></div>
+    {heroImages.length > 1 && <div className="story-hero-controls">
+      <button type="button" onClick={() => move('previous')} aria-label="Previous featured photograph">‹</button>
+      <span aria-live="polite">{activeIndex + 1} / {heroImages.length}</span>
+      <button type="button" onClick={() => move('next')} aria-label="Next featured photograph">›</button>
+    </div>}
+  </section>
+}
 
 function StoryGallery({ gallery, title }) {
   const [activeIndex, setActiveIndex] = useState(null)
@@ -143,10 +188,7 @@ export function StoryPage({ story }) {
     <SiteHeader overlayHero />
 
     <article>
-      <section className="story-hero">
-        <SmartImage image={story.heroImage} loading="eager" fetchPriority="high" decoding="async" />
-        <div><p className="eyebrow">{story.category} · {story.heroLocation || story.location}</p><h1>{story.title}</h1></div>
-      </section>
+      <StoryHero story={story} />
 
       <StoryBlocks blocks={story.blocks} title={story.title} />
     </article>
