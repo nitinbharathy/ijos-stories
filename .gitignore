@@ -1,6 +1,7 @@
 node_modules/
 dist/
 .DS_Store
+/incoming-photos/
 
 # Local visual-capture and QA working files
 source-*.png

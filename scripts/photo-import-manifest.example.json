@@ -1,0 +1,15 @@
+{
+  "photos": [
+    {
+      "source": "Story - Couple Name/example-photo.jpg",
+      "base": "stories/couple-name/couple-sharing-a-quiet-wedding-moment",
+      "include": true,
+      "alt": "A newlywed couple sharing a quiet moment after their ceremony",
+      "focus": {
+        "desktop": "50% 50%",
+        "mobile": "50% 50%"
+      },
+      "roles": ["story-gallery"]
+    }
+  ]
+}

@@ -24,7 +24,7 @@ export function ServicePage({ service }) {
 
     <section className="service-gallery content-block" aria-labelledby="gallery-title">
       <div className="section-heading"><p className="eyebrow">Selected moments</p><h2 id="gallery-title">A glimpse into the story</h2></div>
-      <div className="gallery-grid">{service.gallery.map((image, index) => <SmartImage image={image} loading={index < 2 ? 'eager' : 'lazy'} decoding="async" key={image.base} />)}</div>
+      <div className="gallery-grid">{service.gallery.map((image) => <SmartImage image={image} loading="lazy" decoding="async" key={image.base} />)}</div>
     </section>
 
     <section className="service-page-packages content-block">

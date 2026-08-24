@@ -5,6 +5,16 @@ import { ContactSection, PageSeo, SiteFooter, SiteHeader, SmartImage } from './S
 import { getStoryStructuredData } from './storyData'
 import { sitePath } from './sitePaths'
 
+const INITIAL_GALLERY_IMAGES = 18
+const GALLERY_BATCH_SIZE = 18
+const IDLE_PREFETCH_COUNT = 4
+
+function connectionAllowsIdlePrefetch() {
+  const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection
+  if (!connection) return true
+  return !connection.saveData && !['slow-2g', '2g'].includes(connection.effectiveType)
+}
+
 function StoryHero({ story }) {
   const heroImages = story.heroImages?.length ? story.heroImages : [story.heroImage]
   const reduceMotion = typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches
@@ -50,7 +60,10 @@ function StoryHero({ story }) {
 
 function StoryGallery({ gallery, title }) {
   const [activeIndex, setActiveIndex] = useState(null)
+  const [visibleCount, setVisibleCount] = useState(() => Math.min(INITIAL_GALLERY_IMAGES, gallery.length))
+  const [idlePrefetchEnd, setIdlePrefetchEnd] = useState(visibleCount)
   const openerRef = useRef(null)
+  const loadMoreRef = useRef(null)
 
   const open = (index, event) => {
     openerRef.current = event.currentTarget
@@ -84,9 +97,46 @@ function StoryGallery({ gallery, title }) {
     }
   }, [activeIndex, gallery.length])
 
+  useEffect(() => {
+    const sentinel = loadMoreRef.current
+    if (!sentinel || visibleCount >= gallery.length) return undefined
+
+    const observer = new IntersectionObserver((entries) => {
+      if (!entries.some((entry) => entry.isIntersecting)) return
+      setVisibleCount((count) => Math.min(count + GALLERY_BATCH_SIZE, gallery.length))
+    }, { rootMargin: '1200px 0px' })
+
+    observer.observe(sentinel)
+    return () => observer.disconnect()
+  }, [gallery.length, visibleCount])
+
+  useEffect(() => {
+    setIdlePrefetchEnd(visibleCount)
+    if (visibleCount >= gallery.length || !connectionAllowsIdlePrefetch()) return undefined
+
+    const warmNextBatch = () => {
+      setIdlePrefetchEnd(Math.min(visibleCount + IDLE_PREFETCH_COUNT, gallery.length))
+    }
+
+    if ('requestIdleCallback' in window) {
+      const idleId = window.requestIdleCallback(warmNextBatch, { timeout: 2000 })
+      return () => window.cancelIdleCallback(idleId)
+    }
+
+    const timeoutId = window.setTimeout(warmNextBatch, 1200)
+    return () => window.clearTimeout(timeoutId)
+  }, [gallery.length, visibleCount])
+
+  const visibleImages = gallery.slice(0, visibleCount)
+  const idleImages = gallery.slice(visibleCount, idlePrefetchEnd)
+
   return <>
     <section className="story-gallery content-block" aria-label={`${title} gallery`}>
-      <div className="story-gallery-grid">{gallery.map((image, index) => <button className={`story-gallery-item${image.orientation === 'landscape' ? ' is-landscape' : ''}`} type="button" onClick={(event) => open(index, event)} aria-label={`Open image ${index + 1} of ${gallery.length}: ${image.alt}`} aria-haspopup="dialog" key={image.base}><SmartImage image={image} loading="lazy" decoding="async" /></button>)}</div>
+      <div className="story-gallery-grid">{visibleImages.map((image, index) => <button className={`story-gallery-item${image.orientation === 'landscape' ? ' is-landscape' : ''}`} type="button" onClick={(event) => open(index, event)} aria-label={`Open image ${index + 1} of ${gallery.length}: ${image.alt}`} aria-haspopup="dialog" key={image.base}><SmartImage image={image} loading="lazy" decoding="async" /></button>)}</div>
+      {visibleCount < gallery.length && <div className="story-gallery-load-sentinel" ref={loadMoreRef} aria-hidden="true" />}
+      {idleImages.length > 0 && <div className="story-gallery-idle-prefetch" aria-hidden="true">
+        {idleImages.map((image) => <SmartImage image={image} loading="eager" decoding="async" key={image.base} />)}
+      </div>}
     </section>
 
     {activeIndex !== null && <div className="story-lightbox" role="dialog" aria-modal="true" aria-label={`${title} image viewer`} onMouseDown={(event) => event.target === event.currentTarget && close()}>
