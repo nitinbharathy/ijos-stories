@@ -154,9 +154,9 @@ function joelleAlt(source) {
 }
 
 function pawanAlt(source) {
-  if (source.includes('/Day 1/')) return 'Jaspreet celebrating her Maiyyan and Mehendi with family'
-  if (source.includes('/Day 2 Sangeeth/')) return 'Pawan and Jaspreet celebrating with family during their Sangeet'
-  if (source.includes('/Day 4 reception/')) return 'Pawan and Jaspreet celebrating at their Orchard Hotel wedding reception'
+  if (source.includes('/01-maiyyan-mehendi/')) return 'Jaspreet celebrating her Maiyyan and Mehendi with family'
+  if (source.includes('/02-sangeet/')) return 'Pawan and Jaspreet celebrating with family during their Sangeet'
+  if (source.includes('/04-reception/')) return 'Pawan and Jaspreet celebrating at their Orchard Hotel wedding reception'
 
   const number = Number(source.match(/DSC(\d+)/)?.[1] || 0)
   if (number <= 4293) return 'Jaspreet preparing in her red bridal attire before the Sikh wedding ceremony'
@@ -191,12 +191,14 @@ async function buildFixedGroup(folder, destination, alts, roles) {
   return Promise.all(sources.map((file, index) => createEntry(`${folder}/${file}`, destination, alts[index], roles)))
 }
 
-async function buildStoryGroup(folder, destination, altForSource, role) {
+async function buildStoryGroup(folder, destination, altForSource, role, chapterMap = {}) {
   const files = await collectImages(path.join(inputRoot, folder))
   return Promise.all(files.map((file) => {
     const source = `${folder}/${file}`
-    const chapter = file.includes('/') ? file.split('/')[0] : undefined
-    const chapterSlug = chapter ? slugify(chapter) : null
+    const sourceChapter = file.includes('/') ? file.split('/')[0] : undefined
+    const chapterConfig = sourceChapter ? chapterMap[sourceChapter] : undefined
+    const chapter = chapterConfig?.label || sourceChapter
+    const chapterSlug = chapterConfig?.output || (chapter ? slugify(chapter) : null)
     const imageDestination = chapterSlug ? `${destination}/${chapterSlug}` : destination
     const description = altForSource(source)
     const alt = typeof description === 'string' ? description : description.alt
@@ -209,13 +211,18 @@ async function buildStoryGroup(folder, destination, altForSource, role) {
 }
 
 const [hero, weddingDay, preWedding, proposal, ameliaBrandon, pawanJaspreet, joelleWilson] = await Promise.all([
-  buildFixedGroup('1 Header', 'hero', headerAlts, ['home-hero']),
-  buildFixedGroup('3 Actual Day Carousel', 'galleries/wedding-day', actualDayAlts, ['wedding-day-carousel']),
-  buildFixedGroup('4 Pre Wedding shoot Carousel', 'galleries/pre-wedding', preWeddingAlts, ['pre-wedding-carousel']),
-  buildFixedGroup('5 Proposal Carousel', 'galleries/proposal', proposalAlts, ['proposal-carousel']),
-  buildStoryGroup('Story - Amelia and Brandon', 'stories/amelia-brandon', ameliaAlt, 'amelia-brandon-story'),
-  buildStoryGroup('Story - Jaspreet and Pawan', 'stories/pawan-jaspreet', pawanAlt, 'pawan-jaspreet-story'),
-  buildStoryGroup('Story - Joelle and Wilson', 'stories/joelle-wilson', (source) => ({
+  buildFixedGroup('homepage/hero', 'hero', headerAlts, ['home-hero']),
+  buildFixedGroup('services/wedding-day/gallery', 'galleries/wedding-day', actualDayAlts, ['wedding-day-carousel']),
+  buildFixedGroup('services/pre-wedding/gallery', 'galleries/pre-wedding', preWeddingAlts, ['pre-wedding-carousel']),
+  buildFixedGroup('services/proposal/gallery', 'galleries/proposal', proposalAlts, ['proposal-carousel']),
+  buildStoryGroup('stories/amelia-and-brandon', 'stories/amelia-brandon', ameliaAlt, 'amelia-brandon-story'),
+  buildStoryGroup('stories/pawan-and-jaspreet', 'stories/pawan-jaspreet', pawanAlt, 'pawan-jaspreet-story', {
+    '01-maiyyan-mehendi': { label: 'Day 1', output: 'day-1' },
+    '02-sangeet': { label: 'Day 2 Sangeeth', output: 'day-2-sangeeth' },
+    '03-wedding-and-portraits': { label: 'Day 3 wedding and post wedding shoot', output: 'day-3-wedding-and-post-wedding-shoot' },
+    '04-reception': { label: 'Day 4 reception', output: 'day-4-reception' },
+  }),
+  buildStoryGroup('stories/joelle-and-wilson', 'stories/joelle-wilson', (source) => ({
     alt: joelleAlt(source),
     baseLabel: joelleBaseAlt(source),
   }), 'joelle-wilson-story'),
@@ -225,7 +232,7 @@ const heroOrder = ['dsc4293', 'dsc3540m', 'victoriaandseancatholicweddingsg-63']
 hero.sort((a, b) => heroOrder.indexOf(a.id) - heroOrder.indexOf(b.id))
 
 const photographer = await createEntry(
-  '2 madhu.JPG',
+  'homepage/about/2 madhu.JPG',
   'people',
   'Madhu, founder and lead photographer of ijós Stories, seated with a cup',
   ['about-photographer'],

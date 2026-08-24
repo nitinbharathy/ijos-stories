@@ -3,7 +3,7 @@
   "photoCount": 480,
   "photos": [
     {
-      "source": "1 Header/_DSC4293.jpg",
+      "source": "homepage/hero/_DSC4293.jpg",
       "base": "hero/joelle-and-wilson-holding-hands-as-they-enter-their-wedding-dsc4293",
       "include": true,
       "roles": [
@@ -11,7 +11,7 @@
       ]
     },
     {
-      "source": "1 Header/_DSC3540m.jpg",
+      "source": "homepage/hero/_DSC3540m.jpg",
       "base": "hero/newlyweds-in-chinese-wedding-attire-surrounded-by-motion-on-a-dsc3540m",
       "include": true,
       "roles": [
@@ -19,7 +19,7 @@
       ]
     },
     {
-      "source": "1 Header/VictoriaandSeanCatholicweddingSG_63.JPG",
+      "source": "homepage/hero/VictoriaandSeanCatholicweddingSG_63.JPG",
       "base": "hero/victoria-and-sean-holding-hands-during-their-catholic-wedding-victoriaandseancatholicweddingsg-63",
       "include": true,
       "roles": [
@@ -27,7 +27,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/_DSC3343m.jpg",
+      "source": "services/wedding-day/gallery/_DSC3343m.jpg",
       "base": "galleries/wedding-day/newlyweds-walking-outdoors-in-chinese-wedding-attire-dsc3343m",
       "include": true,
       "roles": [
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/_DSC3430.jpg",
+      "source": "services/wedding-day/gallery/_DSC3430.jpg",
       "base": "galleries/wedding-day/bride-laughing-while-holding-a-red-fan-during-her-wedding-dsc3430",
       "include": true,
       "roles": [
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/_DSC3447m.jpg",
+      "source": "services/wedding-day/gallery/_DSC3447m.jpg",
       "base": "galleries/wedding-day/newlyweds-walking-between-applauding-guests-after-their-ceremony-dsc3447m",
       "include": true,
       "roles": [
@@ -51,7 +51,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/_DSC3658.jpg",
+      "source": "services/wedding-day/gallery/_DSC3658.jpg",
       "base": "galleries/wedding-day/groom-embracing-the-bride-during-an-outdoor-wedding-portrait-dsc3658",
       "include": true,
       "roles": [
@@ -59,7 +59,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/_DSC3693.jpg",
+      "source": "services/wedding-day/gallery/_DSC3693.jpg",
       "base": "galleries/wedding-day/newlyweds-sharing-tea-beneath-a-happy-wedding-sign-dsc3693",
       "include": true,
       "roles": [
@@ -67,7 +67,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/_DSC4121.jpg",
+      "source": "services/wedding-day/gallery/_DSC4121.jpg",
       "base": "galleries/wedding-day/bride-walking-through-a-warmly-lit-corridor-with-the-groom-dsc4121",
       "include": true,
       "roles": [
@@ -75,7 +75,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/_DSC4665.jpg",
+      "source": "services/wedding-day/gallery/_DSC4665.jpg",
       "base": "galleries/wedding-day/newlyweds-dancing-together-in-front-of-their-reception-flowers-dsc4665",
       "include": true,
       "roles": [
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/_DSC7149.jpg",
+      "source": "services/wedding-day/gallery/_DSC7149.jpg",
       "base": "galleries/wedding-day/groom-reading-a-note-during-wedding-door-games-dsc7149",
       "include": true,
       "roles": [
@@ -91,7 +91,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/_DSC7759.jpg",
+      "source": "services/wedding-day/gallery/_DSC7759.jpg",
       "base": "galleries/wedding-day/amelia-and-brandon-smiling-at-each-other-during-their-church-dsc7759",
       "include": true,
       "roles": [
@@ -99,7 +99,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/_DSC8100.jpg",
+      "source": "services/wedding-day/gallery/_DSC8100.jpg",
       "base": "galleries/wedding-day/bride-and-groom-holding-hands-during-their-wedding-ceremony-dsc8100",
       "include": true,
       "roles": [
@@ -107,7 +107,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/_DSC8657.jpg",
+      "source": "services/wedding-day/gallery/_DSC8657.jpg",
       "base": "galleries/wedding-day/newlyweds-posing-with-their-wedding-party-on-garden-steps-dsc8657",
       "include": true,
       "roles": [
@@ -115,7 +115,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/_DSC8775.jpg",
+      "source": "services/wedding-day/gallery/_DSC8775.jpg",
       "base": "galleries/wedding-day/newlyweds-celebrating-as-friends-gather-around-them-outdoors-dsc8775",
       "include": true,
       "roles": [
@@ -123,7 +123,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/_DSC9721(1).jpg",
+      "source": "services/wedding-day/gallery/_DSC9721(1).jpg",
       "base": "galleries/wedding-day/sikh-groom-kissing-the-bride-on-the-forehead-dsc9721-1",
       "include": true,
       "roles": [
@@ -131,7 +131,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/_DSC9776(1).jpg",
+      "source": "services/wedding-day/gallery/_DSC9776(1).jpg",
       "base": "galleries/wedding-day/sikh-bride-twirling-in-her-embroidered-red-wedding-dress-dsc9776-1",
       "include": true,
       "roles": [
@@ -139,7 +139,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/_DSC9924(1).jpg",
+      "source": "services/wedding-day/gallery/_DSC9924(1).jpg",
       "base": "galleries/wedding-day/sikh-newlyweds-seated-beneath-a-large-tree-by-the-water-dsc9924-1",
       "include": true,
       "roles": [
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/2VictoriaandSeanCatholicweddingSG_38.JPG",
+      "source": "services/wedding-day/gallery/2VictoriaandSeanCatholicweddingSG_38.JPG",
       "base": "galleries/wedding-day/victoria-and-sean-standing-outside-the-church-of-st-teresa-2victoriaandseancatholicweddingsg-38",
       "include": true,
       "roles": [
@@ -155,7 +155,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/DSC01477.jpg",
+      "source": "services/wedding-day/gallery/DSC01477.jpg",
       "base": "galleries/wedding-day/bride-smiling-as-she-displays-the-mehndi-on-both-hands-dsc01477",
       "include": true,
       "roles": [
@@ -163,7 +163,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/DSC01867-Edit.jpg",
+      "source": "services/wedding-day/gallery/DSC01867-Edit.jpg",
       "base": "galleries/wedding-day/bride-laughing-during-her-joyful-haldi-ceremony-dsc01867-edit",
       "include": true,
       "roles": [
@@ -171,7 +171,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/DSC01982.jpg",
+      "source": "services/wedding-day/gallery/DSC01982.jpg",
       "base": "galleries/wedding-day/bride-kissing-the-groom-on-the-cheek-during-their-sangeet-dsc01982",
       "include": true,
       "roles": [
@@ -179,7 +179,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/DSC04892.JPG",
+      "source": "services/wedding-day/gallery/DSC04892.JPG",
       "base": "galleries/wedding-day/wedding-stationery-arranged-on-a-reception-table-dsc04892",
       "include": true,
       "roles": [
@@ -187,7 +187,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/DSC05099.JPG",
+      "source": "services/wedding-day/gallery/DSC05099.JPG",
       "base": "galleries/wedding-day/mother-helping-a-bride-prepare-before-the-wedding-ceremony-dsc05099",
       "include": true,
       "roles": [
@@ -195,7 +195,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/DSC05163.jpg",
+      "source": "services/wedding-day/gallery/DSC05163.jpg",
       "base": "galleries/wedding-day/close-view-of-hands-signing-a-wedding-certificate-dsc05163",
       "include": true,
       "roles": [
@@ -203,7 +203,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/DSC05237.jpg",
+      "source": "services/wedding-day/gallery/DSC05237.jpg",
       "base": "galleries/wedding-day/sikh-newlyweds-walking-through-a-bright-white-colonnade-dsc05237",
       "include": true,
       "roles": [
@@ -211,7 +211,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/DSC05327.JPG",
+      "source": "services/wedding-day/gallery/DSC05327.JPG",
       "base": "galleries/wedding-day/close-detail-of-a-couple-holding-hands-in-wedding-attire-dsc05327",
       "include": true,
       "roles": [
@@ -219,7 +219,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/DSC05331.jpg",
+      "source": "services/wedding-day/gallery/DSC05331.jpg",
       "base": "galleries/wedding-day/sikh-newlyweds-facing-each-other-beneath-white-arches-dsc05331",
       "include": true,
       "roles": [
@@ -227,7 +227,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/DSC05814.jpg",
+      "source": "services/wedding-day/gallery/DSC05814.jpg",
       "base": "galleries/wedding-day/bride-embracing-a-family-member-after-her-wedding-ceremony-dsc05814",
       "include": true,
       "roles": [
@@ -235,7 +235,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/DSC05824.JPG",
+      "source": "services/wedding-day/gallery/DSC05824.JPG",
       "base": "galleries/wedding-day/bride-approaching-the-seated-groom-during-their-reception-dsc05824",
       "include": true,
       "roles": [
@@ -243,7 +243,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/DSC05916-2.jpg",
+      "source": "services/wedding-day/gallery/DSC05916-2.jpg",
       "base": "galleries/wedding-day/black-and-white-portrait-of-a-bride-looking-through-a-car-window-dsc05916-2",
       "include": true,
       "roles": [
@@ -251,7 +251,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/DSC05994.JPG",
+      "source": "services/wedding-day/gallery/DSC05994.JPG",
       "base": "galleries/wedding-day/champagne-being-poured-into-a-tower-of-glasses-at-a-wedding-dsc05994",
       "include": true,
       "roles": [
@@ -259,7 +259,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/DSC06015.jpg",
+      "source": "services/wedding-day/gallery/DSC06015.jpg",
       "base": "galleries/wedding-day/sikh-newlyweds-touching-foreheads-in-an-intimate-portrait-dsc06015",
       "include": true,
       "roles": [
@@ -267,7 +267,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/DSC06182.jpg",
+      "source": "services/wedding-day/gallery/DSC06182.jpg",
       "base": "galleries/wedding-day/sikh-newlyweds-holding-hands-on-stone-steps-dsc06182",
       "include": true,
       "roles": [
@@ -275,7 +275,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/DSC06208.JPG",
+      "source": "services/wedding-day/gallery/DSC06208.JPG",
       "base": "galleries/wedding-day/bride-smiling-during-her-wedding-reception-dsc06208",
       "include": true,
       "roles": [
@@ -283,7 +283,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/DSC06319.jpg",
+      "source": "services/wedding-day/gallery/DSC06319.jpg",
       "base": "galleries/wedding-day/sikh-bride-twirling-beneath-a-white-colonnade-dsc06319",
       "include": true,
       "roles": [
@@ -291,7 +291,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/DSC06862.jpg",
+      "source": "services/wedding-day/gallery/DSC06862.jpg",
       "base": "galleries/wedding-day/sikh-newlyweds-sharing-a-quiet-portrait-in-the-evening-sun-dsc06862",
       "include": true,
       "roles": [
@@ -299,7 +299,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/DSC06918.jpg",
+      "source": "services/wedding-day/gallery/DSC06918.jpg",
       "base": "galleries/wedding-day/sikh-bride-photographed-alone-in-her-red-wedding-dress-at-dusk-dsc06918",
       "include": true,
       "roles": [
@@ -307,7 +307,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/DSC06925.jpg",
+      "source": "services/wedding-day/gallery/DSC06925.jpg",
       "base": "galleries/wedding-day/sikh-newlyweds-standing-together-in-a-shadowed-garden-dsc06925",
       "include": true,
       "roles": [
@@ -315,7 +315,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/DSC06930.jpg",
+      "source": "services/wedding-day/gallery/DSC06930.jpg",
       "base": "galleries/wedding-day/backlit-portrait-of-a-sikh-bride-and-groom-outdoors-dsc06930",
       "include": true,
       "roles": [
@@ -323,7 +323,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/DSC08992.jpg",
+      "source": "services/wedding-day/gallery/DSC08992.jpg",
       "base": "galleries/wedding-day/bride-laughing-as-family-apply-haldi-during-her-ceremony-dsc08992",
       "include": true,
       "roles": [
@@ -331,7 +331,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/VictoriaandSeanCatholicweddingSG_1.JPG",
+      "source": "services/wedding-day/gallery/VictoriaandSeanCatholicweddingSG_1.JPG",
       "base": "galleries/wedding-day/victoria-and-sean-s-wedding-stationery-with-floral-details-victoriaandseancatholicweddingsg-1",
       "include": true,
       "roles": [
@@ -339,7 +339,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/VictoriaandSeanCatholicweddingSG_20.JPG",
+      "source": "services/wedding-day/gallery/VictoriaandSeanCatholicweddingSG_20.JPG",
       "base": "galleries/wedding-day/sean-gently-touching-victoria-s-veil-before-their-ceremony-victoriaandseancatholicweddingsg-20",
       "include": true,
       "roles": [
@@ -347,7 +347,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/VictoriaandSeanCatholicweddingSG_23.JPG",
+      "source": "services/wedding-day/gallery/VictoriaandSeanCatholicweddingSG_23.JPG",
       "base": "galleries/wedding-day/victoria-and-sean-kissing-in-the-aisle-of-the-church-of-st-victoriaandseancatholicweddingsg-23",
       "include": true,
       "roles": [
@@ -355,7 +355,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/VictoriaandSeanCatholicweddingSG_27.JPG",
+      "source": "services/wedding-day/gallery/VictoriaandSeanCatholicweddingSG_27.JPG",
       "base": "galleries/wedding-day/black-and-white-close-portrait-of-victoria-and-sean-behind-her-victoriaandseancatholicweddingsg-27",
       "include": true,
       "roles": [
@@ -363,7 +363,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/VictoriaandSeanCatholicweddingSG_42.JPG",
+      "source": "services/wedding-day/gallery/VictoriaandSeanCatholicweddingSG_42.JPG",
       "base": "galleries/wedding-day/the-aisle-and-altar-inside-the-church-of-st-teresa-victoriaandseancatholicweddingsg-42",
       "include": true,
       "roles": [
@@ -371,7 +371,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/VictoriaandSeanCatholicweddingSG_59.JPG",
+      "source": "services/wedding-day/gallery/VictoriaandSeanCatholicweddingSG_59.JPG",
       "base": "galleries/wedding-day/victoria-smiling-at-sean-through-her-wedding-veil-victoriaandseancatholicweddingsg-59",
       "include": true,
       "roles": [
@@ -379,7 +379,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/VictoriaandSeanCatholicweddingSG_66.JPG",
+      "source": "services/wedding-day/gallery/VictoriaandSeanCatholicweddingSG_66.JPG",
       "base": "galleries/wedding-day/victoria-and-sean-walking-down-the-church-aisle-after-their-victoriaandseancatholicweddingsg-66",
       "include": true,
       "roles": [
@@ -387,7 +387,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/VictoriaandSeanCatholicweddingSG_84.JPG",
+      "source": "services/wedding-day/gallery/VictoriaandSeanCatholicweddingSG_84.JPG",
       "base": "galleries/wedding-day/victoria-and-sean-meeting-on-a-grand-staircase-victoriaandseancatholicweddingsg-84",
       "include": true,
       "roles": [
@@ -395,7 +395,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/VictoriaandSeanCatholicweddingSG_88.JPG",
+      "source": "services/wedding-day/gallery/VictoriaandSeanCatholicweddingSG_88.JPG",
       "base": "galleries/wedding-day/black-and-white-view-of-victoria-and-sean-entering-their-victoriaandseancatholicweddingsg-88",
       "include": true,
       "roles": [
@@ -403,7 +403,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/VictoriaandSeanCatholicweddingSG_89.JPG",
+      "source": "services/wedding-day/gallery/VictoriaandSeanCatholicweddingSG_89.JPG",
       "base": "galleries/wedding-day/victoria-and-sean-entering-their-reception-with-their-parents-victoriaandseancatholicweddingsg-89",
       "include": true,
       "roles": [
@@ -411,7 +411,7 @@
       ]
     },
     {
-      "source": "3 Actual Day Carousel/VictoriaandSeanCatholicweddingSG_98.JPG",
+      "source": "services/wedding-day/gallery/VictoriaandSeanCatholicweddingSG_98.JPG",
       "base": "galleries/wedding-day/victoria-laughing-with-guests-during-her-wedding-reception-victoriaandseancatholicweddingsg-98",
       "include": true,
       "roles": [
@@ -419,7 +419,7 @@
       ]
     },
     {
-      "source": "4 Pre Wedding shoot Carousel/_DSC1492.JPG",
+      "source": "services/pre-wedding/gallery/_DSC1492.JPG",
       "base": "galleries/pre-wedding/couple-raising-their-joined-hands-during-a-playful-portrait-dsc1492",
       "include": true,
       "roles": [
@@ -427,7 +427,7 @@
       ]
     },
     {
-      "source": "4 Pre Wedding shoot Carousel/_DSC1617.JPG",
+      "source": "services/pre-wedding/gallery/_DSC1617.JPG",
       "base": "galleries/pre-wedding/close-view-of-a-couple-holding-hands-with-an-engagement-ring-dsc1617",
       "include": true,
       "roles": [
@@ -435,7 +435,7 @@
       ]
     },
     {
-      "source": "4 Pre Wedding shoot Carousel/_DSC1648.JPG",
+      "source": "services/pre-wedding/gallery/_DSC1648.JPG",
       "base": "galleries/pre-wedding/couple-walking-together-in-formal-shoes-during-a-portrait-dsc1648",
       "include": true,
       "roles": [
@@ -443,7 +443,7 @@
       ]
     },
     {
-      "source": "4 Pre Wedding shoot Carousel/_DSC1682.JPG",
+      "source": "services/pre-wedding/gallery/_DSC1682.JPG",
       "base": "galleries/pre-wedding/couple-moving-together-through-a-bright-city-colonnade-dsc1682",
       "include": true,
       "roles": [
@@ -451,7 +451,7 @@
       ]
     },
     {
-      "source": "4 Pre Wedding shoot Carousel/_DSC1743.JPG",
+      "source": "services/pre-wedding/gallery/_DSC1743.JPG",
       "base": "galleries/pre-wedding/bride-posing-with-a-bouquet-beside-a-stone-column-dsc1743",
       "include": true,
       "roles": [
@@ -459,7 +459,7 @@
       ]
     },
     {
-      "source": "4 Pre Wedding shoot Carousel/_DSC1795.JPG",
+      "source": "services/pre-wedding/gallery/_DSC1795.JPG",
       "base": "galleries/pre-wedding/couple-sharing-a-playful-moment-at-a-bar-dsc1795",
       "include": true,
       "roles": [
@@ -467,7 +467,7 @@
       ]
     },
     {
-      "source": "4 Pre Wedding shoot Carousel/_DSC3945.jpg",
+      "source": "services/pre-wedding/gallery/_DSC3945.jpg",
       "base": "galleries/pre-wedding/couple-sharing-a-quiet-outdoor-portrait-surrounded-by-greenery-dsc3945",
       "include": true,
       "roles": [
@@ -475,7 +475,7 @@
       ]
     },
     {
-      "source": "4 Pre Wedding shoot Carousel/_DSC3971.jpg",
+      "source": "services/pre-wedding/gallery/_DSC3971.jpg",
       "base": "galleries/pre-wedding/close-portrait-of-a-couple-kissing-in-soft-natural-light-dsc3971",
       "include": true,
       "roles": [
@@ -483,7 +483,7 @@
       ]
     },
     {
-      "source": "4 Pre Wedding shoot Carousel/_DSC8615.jpg",
+      "source": "services/pre-wedding/gallery/_DSC8615.jpg",
       "base": "galleries/pre-wedding/newlyweds-posing-together-on-garden-steps-dsc8615",
       "include": true,
       "roles": [
@@ -491,7 +491,7 @@
       ]
     },
     {
-      "source": "4 Pre Wedding shoot Carousel/_DSC14252.JPG",
+      "source": "services/pre-wedding/gallery/_DSC14252.JPG",
       "base": "galleries/pre-wedding/black-and-white-motion-portrait-of-a-couple-embracing-dsc14252",
       "include": true,
       "roles": [
@@ -499,7 +499,7 @@
       ]
     },
     {
-      "source": "4 Pre Wedding shoot Carousel/_DSC15322.JPG",
+      "source": "services/pre-wedding/gallery/_DSC15322.JPG",
       "base": "galleries/pre-wedding/intimate-black-and-white-silhouette-of-a-couple-about-to-kiss-dsc15322",
       "include": true,
       "roles": [
@@ -507,7 +507,7 @@
       ]
     },
     {
-      "source": "4 Pre Wedding shoot Carousel/_DSC16032.JPG",
+      "source": "services/pre-wedding/gallery/_DSC16032.JPG",
       "base": "galleries/pre-wedding/couple-posing-together-against-a-stone-wall-dsc16032",
       "include": true,
       "roles": [
@@ -515,7 +515,7 @@
       ]
     },
     {
-      "source": "4 Pre Wedding shoot Carousel/_DSC16112.JPG",
+      "source": "services/pre-wedding/gallery/_DSC16112.JPG",
       "base": "galleries/pre-wedding/couple-exchanging-a-playful-look-during-their-portrait-session-dsc16112",
       "include": true,
       "roles": [
@@ -523,7 +523,7 @@
       ]
     },
     {
-      "source": "4 Pre Wedding shoot Carousel/_DSC16782.JPG",
+      "source": "services/pre-wedding/gallery/_DSC16782.JPG",
       "base": "galleries/pre-wedding/couple-walking-together-through-a-bright-colonnade-dsc16782",
       "include": true,
       "roles": [
@@ -531,7 +531,7 @@
       ]
     },
     {
-      "source": "4 Pre Wedding shoot Carousel/_DSC18802.JPG",
+      "source": "services/pre-wedding/gallery/_DSC18802.JPG",
       "base": "galleries/pre-wedding/couple-raising-their-drinks-during-a-warm-bar-portrait-dsc18802",
       "include": true,
       "roles": [
@@ -539,7 +539,7 @@
       ]
     },
     {
-      "source": "4 Pre Wedding shoot Carousel/_DSC19202.JPG",
+      "source": "services/pre-wedding/gallery/_DSC19202.JPG",
       "base": "galleries/pre-wedding/couple-kissing-inside-a-warmly-lit-elevator-dsc19202",
       "include": true,
       "roles": [
@@ -547,7 +547,7 @@
       ]
     },
     {
-      "source": "4 Pre Wedding shoot Carousel/_DSC37692.jpg",
+      "source": "services/pre-wedding/gallery/_DSC37692.jpg",
       "base": "galleries/pre-wedding/couple-walking-together-through-a-sunlit-garden-dsc37692",
       "include": true,
       "roles": [
@@ -555,7 +555,7 @@
       ]
     },
     {
-      "source": "5 Proposal Carousel/DSC01029.JPG",
+      "source": "services/proposal/gallery/DSC01029.JPG",
       "base": "galleries/proposal/couple-embracing-immediately-after-a-garden-proposal-beneath-dsc01029",
       "include": true,
       "roles": [
@@ -563,7 +563,7 @@
       ]
     },
     {
-      "source": "5 Proposal Carousel/DSC01061.JPG",
+      "source": "services/proposal/gallery/DSC01061.JPG",
       "base": "galleries/proposal/newly-engaged-couple-holding-hands-with-the-engagement-ring-in-dsc01061",
       "include": true,
       "roles": [
@@ -571,7 +571,7 @@
       ]
     },
     {
-      "source": "2 madhu.JPG",
+      "source": "homepage/about/2 madhu.JPG",
       "base": "people/madhu-founder-and-lead-photographer-of-ijos-stories-seated-with-2-madhu",
       "include": true,
       "roles": [
@@ -579,7 +579,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC6815.jpg",
+      "source": "stories/amelia-and-brandon/_DSC6815.jpg",
       "base": "stories/amelia-brandon/amelia-getting-ready-with-family-before-her-wedding-dsc6815",
       "include": true,
       "roles": [
@@ -588,7 +588,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC6824.jpg",
+      "source": "stories/amelia-and-brandon/_DSC6824.jpg",
       "base": "stories/amelia-brandon/amelia-getting-ready-with-family-before-her-wedding-dsc6824",
       "include": true,
       "roles": [
@@ -597,7 +597,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC6836.jpg",
+      "source": "stories/amelia-and-brandon/_DSC6836.jpg",
       "base": "stories/amelia-brandon/amelia-getting-ready-with-family-before-her-wedding-dsc6836",
       "include": true,
       "roles": [
@@ -606,7 +606,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC6840.jpg",
+      "source": "stories/amelia-and-brandon/_DSC6840.jpg",
       "base": "stories/amelia-brandon/amelia-getting-ready-with-family-before-her-wedding-dsc6840",
       "include": true,
       "roles": [
@@ -615,7 +615,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC6857.jpg",
+      "source": "stories/amelia-and-brandon/_DSC6857.jpg",
       "base": "stories/amelia-brandon/amelia-getting-ready-with-family-before-her-wedding-dsc6857",
       "include": true,
       "roles": [
@@ -624,7 +624,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC6903.jpg",
+      "source": "stories/amelia-and-brandon/_DSC6903.jpg",
       "base": "stories/amelia-brandon/amelia-getting-ready-with-family-before-her-wedding-dsc6903",
       "include": true,
       "roles": [
@@ -633,7 +633,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC6911.jpg",
+      "source": "stories/amelia-and-brandon/_DSC6911.jpg",
       "base": "stories/amelia-brandon/amelia-getting-ready-with-family-before-her-wedding-dsc6911",
       "include": true,
       "roles": [
@@ -642,7 +642,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC6927.jpg",
+      "source": "stories/amelia-and-brandon/_DSC6927.jpg",
       "base": "stories/amelia-brandon/amelia-getting-ready-with-family-before-her-wedding-dsc6927",
       "include": true,
       "roles": [
@@ -651,7 +651,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC6947.jpg",
+      "source": "stories/amelia-and-brandon/_DSC6947.jpg",
       "base": "stories/amelia-brandon/amelia-getting-ready-with-family-before-her-wedding-dsc6947",
       "include": true,
       "roles": [
@@ -660,7 +660,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC6978.jpg",
+      "source": "stories/amelia-and-brandon/_DSC6978.jpg",
       "base": "stories/amelia-brandon/amelia-getting-ready-with-family-before-her-wedding-dsc6978",
       "include": true,
       "roles": [
@@ -669,7 +669,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7045.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7045.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-sharing-a-joyful-first-look-before-their-dsc7045",
       "include": true,
       "roles": [
@@ -678,7 +678,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7070.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7070.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-sharing-a-joyful-first-look-before-their-dsc7070",
       "include": true,
       "roles": [
@@ -687,7 +687,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7078.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7078.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-sharing-a-joyful-first-look-before-their-dsc7078",
       "include": true,
       "roles": [
@@ -696,7 +696,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7149.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7149.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-sharing-a-joyful-first-look-before-their-dsc7149",
       "include": true,
       "roles": [
@@ -705,7 +705,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7166.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7166.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-sharing-a-joyful-first-look-before-their-dsc7166",
       "include": true,
       "roles": [
@@ -714,7 +714,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7176.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7176.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-sharing-a-joyful-first-look-before-their-dsc7176",
       "include": true,
       "roles": [
@@ -723,7 +723,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7198.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7198.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-sharing-a-joyful-first-look-before-their-dsc7198",
       "include": true,
       "roles": [
@@ -732,7 +732,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7218.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7218.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-sharing-a-joyful-first-look-before-their-dsc7218",
       "include": true,
       "roles": [
@@ -741,7 +741,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7219.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7219.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-sharing-a-joyful-first-look-before-their-dsc7219",
       "include": true,
       "roles": [
@@ -750,7 +750,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7227.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7227.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-sharing-a-joyful-first-look-before-their-dsc7227",
       "include": true,
       "roles": [
@@ -759,7 +759,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7238.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7238.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-sharing-a-joyful-first-look-before-their-dsc7238",
       "include": true,
       "roles": [
@@ -768,7 +768,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7253.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7253.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-sharing-a-joyful-first-look-before-their-dsc7253",
       "include": true,
       "roles": [
@@ -777,7 +777,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7264.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7264.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-sharing-a-joyful-first-look-before-their-dsc7264",
       "include": true,
       "roles": [
@@ -786,7 +786,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7287.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7287.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-sharing-a-joyful-first-look-before-their-dsc7287",
       "include": true,
       "roles": [
@@ -795,7 +795,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7345.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7345.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-celebrating-a-family-wedding-tradition-dsc7345",
       "include": true,
       "roles": [
@@ -804,7 +804,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7371.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7371.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-celebrating-a-family-wedding-tradition-dsc7371",
       "include": true,
       "roles": [
@@ -813,7 +813,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7411.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7411.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-celebrating-a-family-wedding-tradition-dsc7411",
       "include": true,
       "roles": [
@@ -822,7 +822,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7415.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7415.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-celebrating-a-family-wedding-tradition-dsc7415",
       "include": true,
       "roles": [
@@ -831,7 +831,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7520.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7520.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-celebrating-a-family-wedding-tradition-dsc7520",
       "include": true,
       "roles": [
@@ -840,7 +840,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7575.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7575.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-celebrating-a-family-wedding-tradition-dsc7575",
       "include": true,
       "roles": [
@@ -849,7 +849,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7752.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7752.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc7752",
       "include": true,
       "roles": [
@@ -858,7 +858,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7756.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7756.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc7756",
       "include": true,
       "roles": [
@@ -867,7 +867,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7759.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7759.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc7759",
       "include": true,
       "roles": [
@@ -876,7 +876,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7761.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7761.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc7761",
       "include": true,
       "roles": [
@@ -885,7 +885,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7762.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7762.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc7762",
       "include": true,
       "roles": [
@@ -894,7 +894,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7768.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7768.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc7768",
       "include": true,
       "roles": [
@@ -903,7 +903,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7769.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7769.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc7769",
       "include": true,
       "roles": [
@@ -912,7 +912,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7771.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7771.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc7771",
       "include": true,
       "roles": [
@@ -921,7 +921,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC7982.jpg",
+      "source": "stories/amelia-and-brandon/_DSC7982.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc7982",
       "include": true,
       "roles": [
@@ -930,7 +930,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8003.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8003.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc8003",
       "include": true,
       "roles": [
@@ -939,7 +939,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8018.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8018.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc8018",
       "include": true,
       "roles": [
@@ -948,7 +948,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8038.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8038.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc8038",
       "include": true,
       "roles": [
@@ -957,7 +957,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8047.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8047.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc8047",
       "include": true,
       "roles": [
@@ -966,7 +966,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8074.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8074.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc8074",
       "include": true,
       "roles": [
@@ -975,7 +975,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8094.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8094.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc8094",
       "include": true,
       "roles": [
@@ -984,7 +984,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8100.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8100.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc8100",
       "include": true,
       "roles": [
@@ -993,7 +993,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8125.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8125.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc8125",
       "include": true,
       "roles": [
@@ -1002,7 +1002,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8133.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8133.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc8133",
       "include": true,
       "roles": [
@@ -1011,7 +1011,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8145.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8145.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc8145",
       "include": true,
       "roles": [
@@ -1020,7 +1020,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8179.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8179.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc8179",
       "include": true,
       "roles": [
@@ -1029,7 +1029,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8181.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8181.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc8181",
       "include": true,
       "roles": [
@@ -1038,7 +1038,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8190.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8190.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc8190",
       "include": true,
       "roles": [
@@ -1047,7 +1047,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8213.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8213.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc8213",
       "include": true,
       "roles": [
@@ -1056,7 +1056,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8217.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8217.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc8217",
       "include": true,
       "roles": [
@@ -1065,7 +1065,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8221.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8221.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc8221",
       "include": true,
       "roles": [
@@ -1074,7 +1074,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8226.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8226.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc8226",
       "include": true,
       "roles": [
@@ -1083,7 +1083,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8229.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8229.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc8229",
       "include": true,
       "roles": [
@@ -1092,7 +1092,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8305.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8305.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc8305",
       "include": true,
       "roles": [
@@ -1101,7 +1101,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8350.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8350.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc8350",
       "include": true,
       "roles": [
@@ -1110,7 +1110,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8590.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8590.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-during-their-church-wedding-ceremony-dsc8590",
       "include": true,
       "roles": [
@@ -1119,7 +1119,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8615.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8615.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-photographed-together-in-a-tropical-garden-dsc8615",
       "include": true,
       "roles": [
@@ -1128,7 +1128,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8617.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8617.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-photographed-together-in-a-tropical-garden-dsc8617",
       "include": true,
       "roles": [
@@ -1137,7 +1137,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8619.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8619.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-photographed-together-in-a-tropical-garden-dsc8619",
       "include": true,
       "roles": [
@@ -1146,7 +1146,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8645.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8645.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-photographed-together-in-a-tropical-garden-dsc8645",
       "include": true,
       "roles": [
@@ -1155,7 +1155,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8648.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8648.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-photographed-together-in-a-tropical-garden-dsc8648",
       "include": true,
       "roles": [
@@ -1164,7 +1164,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8652.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8652.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-photographed-together-in-a-tropical-garden-dsc8652",
       "include": true,
       "roles": [
@@ -1173,7 +1173,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8655.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8655.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-photographed-together-in-a-tropical-garden-dsc8655",
       "include": true,
       "roles": [
@@ -1182,7 +1182,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8657.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8657.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-photographed-together-in-a-tropical-garden-dsc8657",
       "include": true,
       "roles": [
@@ -1191,7 +1191,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8674.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8674.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-photographed-together-in-a-tropical-garden-dsc8674",
       "include": true,
       "roles": [
@@ -1200,7 +1200,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8675.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8675.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-photographed-together-in-a-tropical-garden-dsc8675",
       "include": true,
       "roles": [
@@ -1209,7 +1209,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8707.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8707.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-photographed-together-in-a-tropical-garden-dsc8707",
       "include": true,
       "roles": [
@@ -1218,7 +1218,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8737.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8737.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-photographed-together-in-a-tropical-garden-dsc8737",
       "include": true,
       "roles": [
@@ -1227,7 +1227,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8775.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8775.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-celebrating-outdoors-with-their-wedding-party-dsc8775",
       "include": true,
       "roles": [
@@ -1236,7 +1236,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8784.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8784.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-celebrating-outdoors-with-their-wedding-party-dsc8784",
       "include": true,
       "roles": [
@@ -1245,7 +1245,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8793-Edit.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8793-Edit.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-celebrating-outdoors-with-their-wedding-party-dsc8793-edit",
       "include": true,
       "roles": [
@@ -1254,7 +1254,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8826-Edit.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8826-Edit.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-celebrating-outdoors-with-their-wedding-party-dsc8826-edit",
       "include": true,
       "roles": [
@@ -1263,7 +1263,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8852.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8852.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-sharing-a-quiet-outdoor-portrait-after-their-dsc8852",
       "include": true,
       "roles": [
@@ -1272,7 +1272,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8854.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8854.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-sharing-a-quiet-outdoor-portrait-after-their-dsc8854",
       "include": true,
       "roles": [
@@ -1281,7 +1281,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8863.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8863.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-sharing-a-quiet-outdoor-portrait-after-their-dsc8863",
       "include": true,
       "roles": [
@@ -1290,7 +1290,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8870.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8870.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-sharing-a-quiet-outdoor-portrait-after-their-dsc8870",
       "include": true,
       "roles": [
@@ -1299,7 +1299,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8878.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8878.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-sharing-a-quiet-outdoor-portrait-after-their-dsc8878",
       "include": true,
       "roles": [
@@ -1308,7 +1308,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8904.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8904.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-sharing-a-quiet-outdoor-portrait-after-their-dsc8904",
       "include": true,
       "roles": [
@@ -1317,7 +1317,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8909.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8909.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-sharing-a-quiet-outdoor-portrait-after-their-dsc8909",
       "include": true,
       "roles": [
@@ -1326,7 +1326,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/_DSC8917.jpg",
+      "source": "stories/amelia-and-brandon/_DSC8917.jpg",
       "base": "stories/amelia-brandon/amelia-and-brandon-sharing-a-quiet-outdoor-portrait-after-their-dsc8917",
       "include": true,
       "roles": [
@@ -1335,7 +1335,7 @@
       ]
     },
     {
-      "source": "Story - Amelia and Brandon/BandPhoto-10.jpg",
+      "source": "stories/amelia-and-brandon/BandPhoto-10.jpg",
       "base": "stories/amelia-brandon/musicians-performing-during-amelia-and-brandon-s-wedding-bandphoto-10",
       "include": true,
       "roles": [
@@ -1344,7 +1344,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC00586.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC00586.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc00586",
       "include": true,
       "roles": [
@@ -1353,7 +1353,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC00728.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC00728.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc00728",
       "include": true,
       "roles": [
@@ -1362,7 +1362,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC00867.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC00867.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc00867",
       "include": true,
       "roles": [
@@ -1371,7 +1371,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC01095.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC01095.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc01095",
       "include": true,
       "roles": [
@@ -1380,7 +1380,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC01202.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC01202.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc01202",
       "include": true,
       "roles": [
@@ -1389,7 +1389,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC01216.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC01216.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc01216",
       "include": true,
       "roles": [
@@ -1398,7 +1398,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC01391.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC01391.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc01391",
       "include": true,
       "roles": [
@@ -1407,7 +1407,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC01412.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC01412.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc01412",
       "include": true,
       "roles": [
@@ -1416,7 +1416,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC01477.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC01477.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc01477",
       "include": true,
       "roles": [
@@ -1425,7 +1425,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC07873.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC07873.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc07873",
       "include": true,
       "roles": [
@@ -1434,7 +1434,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC07878.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC07878.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc07878",
       "include": true,
       "roles": [
@@ -1443,7 +1443,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC07881.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC07881.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc07881",
       "include": true,
       "roles": [
@@ -1452,7 +1452,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC08186.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC08186.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc08186",
       "include": true,
       "roles": [
@@ -1461,7 +1461,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC08203.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC08203.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc08203",
       "include": true,
       "roles": [
@@ -1470,7 +1470,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC08235.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC08235.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc08235",
       "include": true,
       "roles": [
@@ -1479,7 +1479,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC08290.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC08290.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc08290",
       "include": true,
       "roles": [
@@ -1488,7 +1488,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC08299.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC08299.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc08299",
       "include": true,
       "roles": [
@@ -1497,7 +1497,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC08304.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC08304.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc08304",
       "include": true,
       "roles": [
@@ -1506,7 +1506,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC08306.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC08306.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc08306",
       "include": true,
       "roles": [
@@ -1515,7 +1515,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC08316.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC08316.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc08316",
       "include": true,
       "roles": [
@@ -1524,7 +1524,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC08657.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC08657.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc08657",
       "include": true,
       "roles": [
@@ -1533,7 +1533,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC08731.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC08731.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc08731",
       "include": true,
       "roles": [
@@ -1542,7 +1542,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC08739.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC08739.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc08739",
       "include": true,
       "roles": [
@@ -1551,7 +1551,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC08992.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC08992.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc08992",
       "include": true,
       "roles": [
@@ -1560,7 +1560,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC09668.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC09668.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc09668",
       "include": true,
       "roles": [
@@ -1569,7 +1569,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC09692.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC09692.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc09692",
       "include": true,
       "roles": [
@@ -1578,7 +1578,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC09746.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC09746.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc09746",
       "include": true,
       "roles": [
@@ -1587,7 +1587,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC09769.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC09769.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc09769",
       "include": true,
       "roles": [
@@ -1596,7 +1596,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 1/DSC09776.jpg",
+      "source": "stories/pawan-and-jaspreet/01-maiyyan-mehendi/DSC09776.jpg",
       "base": "stories/pawan-jaspreet/day-1/jaspreet-celebrating-her-maiyyan-and-mehendi-with-family-dsc09776",
       "include": true,
       "roles": [
@@ -1605,7 +1605,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC01801.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC01801.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc01801",
       "include": true,
       "roles": [
@@ -1614,7 +1614,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC01806.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC01806.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc01806",
       "include": true,
       "roles": [
@@ -1623,7 +1623,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC01811.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC01811.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc01811",
       "include": true,
       "roles": [
@@ -1632,7 +1632,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC01818.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC01818.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc01818",
       "include": true,
       "roles": [
@@ -1641,7 +1641,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC01823.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC01823.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc01823",
       "include": true,
       "roles": [
@@ -1650,7 +1650,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC01825.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC01825.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc01825",
       "include": true,
       "roles": [
@@ -1659,7 +1659,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC01831.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC01831.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc01831",
       "include": true,
       "roles": [
@@ -1668,7 +1668,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC01866.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC01866.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc01866",
       "include": true,
       "roles": [
@@ -1677,7 +1677,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC01867-Edit.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC01867-Edit.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc01867-edit",
       "include": true,
       "roles": [
@@ -1686,7 +1686,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC01867.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC01867.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc01867",
       "include": true,
       "roles": [
@@ -1695,7 +1695,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC01868.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC01868.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc01868",
       "include": true,
       "roles": [
@@ -1704,7 +1704,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC01892.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC01892.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc01892",
       "include": true,
       "roles": [
@@ -1713,7 +1713,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC01912.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC01912.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc01912",
       "include": true,
       "roles": [
@@ -1722,7 +1722,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC01928.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC01928.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc01928",
       "include": true,
       "roles": [
@@ -1731,7 +1731,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC01943.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC01943.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc01943",
       "include": true,
       "roles": [
@@ -1740,7 +1740,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC01971.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC01971.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc01971",
       "include": true,
       "roles": [
@@ -1749,7 +1749,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC01982.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC01982.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc01982",
       "include": true,
       "roles": [
@@ -1758,7 +1758,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC01989.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC01989.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc01989",
       "include": true,
       "roles": [
@@ -1767,7 +1767,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC02002.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC02002.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc02002",
       "include": true,
       "roles": [
@@ -1776,7 +1776,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC02014.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC02014.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc02014",
       "include": true,
       "roles": [
@@ -1785,7 +1785,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC02091.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC02091.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc02091",
       "include": true,
       "roles": [
@@ -1794,7 +1794,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC02100.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC02100.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc02100",
       "include": true,
       "roles": [
@@ -1803,7 +1803,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC02157.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC02157.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc02157",
       "include": true,
       "roles": [
@@ -1812,7 +1812,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC02313.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC02313.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc02313",
       "include": true,
       "roles": [
@@ -1821,7 +1821,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC02332.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC02332.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc02332",
       "include": true,
       "roles": [
@@ -1830,7 +1830,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC02383.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC02383.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc02383",
       "include": true,
       "roles": [
@@ -1839,7 +1839,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC02414.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC02414.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc02414",
       "include": true,
       "roles": [
@@ -1848,7 +1848,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC02415.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC02415.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc02415",
       "include": true,
       "roles": [
@@ -1857,7 +1857,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC02418.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC02418.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc02418",
       "include": true,
       "roles": [
@@ -1866,7 +1866,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC02419.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC02419.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc02419",
       "include": true,
       "roles": [
@@ -1875,7 +1875,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC02420.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC02420.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc02420",
       "include": true,
       "roles": [
@@ -1884,7 +1884,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC02422.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC02422.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc02422",
       "include": true,
       "roles": [
@@ -1893,7 +1893,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC02423.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC02423.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc02423",
       "include": true,
       "roles": [
@@ -1902,7 +1902,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC02425.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC02425.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc02425",
       "include": true,
       "roles": [
@@ -1911,7 +1911,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC02447.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC02447.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc02447",
       "include": true,
       "roles": [
@@ -1920,7 +1920,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC02521.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC02521.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc02521",
       "include": true,
       "roles": [
@@ -1929,7 +1929,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC02550.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC02550.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc02550",
       "include": true,
       "roles": [
@@ -1938,7 +1938,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC02779.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC02779.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc02779",
       "include": true,
       "roles": [
@@ -1947,7 +1947,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC02892.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC02892.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc02892",
       "include": true,
       "roles": [
@@ -1956,7 +1956,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC03091.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC03091.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc03091",
       "include": true,
       "roles": [
@@ -1965,7 +1965,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC03103.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC03103.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc03103",
       "include": true,
       "roles": [
@@ -1974,7 +1974,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC03208.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC03208.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc03208",
       "include": true,
       "roles": [
@@ -1983,7 +1983,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC03444.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC03444.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc03444",
       "include": true,
       "roles": [
@@ -1992,7 +1992,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 2 Sangeeth/DSC03651.jpg",
+      "source": "stories/pawan-and-jaspreet/02-sangeet/DSC03651.jpg",
       "base": "stories/pawan-jaspreet/day-2-sangeeth/pawan-and-jaspreet-celebrating-with-family-during-their-sangeet-dsc03651",
       "include": true,
       "roles": [
@@ -2001,7 +2001,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04104.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04104.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/jaspreet-preparing-in-her-red-bridal-attire-before-the-sikh-dsc04104",
       "include": true,
       "roles": [
@@ -2010,7 +2010,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04111.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04111.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/jaspreet-preparing-in-her-red-bridal-attire-before-the-sikh-dsc04111",
       "include": true,
       "roles": [
@@ -2019,7 +2019,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04119.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04119.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/jaspreet-preparing-in-her-red-bridal-attire-before-the-sikh-dsc04119",
       "include": true,
       "roles": [
@@ -2028,7 +2028,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04128.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04128.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/jaspreet-preparing-in-her-red-bridal-attire-before-the-sikh-dsc04128",
       "include": true,
       "roles": [
@@ -2037,7 +2037,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04130.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04130.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/jaspreet-preparing-in-her-red-bridal-attire-before-the-sikh-dsc04130",
       "include": true,
       "roles": [
@@ -2046,7 +2046,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04131.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04131.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/jaspreet-preparing-in-her-red-bridal-attire-before-the-sikh-dsc04131",
       "include": true,
       "roles": [
@@ -2055,7 +2055,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04133.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04133.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/jaspreet-preparing-in-her-red-bridal-attire-before-the-sikh-dsc04133",
       "include": true,
       "roles": [
@@ -2064,7 +2064,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04142.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04142.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/jaspreet-preparing-in-her-red-bridal-attire-before-the-sikh-dsc04142",
       "include": true,
       "roles": [
@@ -2073,7 +2073,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04153.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04153.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/jaspreet-preparing-in-her-red-bridal-attire-before-the-sikh-dsc04153",
       "include": true,
       "roles": [
@@ -2082,7 +2082,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04164.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04164.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/jaspreet-preparing-in-her-red-bridal-attire-before-the-sikh-dsc04164",
       "include": true,
       "roles": [
@@ -2091,7 +2091,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04166.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04166.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/jaspreet-preparing-in-her-red-bridal-attire-before-the-sikh-dsc04166",
       "include": true,
       "roles": [
@@ -2100,7 +2100,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04169.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04169.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/jaspreet-preparing-in-her-red-bridal-attire-before-the-sikh-dsc04169",
       "include": true,
       "roles": [
@@ -2109,7 +2109,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04172.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04172.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/jaspreet-preparing-in-her-red-bridal-attire-before-the-sikh-dsc04172",
       "include": true,
       "roles": [
@@ -2118,7 +2118,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04178.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04178.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/jaspreet-preparing-in-her-red-bridal-attire-before-the-sikh-dsc04178",
       "include": true,
       "roles": [
@@ -2127,7 +2127,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04185.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04185.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/jaspreet-preparing-in-her-red-bridal-attire-before-the-sikh-dsc04185",
       "include": true,
       "roles": [
@@ -2136,7 +2136,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04190.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04190.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/jaspreet-preparing-in-her-red-bridal-attire-before-the-sikh-dsc04190",
       "include": true,
       "roles": [
@@ -2145,7 +2145,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04193.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04193.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/jaspreet-preparing-in-her-red-bridal-attire-before-the-sikh-dsc04193",
       "include": true,
       "roles": [
@@ -2154,7 +2154,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04198.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04198.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/jaspreet-preparing-in-her-red-bridal-attire-before-the-sikh-dsc04198",
       "include": true,
       "roles": [
@@ -2163,7 +2163,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04199.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04199.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/jaspreet-preparing-in-her-red-bridal-attire-before-the-sikh-dsc04199",
       "include": true,
       "roles": [
@@ -2172,7 +2172,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04223.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04223.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/jaspreet-preparing-in-her-red-bridal-attire-before-the-sikh-dsc04223",
       "include": true,
       "roles": [
@@ -2181,7 +2181,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04224.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04224.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/jaspreet-preparing-in-her-red-bridal-attire-before-the-sikh-dsc04224",
       "include": true,
       "roles": [
@@ -2190,7 +2190,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04258.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04258.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/jaspreet-preparing-in-her-red-bridal-attire-before-the-sikh-dsc04258",
       "include": true,
       "roles": [
@@ -2199,7 +2199,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04281.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04281.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/jaspreet-preparing-in-her-red-bridal-attire-before-the-sikh-dsc04281",
       "include": true,
       "roles": [
@@ -2208,7 +2208,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04293.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04293.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/jaspreet-preparing-in-her-red-bridal-attire-before-the-sikh-dsc04293",
       "include": true,
       "roles": [
@@ -2217,7 +2217,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04409.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04409.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-arriving-with-family-for-his-sikh-wedding-ceremony-dsc04409",
       "include": true,
       "roles": [
@@ -2226,7 +2226,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04438.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04438.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-arriving-with-family-for-his-sikh-wedding-ceremony-dsc04438",
       "include": true,
       "roles": [
@@ -2235,7 +2235,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04454.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04454.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-arriving-with-family-for-his-sikh-wedding-ceremony-dsc04454",
       "include": true,
       "roles": [
@@ -2244,7 +2244,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04455.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04455.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-arriving-with-family-for-his-sikh-wedding-ceremony-dsc04455",
       "include": true,
       "roles": [
@@ -2253,7 +2253,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04516.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04516.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-arriving-with-family-for-his-sikh-wedding-ceremony-dsc04516",
       "include": true,
       "roles": [
@@ -2262,7 +2262,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04531.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04531.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-arriving-with-family-for-his-sikh-wedding-ceremony-dsc04531",
       "include": true,
       "roles": [
@@ -2271,7 +2271,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04626.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04626.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-arriving-with-family-for-his-sikh-wedding-ceremony-dsc04626",
       "include": true,
       "roles": [
@@ -2280,7 +2280,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04666.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04666.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-arriving-with-family-for-his-sikh-wedding-ceremony-dsc04666",
       "include": true,
       "roles": [
@@ -2289,7 +2289,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04680.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04680.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-during-their-sikh-wedding-ceremony-dsc04680",
       "include": true,
       "roles": [
@@ -2298,7 +2298,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04780.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04780.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-during-their-sikh-wedding-ceremony-dsc04780",
       "include": true,
       "roles": [
@@ -2307,7 +2307,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04788.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04788.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-during-their-sikh-wedding-ceremony-dsc04788",
       "include": true,
       "roles": [
@@ -2316,7 +2316,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04812.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04812.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-during-their-sikh-wedding-ceremony-dsc04812",
       "include": true,
       "roles": [
@@ -2325,7 +2325,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04816.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04816.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-during-their-sikh-wedding-ceremony-dsc04816",
       "include": true,
       "roles": [
@@ -2334,7 +2334,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04837.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04837.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-during-their-sikh-wedding-ceremony-dsc04837",
       "include": true,
       "roles": [
@@ -2343,7 +2343,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04855.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04855.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-during-their-sikh-wedding-ceremony-dsc04855",
       "include": true,
       "roles": [
@@ -2352,7 +2352,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04875.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04875.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-during-their-sikh-wedding-ceremony-dsc04875",
       "include": true,
       "roles": [
@@ -2361,7 +2361,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04916.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04916.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-during-their-sikh-wedding-ceremony-dsc04916",
       "include": true,
       "roles": [
@@ -2370,7 +2370,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04929.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04929.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-during-their-sikh-wedding-ceremony-dsc04929",
       "include": true,
       "roles": [
@@ -2379,7 +2379,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04931.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04931.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-during-their-sikh-wedding-ceremony-dsc04931",
       "include": true,
       "roles": [
@@ -2388,7 +2388,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC04969.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC04969.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-during-their-sikh-wedding-ceremony-dsc04969",
       "include": true,
       "roles": [
@@ -2397,7 +2397,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05017.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05017.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-during-their-sikh-wedding-ceremony-dsc05017",
       "include": true,
       "roles": [
@@ -2406,7 +2406,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05044.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05044.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-during-their-sikh-wedding-ceremony-dsc05044",
       "include": true,
       "roles": [
@@ -2415,7 +2415,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05072.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05072.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-during-their-sikh-wedding-ceremony-dsc05072",
       "include": true,
       "roles": [
@@ -2424,7 +2424,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05157.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05157.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-during-their-sikh-wedding-ceremony-dsc05157",
       "include": true,
       "roles": [
@@ -2433,7 +2433,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05160.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05160.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-during-their-sikh-wedding-ceremony-dsc05160",
       "include": true,
       "roles": [
@@ -2442,7 +2442,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05163.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05163.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-during-their-sikh-wedding-ceremony-dsc05163",
       "include": true,
       "roles": [
@@ -2451,7 +2451,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05166.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05166.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-during-their-sikh-wedding-ceremony-dsc05166",
       "include": true,
       "roles": [
@@ -2460,7 +2460,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05167.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05167.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-during-their-sikh-wedding-ceremony-dsc05167",
       "include": true,
       "roles": [
@@ -2469,7 +2469,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05178.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05178.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-during-their-sikh-wedding-ceremony-dsc05178",
       "include": true,
       "roles": [
@@ -2478,7 +2478,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05183.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05183.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-during-their-sikh-wedding-ceremony-dsc05183",
       "include": true,
       "roles": [
@@ -2487,7 +2487,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05186.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05186.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-during-their-sikh-wedding-ceremony-dsc05186",
       "include": true,
       "roles": [
@@ -2496,7 +2496,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05198.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05198.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-during-their-sikh-wedding-ceremony-dsc05198",
       "include": true,
       "roles": [
@@ -2505,7 +2505,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05211.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05211.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-during-their-sikh-wedding-ceremony-dsc05211",
       "include": true,
       "roles": [
@@ -2514,7 +2514,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05216.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05216.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-during-their-sikh-wedding-ceremony-dsc05216",
       "include": true,
       "roles": [
@@ -2523,7 +2523,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05237.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05237.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05237",
       "include": true,
       "roles": [
@@ -2532,7 +2532,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05264.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05264.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05264",
       "include": true,
       "roles": [
@@ -2541,7 +2541,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05271.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05271.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05271",
       "include": true,
       "roles": [
@@ -2550,7 +2550,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05274.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05274.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05274",
       "include": true,
       "roles": [
@@ -2559,7 +2559,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05277.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05277.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05277",
       "include": true,
       "roles": [
@@ -2568,7 +2568,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05279.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05279.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05279",
       "include": true,
       "roles": [
@@ -2577,7 +2577,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05287.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05287.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05287",
       "include": true,
       "roles": [
@@ -2586,7 +2586,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05318.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05318.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05318",
       "include": true,
       "roles": [
@@ -2595,7 +2595,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05331.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05331.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05331",
       "include": true,
       "roles": [
@@ -2604,7 +2604,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05345.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05345.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05345",
       "include": true,
       "roles": [
@@ -2613,7 +2613,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05349-2.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05349-2.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05349-2",
       "include": true,
       "roles": [
@@ -2622,7 +2622,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05349.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05349.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05349",
       "include": true,
       "roles": [
@@ -2631,7 +2631,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05351.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05351.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05351",
       "include": true,
       "roles": [
@@ -2640,7 +2640,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05354.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05354.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05354",
       "include": true,
       "roles": [
@@ -2649,7 +2649,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05801.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05801.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05801",
       "include": true,
       "roles": [
@@ -2658,7 +2658,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05808.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05808.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05808",
       "include": true,
       "roles": [
@@ -2667,7 +2667,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05814.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05814.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05814",
       "include": true,
       "roles": [
@@ -2676,7 +2676,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05819.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05819.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05819",
       "include": true,
       "roles": [
@@ -2685,7 +2685,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05824.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05824.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05824",
       "include": true,
       "roles": [
@@ -2694,7 +2694,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05827.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05827.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05827",
       "include": true,
       "roles": [
@@ -2703,7 +2703,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05833.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05833.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05833",
       "include": true,
       "roles": [
@@ -2712,7 +2712,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05836.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05836.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05836",
       "include": true,
       "roles": [
@@ -2721,7 +2721,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05840.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05840.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05840",
       "include": true,
       "roles": [
@@ -2730,7 +2730,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05851.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05851.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05851",
       "include": true,
       "roles": [
@@ -2739,7 +2739,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05853.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05853.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05853",
       "include": true,
       "roles": [
@@ -2748,7 +2748,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05866.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05866.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05866",
       "include": true,
       "roles": [
@@ -2757,7 +2757,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05868.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05868.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05868",
       "include": true,
       "roles": [
@@ -2766,7 +2766,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05870.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05870.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05870",
       "include": true,
       "roles": [
@@ -2775,7 +2775,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05888.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05888.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05888",
       "include": true,
       "roles": [
@@ -2784,7 +2784,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05916-2.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05916-2.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05916-2",
       "include": true,
       "roles": [
@@ -2793,7 +2793,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05916.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05916.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05916",
       "include": true,
       "roles": [
@@ -2802,7 +2802,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05925.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05925.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05925",
       "include": true,
       "roles": [
@@ -2811,7 +2811,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05935-2.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05935-2.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05935-2",
       "include": true,
       "roles": [
@@ -2820,7 +2820,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05935.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05935.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05935",
       "include": true,
       "roles": [
@@ -2829,7 +2829,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05965.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05965.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05965",
       "include": true,
       "roles": [
@@ -2838,7 +2838,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05967.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05967.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05967",
       "include": true,
       "roles": [
@@ -2847,7 +2847,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05974.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05974.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05974",
       "include": true,
       "roles": [
@@ -2856,7 +2856,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05979.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05979.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05979",
       "include": true,
       "roles": [
@@ -2865,7 +2865,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05984.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05984.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05984",
       "include": true,
       "roles": [
@@ -2874,7 +2874,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05985.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05985.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05985",
       "include": true,
       "roles": [
@@ -2883,7 +2883,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC05994.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC05994.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc05994",
       "include": true,
       "roles": [
@@ -2892,7 +2892,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06001.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06001.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc06001",
       "include": true,
       "roles": [
@@ -2901,7 +2901,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06006.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06006.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc06006",
       "include": true,
       "roles": [
@@ -2910,7 +2910,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06007.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06007.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc06007",
       "include": true,
       "roles": [
@@ -2919,7 +2919,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06010.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06010.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc06010",
       "include": true,
       "roles": [
@@ -2928,7 +2928,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06015.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06015.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc06015",
       "include": true,
       "roles": [
@@ -2937,7 +2937,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06019.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06019.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc06019",
       "include": true,
       "roles": [
@@ -2946,7 +2946,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06023.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06023.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc06023",
       "include": true,
       "roles": [
@@ -2955,7 +2955,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06030.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06030.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc06030",
       "include": true,
       "roles": [
@@ -2964,7 +2964,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06032.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06032.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc06032",
       "include": true,
       "roles": [
@@ -2973,7 +2973,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06053.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06053.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc06053",
       "include": true,
       "roles": [
@@ -2982,7 +2982,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06065.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06065.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc06065",
       "include": true,
       "roles": [
@@ -2991,7 +2991,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06071.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06071.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc06071",
       "include": true,
       "roles": [
@@ -3000,7 +3000,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06076.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06076.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc06076",
       "include": true,
       "roles": [
@@ -3009,7 +3009,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06091.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06091.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc06091",
       "include": true,
       "roles": [
@@ -3018,7 +3018,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06130.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06130.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc06130",
       "include": true,
       "roles": [
@@ -3027,7 +3027,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06174.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06174.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc06174",
       "include": true,
       "roles": [
@@ -3036,7 +3036,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06182.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06182.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc06182",
       "include": true,
       "roles": [
@@ -3045,7 +3045,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06208.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06208.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc06208",
       "include": true,
       "roles": [
@@ -3054,7 +3054,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06254.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06254.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc06254",
       "include": true,
       "roles": [
@@ -3063,7 +3063,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06262.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06262.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc06262",
       "include": true,
       "roles": [
@@ -3072,7 +3072,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06282.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06282.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc06282",
       "include": true,
       "roles": [
@@ -3081,7 +3081,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06309.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06309.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc06309",
       "include": true,
       "roles": [
@@ -3090,7 +3090,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06318.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06318.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc06318",
       "include": true,
       "roles": [
@@ -3099,7 +3099,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06319.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06319.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc06319",
       "include": true,
       "roles": [
@@ -3108,7 +3108,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06358.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06358.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc06358",
       "include": true,
       "roles": [
@@ -3117,7 +3117,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06362.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06362.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc06362",
       "include": true,
       "roles": [
@@ -3126,7 +3126,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06438.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06438.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-photographed-together-at-the-national-dsc06438",
       "include": true,
       "roles": [
@@ -3135,7 +3135,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06510.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06510.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-celebrating-family-traditions-after-their-dsc06510",
       "include": true,
       "roles": [
@@ -3144,7 +3144,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06522.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06522.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-celebrating-family-traditions-after-their-dsc06522",
       "include": true,
       "roles": [
@@ -3153,7 +3153,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06706.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06706.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-celebrating-family-traditions-after-their-dsc06706",
       "include": true,
       "roles": [
@@ -3162,7 +3162,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06707.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06707.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-celebrating-family-traditions-after-their-dsc06707",
       "include": true,
       "roles": [
@@ -3171,7 +3171,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06777.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06777.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-celebrating-family-traditions-after-their-dsc06777",
       "include": true,
       "roles": [
@@ -3180,7 +3180,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06856.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06856.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-sharing-a-post-wedding-portrait-at-sunset-in-dsc06856",
       "include": true,
       "roles": [
@@ -3189,7 +3189,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06858.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06858.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-sharing-a-post-wedding-portrait-at-sunset-in-dsc06858",
       "include": true,
       "roles": [
@@ -3198,7 +3198,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06862.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06862.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-sharing-a-post-wedding-portrait-at-sunset-in-dsc06862",
       "include": true,
       "roles": [
@@ -3207,7 +3207,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06873.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06873.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-sharing-a-post-wedding-portrait-at-sunset-in-dsc06873",
       "include": true,
       "roles": [
@@ -3216,7 +3216,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06880.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06880.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-sharing-a-post-wedding-portrait-at-sunset-in-dsc06880",
       "include": true,
       "roles": [
@@ -3225,7 +3225,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06882.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06882.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-sharing-a-post-wedding-portrait-at-sunset-in-dsc06882",
       "include": true,
       "roles": [
@@ -3234,7 +3234,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC06904.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC06904.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-sharing-a-post-wedding-portrait-at-sunset-in-dsc06904",
       "include": true,
       "roles": [
@@ -3243,7 +3243,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC07150.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC07150.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-sharing-a-post-wedding-portrait-at-sunset-in-dsc07150",
       "include": true,
       "roles": [
@@ -3252,7 +3252,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC07165.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC07165.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-sharing-a-post-wedding-portrait-at-sunset-in-dsc07165",
       "include": true,
       "roles": [
@@ -3261,7 +3261,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC07205.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC07205.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-sharing-a-post-wedding-portrait-at-sunset-in-dsc07205",
       "include": true,
       "roles": [
@@ -3270,7 +3270,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC07243.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC07243.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-sharing-a-post-wedding-portrait-at-sunset-in-dsc07243",
       "include": true,
       "roles": [
@@ -3279,7 +3279,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC07256.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC07256.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-sharing-a-post-wedding-portrait-at-sunset-in-dsc07256",
       "include": true,
       "roles": [
@@ -3288,7 +3288,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC07267.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC07267.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-sharing-a-post-wedding-portrait-at-sunset-in-dsc07267",
       "include": true,
       "roles": [
@@ -3297,7 +3297,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC07268.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC07268.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-sharing-a-post-wedding-portrait-at-sunset-in-dsc07268",
       "include": true,
       "roles": [
@@ -3306,7 +3306,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC07270.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC07270.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-sharing-a-post-wedding-portrait-at-sunset-in-dsc07270",
       "include": true,
       "roles": [
@@ -3315,7 +3315,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 3 wedding and post wedding shoot/DSC07276.jpg",
+      "source": "stories/pawan-and-jaspreet/03-wedding-and-portraits/DSC07276.jpg",
       "base": "stories/pawan-jaspreet/day-3-wedding-and-post-wedding-shoot/pawan-and-jaspreet-sharing-a-post-wedding-portrait-at-sunset-in-dsc07276",
       "include": true,
       "roles": [
@@ -3324,7 +3324,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08009.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08009.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08009",
       "include": true,
       "roles": [
@@ -3333,7 +3333,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08031.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08031.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08031",
       "include": true,
       "roles": [
@@ -3342,7 +3342,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08047.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08047.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08047",
       "include": true,
       "roles": [
@@ -3351,7 +3351,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08052.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08052.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08052",
       "include": true,
       "roles": [
@@ -3360,7 +3360,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08100.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08100.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08100",
       "include": true,
       "roles": [
@@ -3369,7 +3369,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08208.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08208.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08208",
       "include": true,
       "roles": [
@@ -3378,7 +3378,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08240.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08240.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08240",
       "include": true,
       "roles": [
@@ -3387,7 +3387,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08276.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08276.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08276",
       "include": true,
       "roles": [
@@ -3396,7 +3396,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08355.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08355.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08355",
       "include": true,
       "roles": [
@@ -3405,7 +3405,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08357.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08357.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08357",
       "include": true,
       "roles": [
@@ -3414,7 +3414,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08363.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08363.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08363",
       "include": true,
       "roles": [
@@ -3423,7 +3423,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08365.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08365.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08365",
       "include": true,
       "roles": [
@@ -3432,7 +3432,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08373.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08373.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08373",
       "include": true,
       "roles": [
@@ -3441,7 +3441,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08376.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08376.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08376",
       "include": true,
       "roles": [
@@ -3450,7 +3450,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08378.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08378.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08378",
       "include": true,
       "roles": [
@@ -3459,7 +3459,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08381.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08381.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08381",
       "include": true,
       "roles": [
@@ -3468,7 +3468,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08399.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08399.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08399",
       "include": true,
       "roles": [
@@ -3477,7 +3477,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08417.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08417.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08417",
       "include": true,
       "roles": [
@@ -3486,7 +3486,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08428.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08428.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08428",
       "include": true,
       "roles": [
@@ -3495,7 +3495,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08514.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08514.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08514",
       "include": true,
       "roles": [
@@ -3504,7 +3504,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08515.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08515.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08515",
       "include": true,
       "roles": [
@@ -3513,7 +3513,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08519.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08519.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08519",
       "include": true,
       "roles": [
@@ -3522,7 +3522,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08583.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08583.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08583",
       "include": true,
       "roles": [
@@ -3531,7 +3531,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08618.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08618.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08618",
       "include": true,
       "roles": [
@@ -3540,7 +3540,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08643.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08643.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08643",
       "include": true,
       "roles": [
@@ -3549,7 +3549,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08689.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08689.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08689",
       "include": true,
       "roles": [
@@ -3558,7 +3558,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08915-2.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08915-2.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08915-2",
       "include": true,
       "roles": [
@@ -3567,7 +3567,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08915.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08915.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08915",
       "include": true,
       "roles": [
@@ -3576,7 +3576,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08928.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08928.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08928",
       "include": true,
       "roles": [
@@ -3585,7 +3585,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08931.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08931.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08931",
       "include": true,
       "roles": [
@@ -3594,7 +3594,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08941.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08941.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08941",
       "include": true,
       "roles": [
@@ -3603,7 +3603,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08943.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08943.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08943",
       "include": true,
       "roles": [
@@ -3612,7 +3612,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC08944.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC08944.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc08944",
       "include": true,
       "roles": [
@@ -3621,7 +3621,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC09065.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC09065.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc09065",
       "include": true,
       "roles": [
@@ -3630,7 +3630,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC09077-2.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC09077-2.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc09077-2",
       "include": true,
       "roles": [
@@ -3639,7 +3639,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC09077.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC09077.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc09077",
       "include": true,
       "roles": [
@@ -3648,7 +3648,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC09089.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC09089.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc09089",
       "include": true,
       "roles": [
@@ -3657,7 +3657,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC09099.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC09099.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc09099",
       "include": true,
       "roles": [
@@ -3666,7 +3666,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC09107.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC09107.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc09107",
       "include": true,
       "roles": [
@@ -3675,7 +3675,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC09108-2.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC09108-2.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc09108-2",
       "include": true,
       "roles": [
@@ -3684,7 +3684,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC09108.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC09108.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc09108",
       "include": true,
       "roles": [
@@ -3693,7 +3693,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC09165.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC09165.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc09165",
       "include": true,
       "roles": [
@@ -3702,7 +3702,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC09169.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC09169.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc09169",
       "include": true,
       "roles": [
@@ -3711,7 +3711,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC09218.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC09218.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc09218",
       "include": true,
       "roles": [
@@ -3720,7 +3720,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC09268.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC09268.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc09268",
       "include": true,
       "roles": [
@@ -3729,7 +3729,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC09283.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC09283.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc09283",
       "include": true,
       "roles": [
@@ -3738,7 +3738,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC09295.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC09295.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc09295",
       "include": true,
       "roles": [
@@ -3747,7 +3747,7 @@
       ]
     },
     {
-      "source": "Story - Jaspreet and Pawan/Day 4 reception/DSC09307.jpg",
+      "source": "stories/pawan-and-jaspreet/04-reception/DSC09307.jpg",
       "base": "stories/pawan-jaspreet/day-4-reception/pawan-and-jaspreet-celebrating-at-their-orchard-hotel-wedding-dsc09307",
       "include": true,
       "roles": [
@@ -3756,7 +3756,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC2759.jpg",
+      "source": "stories/joelle-and-wilson/_DSC2759.jpg",
       "base": "stories/joelle-wilson/joelle-getting-ready-while-wilson-and-friends-take-part-in-dsc2759",
       "include": true,
       "roles": [
@@ -3765,7 +3765,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC2766.jpg",
+      "source": "stories/joelle-and-wilson/_DSC2766.jpg",
       "base": "stories/joelle-wilson/joelle-getting-ready-while-wilson-and-friends-take-part-in-dsc2766",
       "include": true,
       "roles": [
@@ -3774,7 +3774,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC2784.jpg",
+      "source": "stories/joelle-and-wilson/_DSC2784.jpg",
       "base": "stories/joelle-wilson/joelle-getting-ready-while-wilson-and-friends-take-part-in-dsc2784",
       "include": true,
       "roles": [
@@ -3783,7 +3783,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC2943.jpg",
+      "source": "stories/joelle-and-wilson/_DSC2943.jpg",
       "base": "stories/joelle-wilson/joelle-getting-ready-while-wilson-and-friends-take-part-in-dsc2943",
       "include": true,
       "roles": [
@@ -3792,7 +3792,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3073.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3073.jpg",
       "base": "stories/joelle-wilson/joelle-getting-ready-while-wilson-and-friends-take-part-in-dsc3073",
       "include": true,
       "roles": [
@@ -3801,7 +3801,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3109.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3109.jpg",
       "base": "stories/joelle-wilson/joelle-getting-ready-while-wilson-and-friends-take-part-in-dsc3109",
       "include": true,
       "roles": [
@@ -3810,7 +3810,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3143.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3143.jpg",
       "base": "stories/joelle-wilson/joelle-getting-ready-while-wilson-and-friends-take-part-in-dsc3143",
       "include": true,
       "roles": [
@@ -3819,7 +3819,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3157.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3157.jpg",
       "base": "stories/joelle-wilson/joelle-getting-ready-while-wilson-and-friends-take-part-in-dsc3157",
       "include": true,
       "roles": [
@@ -3828,7 +3828,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3229.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3229.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-sharing-family-wedding-traditions-at-home-dsc3229",
       "include": true,
       "roles": [
@@ -3837,7 +3837,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3242.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3242.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-sharing-family-wedding-traditions-at-home-dsc3242",
       "include": true,
       "roles": [
@@ -3846,7 +3846,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3247.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3247.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-sharing-family-wedding-traditions-at-home-dsc3247",
       "include": true,
       "roles": [
@@ -3855,7 +3855,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3297.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3297.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-sharing-family-wedding-traditions-at-home-dsc3297",
       "include": true,
       "roles": [
@@ -3864,7 +3864,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3346.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3346.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-sharing-family-wedding-traditions-at-home-dsc3346",
       "include": true,
       "roles": [
@@ -3873,7 +3873,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3423.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3423.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-sharing-family-wedding-traditions-at-home-dsc3423",
       "include": true,
       "roles": [
@@ -3882,7 +3882,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3430.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3430.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-sharing-family-wedding-traditions-at-home-dsc3430",
       "include": true,
       "roles": [
@@ -3891,7 +3891,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3518.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3518.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-sharing-family-wedding-traditions-at-home-dsc3518",
       "include": true,
       "roles": [
@@ -3900,7 +3900,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3585.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3585.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-photographed-together-outdoors-after-their-dsc3585",
       "include": true,
       "roles": [
@@ -3909,7 +3909,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3586.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3586.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-photographed-together-outdoors-after-their-dsc3586",
       "include": true,
       "roles": [
@@ -3918,7 +3918,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3589.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3589.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-photographed-together-outdoors-after-their-dsc3589",
       "include": true,
       "roles": [
@@ -3927,7 +3927,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3641.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3641.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-photographed-together-outdoors-after-their-dsc3641",
       "include": true,
       "roles": [
@@ -3936,7 +3936,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3680.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3680.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-photographed-together-outdoors-after-their-dsc3680",
       "include": true,
       "roles": [
@@ -3945,7 +3945,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3693.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3693.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-photographed-together-outdoors-after-their-dsc3693",
       "include": true,
       "roles": [
@@ -3954,7 +3954,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3721.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3721.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-photographed-together-outdoors-after-their-dsc3721",
       "include": true,
       "roles": [
@@ -3963,7 +3963,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3755.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3755.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-photographed-together-outdoors-after-their-dsc3755",
       "include": true,
       "roles": [
@@ -3972,7 +3972,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3769 2.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3769 2.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-photographed-together-outdoors-after-their-dsc3769-2",
       "include": true,
       "roles": [
@@ -3981,7 +3981,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3790.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3790.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-photographed-together-outdoors-after-their-dsc3790",
       "include": true,
       "roles": [
@@ -3990,7 +3990,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3798.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3798.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-photographed-together-outdoors-after-their-dsc3798",
       "include": true,
       "roles": [
@@ -3999,7 +3999,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3843.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3843.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-photographed-together-outdoors-after-their-dsc3843",
       "include": true,
       "roles": [
@@ -4008,7 +4008,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3875.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3875.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-photographed-together-outdoors-after-their-dsc3875",
       "include": true,
       "roles": [
@@ -4017,7 +4017,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3884.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3884.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-photographed-together-outdoors-after-their-dsc3884",
       "include": true,
       "roles": [
@@ -4026,7 +4026,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3922.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3922.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-photographed-together-outdoors-after-their-dsc3922",
       "include": true,
       "roles": [
@@ -4035,7 +4035,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3939.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3939.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-photographed-together-outdoors-after-their-dsc3939",
       "include": true,
       "roles": [
@@ -4044,7 +4044,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3945.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3945.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-photographed-together-outdoors-after-their-dsc3945",
       "include": true,
       "roles": [
@@ -4053,7 +4053,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC3971.jpg",
+      "source": "stories/joelle-and-wilson/_DSC3971.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-photographed-together-outdoors-after-their-dsc3971",
       "include": true,
       "roles": [
@@ -4062,7 +4062,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC4121.jpg",
+      "source": "stories/joelle-and-wilson/_DSC4121.jpg",
       "base": "stories/joelle-wilson/joelle-preparing-for-her-evening-wedding-reception-dsc4121",
       "include": true,
       "roles": [
@@ -4071,7 +4071,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC4124.jpg",
+      "source": "stories/joelle-and-wilson/_DSC4124.jpg",
       "base": "stories/joelle-wilson/joelle-preparing-for-her-evening-wedding-reception-dsc4124",
       "include": true,
       "roles": [
@@ -4080,7 +4080,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC4130.jpg",
+      "source": "stories/joelle-and-wilson/_DSC4130.jpg",
       "base": "stories/joelle-wilson/joelle-preparing-for-her-evening-wedding-reception-dsc4130",
       "include": true,
       "roles": [
@@ -4089,7 +4089,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC4131.jpg",
+      "source": "stories/joelle-and-wilson/_DSC4131.jpg",
       "base": "stories/joelle-wilson/joelle-preparing-for-her-evening-wedding-reception-dsc4131",
       "include": true,
       "roles": [
@@ -4098,7 +4098,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC4211.jpg",
+      "source": "stories/joelle-and-wilson/_DSC4211.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-celebrating-with-family-and-friends-at-their-dsc4211",
       "include": true,
       "roles": [
@@ -4107,7 +4107,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC4225.jpg",
+      "source": "stories/joelle-and-wilson/_DSC4225.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-celebrating-with-family-and-friends-at-their-dsc4225",
       "include": true,
       "roles": [
@@ -4116,7 +4116,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC4242.jpg",
+      "source": "stories/joelle-and-wilson/_DSC4242.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-celebrating-with-family-and-friends-at-their-dsc4242",
       "include": true,
       "roles": [
@@ -4125,7 +4125,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC4270.jpg",
+      "source": "stories/joelle-and-wilson/_DSC4270.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-celebrating-with-family-and-friends-at-their-dsc4270",
       "include": true,
       "roles": [
@@ -4134,7 +4134,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC4293.jpg",
+      "source": "stories/joelle-and-wilson/_DSC4293.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-celebrating-with-family-and-friends-at-their-dsc4293",
       "include": true,
       "roles": [
@@ -4143,7 +4143,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC4501.jpg",
+      "source": "stories/joelle-and-wilson/_DSC4501.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-celebrating-with-family-and-friends-at-their-dsc4501",
       "include": true,
       "roles": [
@@ -4152,7 +4152,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC4546.jpg",
+      "source": "stories/joelle-and-wilson/_DSC4546.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-celebrating-with-family-and-friends-at-their-dsc4546",
       "include": true,
       "roles": [
@@ -4161,7 +4161,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC4550.jpg",
+      "source": "stories/joelle-and-wilson/_DSC4550.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-celebrating-with-family-and-friends-at-their-dsc4550",
       "include": true,
       "roles": [
@@ -4170,7 +4170,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC4590.jpg",
+      "source": "stories/joelle-and-wilson/_DSC4590.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-celebrating-with-family-and-friends-at-their-dsc4590",
       "include": true,
       "roles": [
@@ -4179,7 +4179,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC4620 2.jpg",
+      "source": "stories/joelle-and-wilson/_DSC4620 2.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-celebrating-with-family-and-friends-at-their-dsc4620-2",
       "include": true,
       "roles": [
@@ -4188,7 +4188,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC4656.jpg",
+      "source": "stories/joelle-and-wilson/_DSC4656.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-celebrating-with-family-and-friends-at-their-dsc4656",
       "include": true,
       "roles": [
@@ -4197,7 +4197,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC4665.jpg",
+      "source": "stories/joelle-and-wilson/_DSC4665.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-celebrating-with-family-and-friends-at-their-dsc4665",
       "include": true,
       "roles": [
@@ -4206,7 +4206,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC4676.jpg",
+      "source": "stories/joelle-and-wilson/_DSC4676.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-celebrating-with-family-and-friends-at-their-dsc4676",
       "include": true,
       "roles": [
@@ -4215,7 +4215,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC4684.jpg",
+      "source": "stories/joelle-and-wilson/_DSC4684.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-celebrating-with-family-and-friends-at-their-dsc4684",
       "include": true,
       "roles": [
@@ -4224,7 +4224,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC4699.jpg",
+      "source": "stories/joelle-and-wilson/_DSC4699.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-celebrating-with-family-and-friends-at-their-dsc4699",
       "include": true,
       "roles": [
@@ -4233,7 +4233,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC4783 2.jpg",
+      "source": "stories/joelle-and-wilson/_DSC4783 2.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-celebrating-with-family-and-friends-at-their-dsc4783-2",
       "include": true,
       "roles": [
@@ -4242,7 +4242,7 @@
       ]
     },
     {
-      "source": "Story - Joelle and Wilson/_DSC4801 2.jpg",
+      "source": "stories/joelle-and-wilson/_DSC4801 2.jpg",
       "base": "stories/joelle-wilson/joelle-and-wilson-celebrating-with-family-and-friends-at-their-dsc4801-2",
       "include": true,
       "roles": [

@@ -1,7 +1,11 @@
 node_modules/
 dist/
 .DS_Store
-/incoming-photos/
+/incoming-photos/*
+!/incoming-photos/README.md
+!/incoming-photos/to-sort/
+/incoming-photos/to-sort/*
+!/incoming-photos/to-sort/.gitkeep
 
 # Local visual-capture and QA working files
 source-*.png
