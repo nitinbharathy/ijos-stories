@@ -4,7 +4,7 @@ import process from 'node:process'
 import sharp from 'sharp'
 
 const DEFAULT_INPUT = 'incoming-photos'
-const DEFAULT_OUTPUT = 'src/assets/images/imported'
+const DEFAULT_OUTPUT = 'src/assets/images'
 const DEFAULT_MAX_WIDTH = 2400
 const SUPPORTED_EXTENSIONS = new Set([
   '.avif',

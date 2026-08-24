@@ -1,6 +1,9 @@
 import { images } from '../imageCatalog'
 import { STORY_SLUGS } from '../storyRoutes'
 
+const storyImages = images.galleries.proposal
+const photo = (id) => storyImages.find((image) => image.id === id)
+
 export const gardenProposalStory = {
   slug: STORY_SLUGS.gardenProposal,
   category: 'Proposal',
@@ -10,7 +13,7 @@ export const gardenProposalStory = {
   excerpt: 'A glowing garden setting, an intimate ring detail and an unguarded celebration shape this evening proposal story.',
   metaTitle: 'Garden Proposal Photography Singapore | ijós Stories',
   metaDescription: 'An evening garden proposal story in Singapore, photographed among warm fairy lights with natural reactions and close details.',
-  heroImage: images.galleries.proposal[3],
+  heroImage: photo('dsc01029'),
   servicePath: '/proposal',
   serviceLabel: 'View proposal service',
   selectedService: 'Proposal shoot',
@@ -24,14 +27,19 @@ export const gardenProposalStory = {
       eyebrow: 'The detail',
       title: 'A quiet frame for the new ring',
       paragraphs: ['A close photograph of joined hands records the ring without losing the warmth and softness of the surrounding lights. It becomes a small pause within the wider celebration.'],
-      image: images.galleries.proposal[0],
+      image: photo('dsc01061'),
     },
     {
       type: 'imageText',
       eyebrow: 'After the yes',
       title: 'A moment together beneath the lights',
       paragraphs: ['Once the surprise has settled, the photographs become quieter and more observational. The lights form a warm backdrop while the couple settles into the moment together.'],
-      image: images.galleries.proposal[1],
+      image: photo('dsc01029'),
+    },
+    {
+      type: 'gallery',
+      label: 'Garden proposal gallery',
+      images: storyImages,
     },
   ],
 }

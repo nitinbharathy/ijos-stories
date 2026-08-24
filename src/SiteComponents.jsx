@@ -4,6 +4,67 @@ import Autoplay from 'embla-carousel-autoplay'
 import { getImageSources, images } from './imageCatalog'
 import { sitePath } from './sitePaths'
 
+const INITIAL_GALLERY_IMAGES = 18
+const GALLERY_BATCH_SIZE = 18
+const IDLE_PREFETCH_COUNT = 4
+
+function connectionAllowsIdlePrefetch() {
+  const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection
+  if (!connection) return true
+  return !connection.saveData && !['slow-2g', '2g'].includes(connection.effectiveType)
+}
+
+export function useProgressiveImageBatch(imageList, options = {}) {
+  const initialCount = options.initialCount || INITIAL_GALLERY_IMAGES
+  const batchSize = options.batchSize || GALLERY_BATCH_SIZE
+  const idleCount = options.idleCount || IDLE_PREFETCH_COUNT
+  const [visibleCount, setVisibleCount] = useState(() => Math.min(initialCount, imageList.length))
+  const [idlePrefetchEnd, setIdlePrefetchEnd] = useState(visibleCount)
+  const loadMoreRef = useRef(null)
+
+  useEffect(() => {
+    setVisibleCount(Math.min(initialCount, imageList.length))
+    setIdlePrefetchEnd(Math.min(initialCount, imageList.length))
+  }, [imageList, initialCount])
+
+  useEffect(() => {
+    const sentinel = loadMoreRef.current
+    if (!sentinel || visibleCount >= imageList.length) return undefined
+
+    const observer = new IntersectionObserver((entries) => {
+      if (!entries.some((entry) => entry.isIntersecting)) return
+      setVisibleCount((count) => Math.min(count + batchSize, imageList.length))
+    }, { rootMargin: '1200px 0px' })
+
+    observer.observe(sentinel)
+    return () => observer.disconnect()
+  }, [batchSize, imageList.length, visibleCount])
+
+  useEffect(() => {
+    setIdlePrefetchEnd(visibleCount)
+    if (visibleCount >= imageList.length || !connectionAllowsIdlePrefetch()) return undefined
+
+    const warmNextBatch = () => {
+      setIdlePrefetchEnd(Math.min(visibleCount + idleCount, imageList.length))
+    }
+
+    if ('requestIdleCallback' in window) {
+      const idleId = window.requestIdleCallback(warmNextBatch, { timeout: 2000 })
+      return () => window.cancelIdleCallback(idleId)
+    }
+
+    const timeoutId = window.setTimeout(warmNextBatch, 1200)
+    return () => window.clearTimeout(timeoutId)
+  }, [idleCount, imageList.length, visibleCount])
+
+  return {
+    visibleImages: imageList.slice(0, visibleCount),
+    idleImages: imageList.slice(visibleCount, idlePrefetchEnd),
+    loadMoreRef,
+    hasMore: visibleCount < imageList.length,
+  }
+}
+
 export function SmartImage({ image, className, ...props }) {
   const sources = getImageSources(image.base)
   const fallback = sources.jpg || sources.webp || sources.avif

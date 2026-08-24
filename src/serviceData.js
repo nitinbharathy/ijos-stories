@@ -68,7 +68,7 @@ export const services = [
     metaTitle: 'Proposal Photographer Singapore | ijós Stories',
     metaDescription: 'Discreet proposal photography in Singapore, planned with you so the surprise and every meaningful reaction are naturally captured.',
     lead: 'You plan the question; we make sure the surprise, reaction and celebration are documented without taking you out of the moment.',
-    heroImage: images.galleries.proposal[3],
+    heroImage: images.galleries.proposal[0],
     gallery: images.galleries.proposal,
     storyTitle: 'Carefully planned, quietly captured',
     story: [
@@ -85,6 +85,15 @@ export const services = [
     ],
   },
 ]
+
+services.forEach((service) => {
+  if (!service.heroImage) {
+    throw new Error(`Service "${service.slug}" needs a valid hero image`)
+  }
+  if (!Array.isArray(service.gallery) || !service.gallery.length) {
+    throw new Error(`Service "${service.slug}" needs at least one gallery image`)
+  }
+})
 
 export function getService(slug) {
   return services.find((service) => service.slug === slug)

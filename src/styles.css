@@ -397,9 +397,9 @@ footer a:hover, footer a:focus-visible { text-decoration: underline; text-underl
 .story-gallery-item img { object-fit: cover; transition: var(--transition-control); }
 .story-gallery-item:hover img { transform: scale(1.015); }
 .story-gallery-item:focus-visible, .story-lightbox button:focus-visible { outline: var(--focus-ring); outline-offset: 0.25rem; }
-.story-gallery-load-sentinel { height: 1px; }
-.story-gallery-idle-prefetch { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
-.story-gallery-idle-prefetch picture, .story-gallery-idle-prefetch img { width: 1px; height: 1px; }
+.image-grid-load-sentinel { height: 1px; }
+.image-grid-idle-prefetch { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.image-grid-idle-prefetch picture, .image-grid-idle-prefetch img { width: 1px; height: 1px; }
 .story-lightbox { position: fixed; z-index: 100; inset: 0; display: grid; place-items: center; padding: 4rem 6rem 2rem; background: var(--color-lightbox); color: var(--color-text-inverse); }
 .story-lightbox-image { display: grid; place-items: center; max-width: 100%; max-height: 100%; }
 .story-lightbox-image picture { display: block; max-width: 100%; max-height: calc(100vh - 7rem); }

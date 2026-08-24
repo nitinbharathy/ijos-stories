@@ -1,6 +1,9 @@
 import { images } from '../imageCatalog'
 import { STORY_SLUGS } from '../storyRoutes'
 
+const storyImages = images.stories.pawanJaspreet
+const photo = (id) => storyImages.find((image) => image.id === id)
+
 export const pawanAndJaspreetStory = {
   slug: STORY_SLUGS.pawanAndJaspreet,
   category: 'Wedding Day',
@@ -11,11 +14,12 @@ export const pawanAndJaspreetStory = {
   excerpt: 'Four days of ceremonies, family traditions, heartfelt celebrations and the enduring love between Pawan and Jaspreet.',
   metaTitle: 'A 4-day Sikh Wedding in Singapore | ijós Stories',
   metaDescription: 'Pawan and Jaspreet’s four-day Sikh wedding celebration in Singapore, from Maiyyan and Mehendi to their Central Gurdwara ceremony and Orchard Hotel reception.',
-  heroImage: images.galleries.weddingDay[1],
+  heroImage: photo('dsc06862'),
   heroImages: [
-    images.galleries.weddingDay[1],
-    images.hero[1],
-    images.galleries.weddingDay[5],
+    photo('dsc06862'),
+    photo('dsc06015'),
+    photo('dsc02422'),
+    photo('dsc08363'),
   ],
   servicePath: '/wedding-day',
   serviceLabel: 'View wedding-day service',
@@ -33,7 +37,7 @@ export const pawanAndJaspreetStory = {
       eyebrow: 'Day 1',
       title: 'Maiyyan, Mehendi & family',
       paragraphs: ['Day 1 began at Jaspreet’s home with the Maiyyan ceremony, followed by Mehendi and an afternoon of celebrations with family.'],
-      image: images.galleries.weddingDay[0],
+      image: photo('dsc01477'),
       imagePosition: 'left',
     },
     {
@@ -41,7 +45,7 @@ export const pawanAndJaspreetStory = {
       eyebrow: 'Day 2',
       title: 'A night of Bhangra & dancing',
       paragraphs: ['Day 2 was Sangeeth, and the groom’s side kicked things off with an outstanding Bhangra performance. The families followed with performances of their own, before the night inevitably turned into one big dance floor.'],
-      image: images.galleries.weddingDay[4],
+      image: photo('dsc02422'),
       imagePosition: 'right',
     },
     {
@@ -53,7 +57,7 @@ export const pawanAndJaspreetStory = {
         'We then headed out for their post-wedding portraits, starting at the National Gallery before visiting places that were part of their everyday life: the jogging path where they ran together every day, and the traffic signal where they said goodbye to each other every night.',
         'Places that might seem ordinary to anyone else, but meant something to them.',
       ],
-      image: images.galleries.weddingDay[2],
+      image: photo('dsc06015'),
       imagePosition: 'left',
     },
     {
@@ -64,17 +68,13 @@ export const pawanAndJaspreetStory = {
         'Day 4 brought everyone together again for the reception at the Orchard Hotel. There were heartfelt speeches, plenty of games, lots of laughter and, of course, another night of dancing.',
         'Four days, countless celebrations, and a whole lot of love. At the heart of it all was simply Pawan and Jaspreet, and the people who were there to celebrate their story with them.',
       ],
-      image: images.galleries.weddingDay[3],
+      image: photo('dsc08363'),
       imagePosition: 'right',
     },
     {
       type: 'gallery',
       label: 'Pawan and Jaspreet wedding gallery',
-      images: [
-        images.galleries.weddingDay[0],
-        images.hero[1],
-        ...images.galleries.weddingDay.slice(2),
-      ],
+      images: storyImages,
     },
   ],
 }

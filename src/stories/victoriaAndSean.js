@@ -1,6 +1,9 @@
 import { images } from '../imageCatalog'
 import { STORY_SLUGS } from '../storyRoutes'
 
+const storyImages = images.stories.victoriaSean
+const photo = (id) => storyImages.find((image) => image.id === id)
+
 export const victoriaAndSeanStory = {
   slug: STORY_SLUGS.victoriaAndSean,
   category: 'Wedding Day',
@@ -11,7 +14,12 @@ export const victoriaAndSeanStory = {
   excerpt: 'A heartfelt Catholic wedding at the Church of St Teresa, followed by a tea ceremony and an evening reception at Goodwood Park Hotel.',
   metaTitle: 'Catholic Wedding at Church of St Teresa | ijós Stories',
   metaDescription: 'Victoria and Sean’s Catholic wedding at the Church of St Teresa in Singapore, with a tea ceremony and reception at Goodwood Park Hotel.',
-  heroImage: images.galleries.weddingDay[2],
+  heroImage: photo('victoriaandseancatholicweddingsg-23'),
+  heroImages: [
+    photo('victoriaandseancatholicweddingsg-23'),
+    photo('victoriaandseancatholicweddingsg-63'),
+    photo('victoriaandseancatholicweddingsg-88'),
+  ],
   servicePath: '/wedding-day',
   serviceLabel: 'View wedding-day service',
   selectedService: 'Actual day coverage',
@@ -29,7 +37,7 @@ export const victoriaAndSeanStory = {
       paragraphs: [
         'Before the celebrations gathered pace, the morning left room for the smaller moments: jewellery, the veil and the anticipation of seeing Sean for the first time.',
       ],
-      image: images.galleries.weddingDay[0],
+      image: photo('victoriaandseancatholicweddingsg-20'),
       imagePosition: 'left',
     },
     {
@@ -39,7 +47,7 @@ export const victoriaAndSeanStory = {
       paragraphs: [
         'From there, we headed to the Church of St Teresa for their Catholic wedding, along with a bridal party shoot and group photos with family and friends.',
       ],
-      image: images.galleries.weddingDay[2],
+      image: photo('victoriaandseancatholicweddingsg-23'),
       imagePosition: 'right',
     },
     {
@@ -49,7 +57,7 @@ export const victoriaAndSeanStory = {
       paragraphs: [
         'The day continued with a tea ceremony before everyone gathered at Goodwood Park Hotel for the evening reception.',
       ],
-      image: images.galleries.weddingDay[3],
+      image: photo('victoriaandseancatholicweddingsg-89'),
       imagePosition: 'left',
     },
     {
@@ -60,19 +68,13 @@ export const victoriaAndSeanStory = {
         'There were plenty of emotional moments along the way, especially with Victoria’s sisters and parents, but the tears soon gave way to laughter as the couple mingled with their friends and celebrated together.',
         'And that felt very fitting for Victoria: a day filled with love, emotion, and plenty of her bubbly energy.',
       ],
-      image: images.galleries.weddingDay[4],
+      image: photo('victoriaandseancatholicweddingsg-98'),
       imagePosition: 'right',
     },
     {
       type: 'gallery',
       label: 'Victoria and Sean Catholic wedding gallery',
-      images: [
-        images.galleries.weddingDay[0],
-        images.hero[1],
-        images.galleries.weddingDay[2],
-        images.galleries.weddingDay[3],
-        images.galleries.weddingDay[4],
-      ],
+      images: storyImages,
     },
   ],
 }

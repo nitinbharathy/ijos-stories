@@ -1,10 +1,11 @@
-import { ContactSection, PageSeo, SiteFooter, SiteHeader, SmartImage } from './SiteComponents'
+import { ContactSection, PageSeo, SiteFooter, SiteHeader, SmartImage, useProgressiveImageBatch } from './SiteComponents'
 import { getServiceStructuredData, services } from './serviceData'
 import { sitePath } from './sitePaths'
 
 export function ServicePage({ service }) {
   const siteOrigin = new URL(sitePath('/'), window.location.origin).href.replace(/\/$/, '')
   const structuredData = getServiceStructuredData(service, siteOrigin)
+  const { visibleImages, idleImages, loadMoreRef, hasMore } = useProgressiveImageBatch(service.gallery)
 
   return <main>
     <PageSeo title={service.metaTitle} description={service.metaDescription} path={`/${service.slug}`} structuredData={structuredData} />
@@ -24,7 +25,11 @@ export function ServicePage({ service }) {
 
     <section className="service-gallery content-block" aria-labelledby="gallery-title">
       <div className="section-heading"><p className="eyebrow">Selected moments</p><h2 id="gallery-title">A glimpse into the story</h2></div>
-      <div className="gallery-grid">{service.gallery.map((image) => <SmartImage image={image} loading="lazy" decoding="async" key={image.base} />)}</div>
+      <div className="gallery-grid">{visibleImages.map((image) => <SmartImage image={image} loading="lazy" decoding="async" key={image.base} />)}</div>
+      {hasMore && <div className="image-grid-load-sentinel" ref={loadMoreRef} aria-hidden="true" />}
+      {idleImages.length > 0 && <div className="image-grid-idle-prefetch" aria-hidden="true">
+        {idleImages.map((image) => <SmartImage image={image} loading="eager" decoding="async" key={image.base} />)}
+      </div>}
     </section>
 
     <section className="service-page-packages content-block">

@@ -1,4 +1,6 @@
 import { gardenProposalStory } from './stories/gardenProposal'
+import { ameliaAndBrandonStory } from './stories/ameliaAndBrandon'
+import { joelleAndWilsonStory } from './stories/joelleAndWilson'
 import { pawanAndJaspreetStory } from './stories/pawanAndJaspreet'
 import { preWeddingPortraitStory } from './stories/preWeddingPortrait'
 import { victoriaAndSeanStory } from './stories/victoriaAndSean'
@@ -9,6 +11,8 @@ const requiredStoryFields = ['slug', 'category', 'tags', 'location', 'title', 'e
 export const stories = [
   pawanAndJaspreetStory,
   victoriaAndSeanStory,
+  ameliaAndBrandonStory,
+  joelleAndWilsonStory,
   preWeddingPortraitStory,
   gardenProposalStory,
 ]
