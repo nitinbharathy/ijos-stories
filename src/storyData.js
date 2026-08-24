@@ -22,37 +22,37 @@ export const storyTags = [...new Set(stories.flatMap((story) => story.tags))]
 
 function validateStory(story) {
   requiredStoryFields.forEach((field) => {
-    if (!story[field]) throw new Error(`Story "${story.slug || story.title || 'untitled'}" is missing required field "${field}"`)
+    if (!story[field]) console.error(`Story "${story.slug || story.title || 'untitled'}" is missing required field "${field}"`)
   })
 
   if (story.blocks !== undefined && !Array.isArray(story.blocks)) {
-    throw new Error(`Story "${story.slug}" must use an array for "blocks"`)
+    console.error(`Story "${story.slug}" must use an array for "blocks"`)
   }
   if (!Array.isArray(story.tags) || !story.tags.length || story.tags.some((tag) => typeof tag !== 'string' || !tag.trim())) {
-    throw new Error(`Story "${story.slug}" must include at least one valid tag`)
+    console.error(`Story "${story.slug}" must include at least one valid tag`)
   }
   if (story.heroImages !== undefined && (!Array.isArray(story.heroImages) || !story.heroImages.length)) {
-    throw new Error(`Story "${story.slug}" must use a non-empty array for "heroImages"`)
+    console.error(`Story "${story.slug}" must use a non-empty array for "heroImages"`)
   }
 
   story.blocks?.forEach((block, index) => {
     if (!supportedBlockTypes.has(block.type)) {
-      throw new Error(`Story "${story.slug}" has unsupported block type "${block.type}" at position ${index + 1}`)
+      console.error(`Story "${story.slug}" has unsupported block type "${block.type}" at position ${index + 1}`)
     }
     if (['introduction', 'text'].includes(block.type) && !block.paragraphs?.length) {
-      throw new Error(`Story "${story.slug}" needs paragraphs in its ${block.type} block at position ${index + 1}`)
+      console.error(`Story "${story.slug}" needs paragraphs in its ${block.type} block at position ${index + 1}`)
     }
     if (block.type === 'imageText' && (!block.image || !block.paragraphs?.length)) {
-      throw new Error(`Story "${story.slug}" needs an image and paragraphs in its imageText block at position ${index + 1}`)
+      console.error(`Story "${story.slug}" needs an image and paragraphs in its imageText block at position ${index + 1}`)
     }
     if (block.type === 'fullImage' && !block.image) {
-      throw new Error(`Story "${story.slug}" needs an image in its fullImage block at position ${index + 1}`)
+      console.error(`Story "${story.slug}" needs an image in its fullImage block at position ${index + 1}`)
     }
     if (block.type === 'quote' && !block.quote) {
-      throw new Error(`Story "${story.slug}" needs quote text in its quote block at position ${index + 1}`)
+      console.error(`Story "${story.slug}" needs quote text in its quote block at position ${index + 1}`)
     }
     if (block.type === 'gallery' && !block.images?.length) {
-      throw new Error(`Story "${story.slug}" needs images in its gallery block at position ${index + 1}`)
+      console.error(`Story "${story.slug}" needs images in its gallery block at position ${index + 1}`)
     }
   })
 }

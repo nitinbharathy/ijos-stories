@@ -88,10 +88,10 @@ export const services = [
 
 services.forEach((service) => {
   if (!service.heroImage) {
-    throw new Error(`Service "${service.slug}" needs a valid hero image`)
+    console.error(`Service "${service.slug}" needs a valid hero image`)
   }
   if (!Array.isArray(service.gallery) || !service.gallery.length) {
-    throw new Error(`Service "${service.slug}" needs at least one gallery image`)
+    console.error(`Service "${service.slug}" needs at least one gallery image`)
   }
 })
 

@@ -50,13 +50,7 @@ const importedStories = Object.fromEntries(
 )
 
 export function getImageSources(base) {
-  const sources = variants[base]
-
-  if (!sources) {
-    throw new Error(`No image files found for "${base}"`)
-  }
-
-  return sources
+  return base ? variants[base] || null : null
 }
 
 export const images = {

@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import { getImageSources, images } from './imageCatalog'
+import { resolveImagePresentation } from './imagePresentation'
 import { sitePath } from './sitePaths'
 
 const INITIAL_GALLERY_IMAGES = 18
@@ -15,37 +16,39 @@ function connectionAllowsIdlePrefetch() {
 }
 
 export function useProgressiveImageBatch(imageList, options = {}) {
+  const safeImageList = Array.isArray(imageList) ? imageList.filter(Boolean) : []
+  const imageCount = safeImageList.length
   const initialCount = options.initialCount || INITIAL_GALLERY_IMAGES
   const batchSize = options.batchSize || GALLERY_BATCH_SIZE
   const idleCount = options.idleCount || IDLE_PREFETCH_COUNT
-  const [visibleCount, setVisibleCount] = useState(() => Math.min(initialCount, imageList.length))
+  const [visibleCount, setVisibleCount] = useState(() => Math.min(initialCount, imageCount))
   const [idlePrefetchEnd, setIdlePrefetchEnd] = useState(visibleCount)
   const loadMoreRef = useRef(null)
 
   useEffect(() => {
-    setVisibleCount(Math.min(initialCount, imageList.length))
-    setIdlePrefetchEnd(Math.min(initialCount, imageList.length))
+    setVisibleCount(Math.min(initialCount, imageCount))
+    setIdlePrefetchEnd(Math.min(initialCount, imageCount))
   }, [imageList, initialCount])
 
   useEffect(() => {
     const sentinel = loadMoreRef.current
-    if (!sentinel || visibleCount >= imageList.length) return undefined
+    if (!sentinel || visibleCount >= imageCount) return undefined
 
     const observer = new IntersectionObserver((entries) => {
       if (!entries.some((entry) => entry.isIntersecting)) return
-      setVisibleCount((count) => Math.min(count + batchSize, imageList.length))
+      setVisibleCount((count) => Math.min(count + batchSize, imageCount))
     }, { rootMargin: '1200px 0px' })
 
     observer.observe(sentinel)
     return () => observer.disconnect()
-  }, [batchSize, imageList.length, visibleCount])
+  }, [batchSize, imageCount, visibleCount])
 
   useEffect(() => {
     setIdlePrefetchEnd(visibleCount)
-    if (visibleCount >= imageList.length || !connectionAllowsIdlePrefetch()) return undefined
+    if (visibleCount >= imageCount || !connectionAllowsIdlePrefetch()) return undefined
 
     const warmNextBatch = () => {
-      setIdlePrefetchEnd(Math.min(visibleCount + idleCount, imageList.length))
+      setIdlePrefetchEnd(Math.min(visibleCount + idleCount, imageCount))
     }
 
     if ('requestIdleCallback' in window) {
@@ -55,34 +58,61 @@ export function useProgressiveImageBatch(imageList, options = {}) {
 
     const timeoutId = window.setTimeout(warmNextBatch, 1200)
     return () => window.clearTimeout(timeoutId)
-  }, [idleCount, imageList.length, visibleCount])
+  }, [idleCount, imageCount, visibleCount])
 
   return {
-    visibleImages: imageList.slice(0, visibleCount),
-    idleImages: imageList.slice(visibleCount, idlePrefetchEnd),
+    visibleImages: safeImageList.slice(0, visibleCount),
+    idleImages: safeImageList.slice(visibleCount, idlePrefetchEnd),
     loadMoreRef,
-    hasMore: visibleCount < imageList.length,
+    hasMore: visibleCount < imageCount,
   }
 }
 
 export function SmartImage({ image, className, ...props }) {
-  const sources = getImageSources(image.base)
-  const fallback = sources.jpg || sources.webp || sources.avif
-  const { style: imageStyle, ...imageProps } = props
+  const sources = getImageSources(image?.base)
+  const presentation = resolveImagePresentation(image, sources)
+  const [loadMode, setLoadMode] = useState('auto')
+  const { style: imageStyle, onError, ...imageProps } = props
   const pictureClassName = ['smart-image', className].filter(Boolean).join(' ')
   const focusStyle = {
-    '--image-focus-desktop': image.focus.desktop,
-    '--image-focus-mobile': image.focus.mobile,
+    '--image-focus-desktop': presentation.focus.desktop,
+    '--image-focus-mobile': presentation.focus.mobile,
+  }
+
+  useEffect(() => {
+    setLoadMode('auto')
+  }, [image?.base])
+
+  useEffect(() => {
+    if (presentation.available) return
+    console.error(`Image unavailable: ${image?.base || 'missing catalogue entry'}`)
+  }, [image?.base, presentation.available])
+
+  if (!presentation.available || loadMode === 'failed') {
+    return <span
+      className={`${pictureClassName} smart-image-fallback`}
+      style={focusStyle}
+      role={presentation.alt ? 'img' : undefined}
+      aria-label={presentation.alt || undefined}
+      aria-hidden={presentation.alt ? undefined : 'true'}
+      data-image-state="unavailable"
+    />
+  }
+
+  const handleError = (event) => {
+    onError?.(event)
+    setLoadMode((mode) => mode === 'auto' && sources.jpg ? 'jpeg' : 'failed')
   }
 
   return <picture className={pictureClassName} style={focusStyle}>
-    {sources.avif && <source srcSet={sources.avif} type="image/avif" />}
-    {sources.webp && <source srcSet={sources.webp} type="image/webp" />}
-    <img src={fallback} alt={image.alt} style={{ objectPosition: 'var(--image-focus-current)', ...imageStyle }} {...imageProps} />
+    {loadMode === 'auto' && sources.avif && <source srcSet={sources.avif} type="image/avif" />}
+    {loadMode === 'auto' && sources.webp && <source srcSet={sources.webp} type="image/webp" />}
+    <img src={loadMode === 'jpeg' ? sources.jpg : presentation.fallback} alt={presentation.alt} style={{ objectPosition: 'var(--image-focus-current)', ...imageStyle }} onError={handleError} {...imageProps} />
   </picture>
 }
 
 export function Rail({ images: railImages, label }) {
+  const safeRailImages = Array.isArray(railImages) ? railImages.filter(Boolean) : []
   const reduceMotion = typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches
   const autoplay = useRef(Autoplay({ active: !reduceMotion, delay: 4200, stopOnInteraction: false, stopOnMouseEnter: false, stopOnFocusIn: true }))
   const [railRef, railApi] = useEmblaCarousel({ loop: true, align: 'start', duration: 32 }, [autoplay.current])
@@ -94,7 +124,7 @@ export function Rail({ images: railImages, label }) {
 
   return <div className="carousel" role="region" aria-roledescription="carousel" aria-label={label}>
     <div className="rail" ref={railRef}>
-      <div className="rail-track">{railImages.map((image, index) => <div className="rail-slide" role="group" aria-roledescription="slide" aria-label={`${index + 1} of ${railImages.length}`} key={image.base}><SmartImage image={image} loading="lazy" decoding="async" /></div>)}</div>
+      <div className="rail-track">{safeRailImages.map((image, index) => <div className="rail-slide" role="group" aria-roledescription="slide" aria-label={`${index + 1} of ${safeRailImages.length}`} key={image.base}><SmartImage image={image} loading="lazy" decoding="async" /></div>)}</div>
     </div>
     <div className="rail-controls">
       <button type="button" onClick={() => move('previous')} aria-label={`Previous image in ${label}`}>‹</button>

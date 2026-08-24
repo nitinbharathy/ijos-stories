@@ -6,7 +6,7 @@ import { getStoryStructuredData } from './storyData'
 import { sitePath } from './sitePaths'
 
 function StoryHero({ story }) {
-  const heroImages = story.heroImages?.length ? story.heroImages : [story.heroImage]
+  const heroImages = (story.heroImages?.length ? story.heroImages : [story.heroImage]).filter(Boolean)
   const reduceMotion = typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches
   const autoplay = useRef(Autoplay({ active: heroImages.length > 1 && !reduceMotion, delay: 5200, stopOnInteraction: false, stopOnMouseEnter: false, stopOnFocusIn: true }))
   const [heroRef, heroApi] = useEmblaCarousel({ loop: heroImages.length > 1 }, [autoplay.current])
@@ -49,6 +49,7 @@ function StoryHero({ story }) {
 }
 
 function StoryGallery({ gallery, title }) {
+  const safeGallery = Array.isArray(gallery) ? gallery.filter(Boolean) : []
   const [activeIndex, setActiveIndex] = useState(null)
   const openerRef = useRef(null)
   const { visibleImages, idleImages, loadMoreRef, hasMore } = useProgressiveImageBatch(gallery)
@@ -64,7 +65,7 @@ function StoryGallery({ gallery, title }) {
   }
 
   const move = (direction) => {
-    setActiveIndex((index) => (index + direction + gallery.length) % gallery.length)
+    setActiveIndex((index) => (index + direction + safeGallery.length) % safeGallery.length)
   }
 
   useEffect(() => {
@@ -83,11 +84,11 @@ function StoryGallery({ gallery, title }) {
       document.body.style.overflow = previousOverflow
       window.removeEventListener('keydown', handleKeyDown)
     }
-  }, [activeIndex, gallery.length])
+  }, [activeIndex, safeGallery.length])
 
   return <>
     <section className="story-gallery content-block" aria-label={`${title} gallery`}>
-      <div className="story-gallery-grid">{visibleImages.map((image, index) => <button className={`story-gallery-item${image.orientation === 'landscape' ? ' is-landscape' : ''}`} type="button" onClick={(event) => open(index, event)} aria-label={`Open image ${index + 1} of ${gallery.length}: ${image.alt}`} aria-haspopup="dialog" key={image.base}><SmartImage image={image} loading="lazy" decoding="async" /></button>)}</div>
+      <div className="story-gallery-grid">{visibleImages.map((image, index) => <button className={`story-gallery-item${image.orientation === 'landscape' ? ' is-landscape' : ''}`} type="button" onClick={(event) => open(index, event)} aria-label={`Open image ${index + 1} of ${safeGallery.length}: ${image.alt}`} aria-haspopup="dialog" key={image.base}><SmartImage image={image} loading="lazy" decoding="async" /></button>)}</div>
       {hasMore && <div className="image-grid-load-sentinel" ref={loadMoreRef} aria-hidden="true" />}
       {idleImages.length > 0 && <div className="image-grid-idle-prefetch" aria-hidden="true">
         {idleImages.map((image) => <SmartImage image={image} loading="eager" decoding="async" key={image.base} />)}
@@ -98,8 +99,8 @@ function StoryGallery({ gallery, title }) {
       <button className="story-lightbox-close" type="button" onClick={close} aria-label="Close image viewer" autoFocus>×</button>
       <button className="story-lightbox-arrow previous" type="button" onClick={() => move(-1)} aria-label="Previous image">‹</button>
       <div className="story-lightbox-image">
-        <SmartImage image={gallery[activeIndex]} decoding="async" />
-        <p aria-live="polite">{activeIndex + 1} / {gallery.length}</p>
+        <SmartImage image={safeGallery[activeIndex]} decoding="async" />
+        <p aria-live="polite">{activeIndex + 1} / {safeGallery.length}</p>
       </div>
       <button className="story-lightbox-arrow next" type="button" onClick={() => move(1)} aria-label="Next image">›</button>
     </div>}
