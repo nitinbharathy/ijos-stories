@@ -98,7 +98,7 @@ Strong story anchors include `_DSC2759.jpg`, `_DSC2943.jpg`, `_DSC3073.jpg`, `_D
 - Keep descriptive alt text for meaningful images. Use an empty alt string only when an image is deliberately decorative or repeats the same information immediately beside it.
 - Default focal points to `50% 50%`; override only where the subject would otherwise be cropped. Portrait photographs generally need a slightly higher mobile focal point around `50% 40%`.
 
-## Confirm before final manifest
+## Confirmed import decisions
 
-1. Should the visible story name be “Jaspreet and Pawan,” matching the supplied folder, or “Pawan and Jaspreet,” matching the current site story?
-2. Should the “Pre Wedding shoot Carousel” be treated strictly as pre-wedding work, or as a broader couple-portrait gallery that may include wedding-day portraits?
+1. Keep the existing visible story name “Pawan and Jaspreet,” even though the supplied source folder is named “Story - Jaspreet and Pawan.”
+2. Treat every photograph in “Pre Wedding shoot Carousel” as approved for the Pre Wedding section exactly as supplied.
