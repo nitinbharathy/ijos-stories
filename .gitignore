@@ -3,6 +3,9 @@ dist/
 .DS_Store
 /incoming-photos/*
 !/incoming-photos/README.md
+!/incoming-photos/stories/
+/incoming-photos/stories/*
+!/incoming-photos/stories/example-story/
 !/incoming-photos/to-sort/
 /incoming-photos/to-sort/*
 !/incoming-photos/to-sort/.gitkeep
