@@ -8,10 +8,20 @@ const imageFiles = import.meta.glob(
 const variants = Object.entries(imageFiles).reduce((catalog, [path, url]) => {
   const relativePath = path.replace('./assets/images/', '')
   const extension = relativePath.split('.').pop().toLowerCase()
-  const base = relativePath.slice(0, -(extension.length + 1))
+  const filenameBase = relativePath.slice(0, -(extension.length + 1))
+  const responsiveMatch = filenameBase.match(/^(.*)-(\d+)w$/)
+  const base = responsiveMatch?.[1] || filenameBase
+  const width = responsiveMatch?.[2]
+  const format = extension === 'jpeg' ? 'jpg' : extension
 
   catalog[base] ??= {}
-  catalog[base][extension === 'jpeg' ? 'jpg' : extension] = url
+  if (width) {
+    catalog[base].responsive ??= {}
+    catalog[base].responsive[format] ??= {}
+    catalog[base].responsive[format][width] = url
+  } else {
+    catalog[base][format] = url
+  }
   return catalog
 }, {})
 

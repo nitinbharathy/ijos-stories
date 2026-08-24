@@ -1,6 +1,4 @@
 import { useEffect, useRef, useState } from 'react'
-import useEmblaCarousel from 'embla-carousel-react'
-import Autoplay from 'embla-carousel-autoplay'
 import { getImageSources, images } from './imageCatalog'
 import { resolveImagePresentation } from './imagePresentation'
 import { sitePath } from './sitePaths'
@@ -72,7 +70,7 @@ export function SmartImage({ image, className, ...props }) {
   const sources = getImageSources(image?.base)
   const presentation = resolveImagePresentation(image, sources)
   const [loadMode, setLoadMode] = useState('auto')
-  const { style: imageStyle, onError, ...imageProps } = props
+  const { style: imageStyle, onError, sizes, ...imageProps } = props
   const pictureClassName = ['smart-image', className].filter(Boolean).join(' ')
   const focusStyle = {
     '--image-focus-desktop': presentation.focus.desktop,
@@ -104,27 +102,34 @@ export function SmartImage({ image, className, ...props }) {
     setLoadMode((mode) => mode === 'auto' && sources.jpg ? 'jpeg' : 'failed')
   }
 
+  const responsiveSrcSet = (format) => {
+    const entries = Object.entries(sources.responsive?.[format] || {})
+      .sort(([first], [second]) => Number(first) - Number(second))
+    return entries.length ? entries.map(([width, url]) => `${url} ${width}w`).join(', ') : undefined
+  }
+
   return <picture className={pictureClassName} style={focusStyle}>
-    {loadMode === 'auto' && sources.avif && <source srcSet={sources.avif} type="image/avif" />}
-    {loadMode === 'auto' && sources.webp && <source srcSet={sources.webp} type="image/webp" />}
-    <img src={loadMode === 'jpeg' ? sources.jpg : presentation.fallback} alt={presentation.alt} style={{ objectPosition: 'var(--image-focus-current)', ...imageStyle }} onError={handleError} {...imageProps} />
+    {loadMode === 'auto' && sources.avif && <source srcSet={responsiveSrcSet('avif') || sources.avif} sizes={sizes} type="image/avif" />}
+    {loadMode === 'auto' && sources.webp && <source srcSet={responsiveSrcSet('webp') || sources.webp} sizes={sizes} type="image/webp" />}
+    <img src={loadMode === 'jpeg' ? sources.jpg : presentation.fallback} srcSet={loadMode === 'jpeg' ? responsiveSrcSet('jpg') : undefined} sizes={sizes} alt={presentation.alt} style={{ objectPosition: 'var(--image-focus-current)', ...imageStyle }} onError={handleError} {...imageProps} />
   </picture>
 }
 
 export function Rail({ images: railImages, label }) {
   const safeRailImages = Array.isArray(railImages) ? railImages.filter(Boolean) : []
-  const reduceMotion = typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  const autoplay = useRef(Autoplay({ active: !reduceMotion, delay: 4200, stopOnInteraction: false, stopOnMouseEnter: false, stopOnFocusIn: true }))
-  const [railRef, railApi] = useEmblaCarousel({ loop: true, align: 'start', duration: 32 }, [autoplay.current])
+  const railRef = useRef(null)
+  const currentIndex = useRef(0)
   const move = (direction) => {
-    if (direction === 'previous') railApi?.scrollPrev()
-    else railApi?.scrollNext()
-    autoplay.current.reset()
+    if (!railRef.current || !safeRailImages.length) return
+    currentIndex.current = direction === 'previous'
+      ? (currentIndex.current - 1 + safeRailImages.length) % safeRailImages.length
+      : (currentIndex.current + 1) % safeRailImages.length
+    railRef.current.children[0]?.children[currentIndex.current]?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' })
   }
 
   return <div className="carousel" role="region" aria-roledescription="carousel" aria-label={label}>
     <div className="rail" ref={railRef}>
-      <div className="rail-track">{safeRailImages.map((image, index) => <div className="rail-slide" role="group" aria-roledescription="slide" aria-label={`${index + 1} of ${safeRailImages.length}`} key={image.base}><SmartImage image={image} loading="lazy" decoding="async" /></div>)}</div>
+      <div className="rail-track">{safeRailImages.map((image, index) => <div className="rail-slide" role="group" aria-roledescription="slide" aria-label={`${index + 1} of ${safeRailImages.length}`} key={image.base}><SmartImage image={image} loading="lazy" decoding="async" sizes="(max-width: 720px) 74vw, 25vw" /></div>)}</div>
     </div>
     <div className="rail-controls">
       <button type="button" onClick={() => move('previous')} aria-label={`Previous image in ${label}`}>‹</button>

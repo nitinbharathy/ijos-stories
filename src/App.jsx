@@ -9,7 +9,7 @@ export function App(){
   return <main>
     <SiteHeader overlayHero />
     <section className="hero" id="top">
-      {images.hero.map((image,i)=><SmartImage key={image.base} className={`hero-picture ${i===slide?'active':''}`} image={image} loading={i===0?'eager':'lazy'} fetchPriority={i===0?'high':'auto'} decoding="async" />)}
+      {images.hero.map((image,i)=><SmartImage key={image.base} className={`hero-picture ${i===slide?'active':''}`} image={image} loading={i===0?'eager':'lazy'} fetchPriority={i===0?'high':'auto'} decoding="async" sizes="100vw" />)}
       <h1>Capture your big day as it unfolds</h1>
       <div className="counter">
         <button onClick={() => setSlide(current => (current - 1 + images.hero.length) % images.hero.length)} aria-label="Previous image">‹</button>
@@ -20,7 +20,7 @@ export function App(){
 
     <section className="intro content-block"><p className="eyebrow">Singapore wedding photography &amp; videography</p><p>We, at ijós Stories, create natural, documentary style photography and videography for ROMs, church ceremonies, multicultural celebrations, weddings (Singapore and destinations), pre-wedding shoots and proposals.</p><p>From quiet glances to joyful celebrations, we capture the moments that matter while blending seamlessly into your day, so you can be fully present with the people you love.</p></section>
 
-    <section className="about content-block"><SmartImage image={images.people.photographer} loading="lazy" decoding="async"/><div><p className="eyebrow">Meet the photographer</p><h2>Hi! I'm Madhu</h2><p>I’m the founder and lead photographer behind ijós Stories.</p><p>I’ve been photographing people and stories since 2013. My approach is simple: help you feel comfortable, blend into the background when the moments matter, and capture your day as naturally as it unfolds.</p></div></section>
+    <section className="about content-block"><SmartImage image={images.people.photographer} loading="lazy" decoding="async" sizes="(max-width: 720px) 100vw, 31rem"/><div><p className="eyebrow">Meet the photographer</p><h2>Hi! I'm Madhu</h2><p>I’m the founder and lead photographer behind ijós Stories.</p><p>I’ve been photographing people and stories since 2013. My approach is simple: help you feel comfortable, blend into the background when the moments matter, and capture your day as naturally as it unfolds.</p></div></section>
 
     <section className="service left content-block"><div><h2>Wedding Day</h2><p>From intimate solemnisations to multi-day wedding celebrations, we create photos and videos that let you relive the people, emotions and moments that made the day yours.</p><a className="text-link" href={sitePath('/wedding-day')}>View wedding coverage</a></div><Rail images={images.galleries.weddingDay} label="Wedding day gallery"/></section>
     <section className="service right content-block"><Rail images={images.galleries.preWedding} label="Pre-wedding gallery"/><div><h2>Pre-wedding shoots</h2><p>Meaningful pre wedding photography that captures this chapter of your story with honesty, warmth and timeless style.</p><a className="text-link" href={sitePath('/pre-wedding')}>View pre-wedding shoots</a></div></section>

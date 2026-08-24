@@ -6,6 +6,7 @@ import sharp from 'sharp'
 const DEFAULT_INPUT = 'incoming-photos'
 const DEFAULT_OUTPUT = 'src/assets/images'
 const DEFAULT_MAX_WIDTH = 2400
+const RESPONSIVE_WIDTHS = [640, 1280]
 const SUPPORTED_EXTENSIONS = new Set([
   '.avif',
   '.heic',
@@ -184,6 +185,11 @@ async function processPhoto(job, options) {
     webp: `${outputBase}.webp`,
     jpg: `${outputBase}.jpg`,
   }
+  const responsiveOutputs = Object.fromEntries(RESPONSIVE_WIDTHS.flatMap((width) => [
+    [`avif-${width}`, `${outputBase}-${width}w.avif`],
+    [`webp-${width}`, `${outputBase}-${width}w.webp`],
+    [`jpg-${width}`, `${outputBase}-${width}w.jpg`],
+  ]))
 
   if (!SUPPORTED_EXTENSIONS.has(path.extname(source).toLowerCase())) {
     throw new Error(`Unsupported image type: ${job.source}`)
@@ -192,7 +198,7 @@ async function processPhoto(job, options) {
     throw new Error(`Source photo not found: ${job.source}`)
   }
 
-  const outputExists = await Promise.all(Object.values(outputs).map(exists))
+  const outputExists = await Promise.all([...Object.values(outputs), ...Object.values(responsiveOutputs)].map(exists))
   if (!options.force && outputExists.every(Boolean)) {
     return { status: 'skipped', source: job.source, base: job.base }
   }
@@ -215,6 +221,13 @@ async function processPhoto(job, options) {
   await pipeline.clone().avif({ quality: 55, effort: 5 }).toFile(outputs.avif)
   await pipeline.clone().webp({ quality: 78, effort: 5, smartSubsample: true }).toFile(outputs.webp)
   await pipeline.clone().jpeg({ quality: 82, mozjpeg: true, progressive: true }).toFile(outputs.jpg)
+
+  for (const width of RESPONSIVE_WIDTHS.filter((candidate) => candidate < options.maxWidth)) {
+    const responsive = pipeline.clone().resize({ width, fit: 'inside', withoutEnlargement: true })
+    await responsive.clone().avif({ quality: 52, effort: 5 }).toFile(responsiveOutputs[`avif-${width}`])
+    await responsive.clone().webp({ quality: 76, effort: 5, smartSubsample: true }).toFile(responsiveOutputs[`webp-${width}`])
+    await responsive.clone().jpeg({ quality: 80, mozjpeg: true, progressive: true }).toFile(responsiveOutputs[`jpg-${width}`])
+  }
 
   return { status: 'created', source: job.source, base: job.base }
 }
